@@ -19,6 +19,16 @@
 		865BD1E61C73735900F180D8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD1E51C73735900F180D8 /* SettingsViewController.swift */; };
 		865BD1E71C73735900F180D8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD1E51C73735900F180D8 /* SettingsViewController.swift */; };
 		865BD1E81C73735900F180D8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD1E51C73735900F180D8 /* SettingsViewController.swift */; };
+		865BD1EC1C7490C000F180D8 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 865BD1EA1C7490C000F180D8 /* MobFoxSDKCore.bundle */; };
+		865BD1ED1C7490C000F180D8 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 865BD1EA1C7490C000F180D8 /* MobFoxSDKCore.bundle */; };
+		865BD1EE1C7490C000F180D8 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 865BD1EA1C7490C000F180D8 /* MobFoxSDKCore.bundle */; };
+		865BD1EF1C7490C000F180D8 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865BD1EB1C7490C000F180D8 /* MobFoxSDKCore.framework */; };
+		865BD1F01C7490C100F180D8 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865BD1EB1C7490C000F180D8 /* MobFoxSDKCore.framework */; };
+		865BD1F11C7490C100F180D8 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865BD1EB1C7490C000F180D8 /* MobFoxSDKCore.framework */; };
+		865BD1F31C7495B100F180D8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865BD1F21C7495B100F180D8 /* AdSupport.framework */; };
+		865BD2321C74A72B00F180D8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD2311C74A72B00F180D8 /* CollectionViewCell.swift */; };
+		865BD2331C74A72B00F180D8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD2311C74A72B00F180D8 /* CollectionViewCell.swift */; };
+		865BD2341C74A72B00F180D8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD2311C74A72B00F180D8 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +63,10 @@
 		865BD1D51C73728400F180D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		865BD1E11C7372F100F180D8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		865BD1E51C73735900F180D8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		865BD1EA1C7490C000F180D8 /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobFoxSDKCore.bundle; sourceTree = "<group>"; };
+		865BD1EB1C7490C000F180D8 /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCore.framework; sourceTree = "<group>"; };
+		865BD1F21C7495B100F180D8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		865BD2311C74A72B00F180D8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865BD1F31C7495B100F180D8 /* AdSupport.framework in Frameworks */,
+				865BD1EF1C7490C000F180D8 /* MobFoxSDKCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865BD1F01C7490C100F180D8 /* MobFoxSDKCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865BD1F11C7490C100F180D8 /* MobFoxSDKCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,7 @@
 		865BD1A71C73728400F180D8 = {
 			isa = PBXGroup;
 			children = (
+				865BD2351C74CFC900F180D8 /* Frameworks */,
 				865BD1B21C73728400F180D8 /* DemoAppSwift */,
 				865BD1C71C73728400F180D8 /* DemoAppSwiftTests */,
 				865BD1D21C73728400F180D8 /* DemoAppSwiftUITests */,
@@ -103,6 +122,7 @@
 		865BD1B21C73728400F180D8 /* DemoAppSwift */ = {
 			isa = PBXGroup;
 			children = (
+				865BD2301C74A6E300F180D8 /* CollectionViewCell */,
 				865BD1B31C73728400F180D8 /* AppDelegate.swift */,
 				865BD1B51C73728400F180D8 /* MainViewController.swift */,
 				865BD1E51C73735900F180D8 /* SettingsViewController.swift */,
@@ -130,6 +150,32 @@
 				865BD1D51C73728400F180D8 /* Info.plist */,
 			);
 			path = DemoAppSwiftUITests;
+			sourceTree = "<group>";
+		};
+		865BD1E91C7490C000F180D8 /* MobFoxSDKCore.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				865BD1EA1C7490C000F180D8 /* MobFoxSDKCore.bundle */,
+				865BD1EB1C7490C000F180D8 /* MobFoxSDKCore.framework */,
+			);
+			path = MobFoxSDKCore.embeddedframework;
+			sourceTree = "<group>";
+		};
+		865BD2301C74A6E300F180D8 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				865BD2311C74A72B00F180D8 /* CollectionViewCell.swift */,
+			);
+			name = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		865BD2351C74CFC900F180D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				865BD1E91C7490C000F180D8 /* MobFoxSDKCore.embeddedframework */,
+				865BD1F21C7495B100F180D8 /* AdSupport.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +246,7 @@
 				TargetAttributes = {
 					865BD1AF1C73728400F180D8 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = AV662668AP;
 					};
 					865BD1C31C73728400F180D8 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -238,6 +285,7 @@
 			files = (
 				865BD1E21C7372F100F180D8 /* Main.storyboard in Resources */,
 				865BD1BE1C73728400F180D8 /* LaunchScreen.storyboard in Resources */,
+				865BD1EC1C7490C000F180D8 /* MobFoxSDKCore.bundle in Resources */,
 				865BD1BB1C73728400F180D8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865BD1ED1C7490C000F180D8 /* MobFoxSDKCore.bundle in Resources */,
 				865BD1E31C7372F100F180D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865BD1EE1C7490C000F180D8 /* MobFoxSDKCore.bundle in Resources */,
 				865BD1E41C7372F100F180D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +317,7 @@
 			files = (
 				865BD1B61C73728400F180D8 /* MainViewController.swift in Sources */,
 				865BD1B41C73728400F180D8 /* AppDelegate.swift in Sources */,
+				865BD2321C74A72B00F180D8 /* CollectionViewCell.swift in Sources */,
 				865BD1E61C73735900F180D8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +328,7 @@
 			files = (
 				865BD1C91C73728400F180D8 /* DemoAppSwiftTests.swift in Sources */,
 				865BD1E71C73735900F180D8 /* SettingsViewController.swift in Sources */,
+				865BD2331C74A72B00F180D8 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +338,7 @@
 			files = (
 				865BD1D41C73728400F180D8 /* DemoAppSwiftUITests.swift in Sources */,
 				865BD1E81C73735900F180D8 /* SettingsViewController.swift in Sources */,
+				865BD2341C74A72B00F180D8 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,8 +456,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
+				);
 				INFOPLIST_FILE = DemoAppSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matomy.DemoAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -414,8 +474,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
+				);
 				INFOPLIST_FILE = DemoAppSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matomy.DemoAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -425,6 +492,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
+				);
 				INFOPLIST_FILE = DemoAppSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matomy.DemoAppSwiftTests;
@@ -437,6 +508,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
+				);
 				INFOPLIST_FILE = DemoAppSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matomy.DemoAppSwiftTests;
@@ -448,6 +523,10 @@
 		865BD1DF1C73728400F180D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
+				);
 				INFOPLIST_FILE = DemoAppSwiftUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matomy.DemoAppSwiftUITests;
@@ -460,6 +539,10 @@
 		865BD1E01C73728400F180D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
+				);
 				INFOPLIST_FILE = DemoAppSwiftUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matomy.DemoAppSwiftUITests;
@@ -488,6 +571,7 @@
 				865BD1DA1C73728400F180D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		865BD1DB1C73728400F180D8 /* Build configuration list for PBXNativeTarget "DemoAppSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +580,7 @@
 				865BD1DD1C73728400F180D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		865BD1DE1C73728400F180D8 /* Build configuration list for PBXNativeTarget "DemoAppSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +589,7 @@
 				865BD1E01C73728400F180D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
