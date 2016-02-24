@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
@@ -7,7 +7,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="DemoAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="DemoAppSwift" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,7 +173,7 @@
         <!--Settings View Controller-->
         <scene sceneID="1na-Sq-WJX">
             <objects>
-                <viewController id="4N1-fF-lrS" customClass="SettingsViewController" sceneMemberID="viewController">
+                <viewController id="4N1-fF-lrS" customClass="SettingsViewController" customModule="DemoAppSwift" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wLK-id-GBo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,7 +214,7 @@
                                     <color key="titleColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="startStopReading:" destination="4N1-fF-lrS" eventType="touchUpInside" id="eKK-W5-Oop"/>
+                                    <action selector="startStopReading:" destination="4N1-fF-lrS" eventType="touchUpInside" id="uBV-Me-6aI"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" id="8pr-yL-f1H">
@@ -245,12 +245,12 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="doneButtonItem" destination="NLe-kT-5ge" id="pJd-Nf-BWF"/>
-                        <outlet property="hashTextField" destination="ruY-Dh-H2X" id="VQ6-g0-enI"/>
-                        <outlet property="navigationBar" destination="8pr-yL-f1H" id="ncn-Td-HNs"/>
-                        <outlet property="startButton" destination="enm-ET-0JS" id="3HE-DX-RLe"/>
-                        <outlet property="statusLabel" destination="M2H-Ss-ZXQ" id="xC6-4R-JQp"/>
-                        <outlet property="viewPreview" destination="0ax-Wt-peA" id="Pa9-Of-PLB"/>
+                        <outlet property="doneButtonItem" destination="NLe-kT-5ge" id="3LS-C2-euO"/>
+                        <outlet property="hashTextField" destination="ruY-Dh-H2X" id="t3e-tc-LSf"/>
+                        <outlet property="navigationBar" destination="8pr-yL-f1H" id="bsF-Tb-cDs"/>
+                        <outlet property="startButton" destination="enm-ET-0JS" id="KCW-hI-GWe"/>
+                        <outlet property="statusLabel" destination="M2H-Ss-ZXQ" id="hHH-33-BPX"/>
+                        <outlet property="viewPreview" destination="0ax-Wt-peA" id="0np-3M-2jQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftB-s4-h20" userLabel="First Responder" sceneMemberID="firstResponder"/>

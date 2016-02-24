@@ -7,6 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86186ABF1C7B554600D406BB /* icon_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186AB01C7B554600D406BB /* icon_02.png */; };
+		86186AC01C7B554600D406BB /* icon_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186AB01C7B554600D406BB /* icon_02.png */; };
+		86186AC11C7B554600D406BB /* icon_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186AB01C7B554600D406BB /* icon_02.png */; };
+		86186AC21C7B554600D406BB /* icon_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186AB11C7B554600D406BB /* icon_01.png */; };
+		86186AC31C7B554600D406BB /* icon_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186AB11C7B554600D406BB /* icon_01.png */; };
+		86186AC41C7B554600D406BB /* icon_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186AB11C7B554600D406BB /* icon_01.png */; };
+		86186AD41C7B554600D406BB /* mobfox_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186AB71C7B554600D406BB /* mobfox_icon.png */; };
+		86186AD51C7B554600D406BB /* mobfox_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186AB71C7B554600D406BB /* mobfox_icon.png */; };
+		86186AD61C7B554600D406BB /* mobfox_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186AB71C7B554600D406BB /* mobfox_icon.png */; };
+		86186AD71C7B554600D406BB /* test_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186AB81C7B554600D406BB /* test_bg.png */; };
+		86186AD81C7B554600D406BB /* test_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186AB81C7B554600D406BB /* test_bg.png */; };
+		86186AD91C7B554600D406BB /* test_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186AB81C7B554600D406BB /* test_bg.png */; };
+		86186ADA1C7B554600D406BB /* test_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186AB91C7B554600D406BB /* test_banner.png */; };
+		86186ADB1C7B554600D406BB /* test_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186AB91C7B554600D406BB /* test_banner.png */; };
+		86186ADC1C7B554600D406BB /* test_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186AB91C7B554600D406BB /* test_banner.png */; };
+		86186ADD1C7B554600D406BB /* test_interstitial.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186ABA1C7B554600D406BB /* test_interstitial.png */; };
+		86186ADE1C7B554600D406BB /* test_interstitial.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186ABA1C7B554600D406BB /* test_interstitial.png */; };
+		86186ADF1C7B554600D406BB /* test_interstitial.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186ABA1C7B554600D406BB /* test_interstitial.png */; };
+		86186AE01C7B554600D406BB /* test_native.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186ABB1C7B554600D406BB /* test_native.png */; };
+		86186AE11C7B554600D406BB /* test_native.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186ABB1C7B554600D406BB /* test_native.png */; };
+		86186AE21C7B554600D406BB /* test_native.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186ABB1C7B554600D406BB /* test_native.png */; };
+		86186AE31C7B554600D406BB /* title_mobfox.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186ABC1C7B554600D406BB /* title_mobfox.png */; };
+		86186AE41C7B554600D406BB /* title_mobfox.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186ABC1C7B554600D406BB /* title_mobfox.png */; };
+		86186AE51C7B554600D406BB /* title_mobfox.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186ABC1C7B554600D406BB /* title_mobfox.png */; };
+		86186AE61C7B554600D406BB /* icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186ABD1C7B554600D406BB /* icon_info.png */; };
+		86186AE71C7B554600D406BB /* icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186ABD1C7B554600D406BB /* icon_info.png */; };
+		86186AE81C7B554600D406BB /* icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186ABD1C7B554600D406BB /* icon_info.png */; };
+		86186AE91C7B554600D406BB /* test_video.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186ABE1C7B554600D406BB /* test_video.png */; };
+		86186AEA1C7B554600D406BB /* test_video.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186ABE1C7B554600D406BB /* test_video.png */; };
+		86186AEB1C7B554600D406BB /* test_video.png in Resources */ = {isa = PBXBuildFile; fileRef = 86186ABE1C7B554600D406BB /* test_video.png */; };
+		86186AEC1C7B739900D406BB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD1B51C73728400F180D8 /* MainViewController.swift */; };
+		86186AED1C7B739900D406BB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD1B51C73728400F180D8 /* MainViewController.swift */; };
+		8659487D1C7DECFB009E6750 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8659487B1C7DECFB009E6750 /* MobFoxSDKCore.bundle */; };
+		8659487E1C7DECFB009E6750 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8659487B1C7DECFB009E6750 /* MobFoxSDKCore.bundle */; };
+		8659487F1C7DECFB009E6750 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8659487B1C7DECFB009E6750 /* MobFoxSDKCore.bundle */; };
+		865948801C7DECFB009E6750 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8659487C1C7DECFB009E6750 /* MobFoxSDKCore.framework */; };
+		865948811C7DECFB009E6750 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8659487C1C7DECFB009E6750 /* MobFoxSDKCore.framework */; };
+		865948821C7DECFB009E6750 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8659487C1C7DECFB009E6750 /* MobFoxSDKCore.framework */; };
 		865BD1B41C73728400F180D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD1B31C73728400F180D8 /* AppDelegate.swift */; };
 		865BD1B61C73728400F180D8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD1B51C73728400F180D8 /* MainViewController.swift */; };
 		865BD1BB1C73728400F180D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 865BD1BA1C73728400F180D8 /* Assets.xcassets */; };
@@ -19,12 +57,6 @@
 		865BD1E61C73735900F180D8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD1E51C73735900F180D8 /* SettingsViewController.swift */; };
 		865BD1E71C73735900F180D8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD1E51C73735900F180D8 /* SettingsViewController.swift */; };
 		865BD1E81C73735900F180D8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD1E51C73735900F180D8 /* SettingsViewController.swift */; };
-		865BD1EC1C7490C000F180D8 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 865BD1EA1C7490C000F180D8 /* MobFoxSDKCore.bundle */; };
-		865BD1ED1C7490C000F180D8 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 865BD1EA1C7490C000F180D8 /* MobFoxSDKCore.bundle */; };
-		865BD1EE1C7490C000F180D8 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 865BD1EA1C7490C000F180D8 /* MobFoxSDKCore.bundle */; };
-		865BD1EF1C7490C000F180D8 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865BD1EB1C7490C000F180D8 /* MobFoxSDKCore.framework */; };
-		865BD1F01C7490C100F180D8 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865BD1EB1C7490C000F180D8 /* MobFoxSDKCore.framework */; };
-		865BD1F11C7490C100F180D8 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865BD1EB1C7490C000F180D8 /* MobFoxSDKCore.framework */; };
 		865BD1F31C7495B100F180D8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865BD1F21C7495B100F180D8 /* AdSupport.framework */; };
 		865BD2321C74A72B00F180D8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD2311C74A72B00F180D8 /* CollectionViewCell.swift */; };
 		865BD2331C74A72B00F180D8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD2311C74A72B00F180D8 /* CollectionViewCell.swift */; };
@@ -49,6 +81,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		86186AB01C7B554600D406BB /* icon_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_02.png; sourceTree = "<group>"; };
+		86186AB11C7B554600D406BB /* icon_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_01.png; sourceTree = "<group>"; };
+		86186AB71C7B554600D406BB /* mobfox_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mobfox_icon.png; sourceTree = "<group>"; };
+		86186AB81C7B554600D406BB /* test_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_bg.png; sourceTree = "<group>"; };
+		86186AB91C7B554600D406BB /* test_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_banner.png; sourceTree = "<group>"; };
+		86186ABA1C7B554600D406BB /* test_interstitial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_interstitial.png; sourceTree = "<group>"; };
+		86186ABB1C7B554600D406BB /* test_native.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_native.png; sourceTree = "<group>"; };
+		86186ABC1C7B554600D406BB /* title_mobfox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_mobfox.png; sourceTree = "<group>"; };
+		86186ABD1C7B554600D406BB /* icon_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_info.png; sourceTree = "<group>"; };
+		86186ABE1C7B554600D406BB /* test_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_video.png; sourceTree = "<group>"; };
+		8659487B1C7DECFB009E6750 /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobFoxSDKCore.bundle; sourceTree = "<group>"; };
+		8659487C1C7DECFB009E6750 /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCore.framework; sourceTree = "<group>"; };
 		865BD1B01C73728400F180D8 /* DemoAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		865BD1B31C73728400F180D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		865BD1B51C73728400F180D8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -63,8 +107,6 @@
 		865BD1D51C73728400F180D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		865BD1E11C7372F100F180D8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		865BD1E51C73735900F180D8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		865BD1EA1C7490C000F180D8 /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobFoxSDKCore.bundle; sourceTree = "<group>"; };
-		865BD1EB1C7490C000F180D8 /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCore.framework; sourceTree = "<group>"; };
 		865BD1F21C7495B100F180D8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		865BD2311C74A72B00F180D8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,7 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				865BD1F31C7495B100F180D8 /* AdSupport.framework in Frameworks */,
-				865BD1EF1C7490C000F180D8 /* MobFoxSDKCore.framework in Frameworks */,
+				865948801C7DECFB009E6750 /* MobFoxSDKCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865BD1F01C7490C100F180D8 /* MobFoxSDKCore.framework in Frameworks */,
+				865948811C7DECFB009E6750 /* MobFoxSDKCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,16 +133,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865BD1F11C7490C100F180D8 /* MobFoxSDKCore.framework in Frameworks */,
+				865948821C7DECFB009E6750 /* MobFoxSDKCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8659487A1C7DECFB009E6750 /* MobFoxSDKCore.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				8659487B1C7DECFB009E6750 /* MobFoxSDKCore.bundle */,
+				8659487C1C7DECFB009E6750 /* MobFoxSDKCore.framework */,
+			);
+			path = MobFoxSDKCore.embeddedframework;
+			sourceTree = "<group>";
+		};
 		865BD1A71C73728400F180D8 = {
 			isa = PBXGroup;
 			children = (
+				8659487A1C7DECFB009E6750 /* MobFoxSDKCore.embeddedframework */,
 				865BD2351C74CFC900F180D8 /* Frameworks */,
 				865BD1B21C73728400F180D8 /* DemoAppSwift */,
 				865BD1C71C73728400F180D8 /* DemoAppSwiftTests */,
@@ -128,6 +180,16 @@
 				865BD1E51C73735900F180D8 /* SettingsViewController.swift */,
 				865BD1E11C7372F100F180D8 /* Main.storyboard */,
 				865BD1BA1C73728400F180D8 /* Assets.xcassets */,
+				86186AB11C7B554600D406BB /* icon_01.png */,
+				86186AB01C7B554600D406BB /* icon_02.png */,
+				86186AB71C7B554600D406BB /* mobfox_icon.png */,
+				86186AB81C7B554600D406BB /* test_bg.png */,
+				86186AB91C7B554600D406BB /* test_banner.png */,
+				86186ABA1C7B554600D406BB /* test_interstitial.png */,
+				86186ABB1C7B554600D406BB /* test_native.png */,
+				86186ABC1C7B554600D406BB /* title_mobfox.png */,
+				86186ABD1C7B554600D406BB /* icon_info.png */,
+				86186ABE1C7B554600D406BB /* test_video.png */,
 				865BD1BC1C73728400F180D8 /* LaunchScreen.storyboard */,
 				865BD1BF1C73728400F180D8 /* Info.plist */,
 			);
@@ -152,15 +214,6 @@
 			path = DemoAppSwiftUITests;
 			sourceTree = "<group>";
 		};
-		865BD1E91C7490C000F180D8 /* MobFoxSDKCore.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				865BD1EA1C7490C000F180D8 /* MobFoxSDKCore.bundle */,
-				865BD1EB1C7490C000F180D8 /* MobFoxSDKCore.framework */,
-			);
-			path = MobFoxSDKCore.embeddedframework;
-			sourceTree = "<group>";
-		};
 		865BD2301C74A6E300F180D8 /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,7 +225,6 @@
 		865BD2351C74CFC900F180D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				865BD1E91C7490C000F180D8 /* MobFoxSDKCore.embeddedframework */,
 				865BD1F21C7495B100F180D8 /* AdSupport.framework */,
 			);
 			name = Frameworks;
@@ -284,8 +336,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				865BD1E21C7372F100F180D8 /* Main.storyboard in Resources */,
+				86186ADD1C7B554600D406BB /* test_interstitial.png in Resources */,
+				86186ADA1C7B554600D406BB /* test_banner.png in Resources */,
+				86186AD71C7B554600D406BB /* test_bg.png in Resources */,
+				86186AE01C7B554600D406BB /* test_native.png in Resources */,
+				86186AD41C7B554600D406BB /* mobfox_icon.png in Resources */,
+				86186AE31C7B554600D406BB /* title_mobfox.png in Resources */,
+				86186AE91C7B554600D406BB /* test_video.png in Resources */,
+				8659487D1C7DECFB009E6750 /* MobFoxSDKCore.bundle in Resources */,
+				86186AC21C7B554600D406BB /* icon_01.png in Resources */,
 				865BD1BE1C73728400F180D8 /* LaunchScreen.storyboard in Resources */,
-				865BD1EC1C7490C000F180D8 /* MobFoxSDKCore.bundle in Resources */,
+				86186AE61C7B554600D406BB /* icon_info.png in Resources */,
+				86186ABF1C7B554600D406BB /* icon_02.png in Resources */,
 				865BD1BB1C73728400F180D8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,8 +356,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865BD1ED1C7490C000F180D8 /* MobFoxSDKCore.bundle in Resources */,
+				86186AE41C7B554600D406BB /* title_mobfox.png in Resources */,
+				86186AEA1C7B554600D406BB /* test_video.png in Resources */,
+				86186AE71C7B554600D406BB /* icon_info.png in Resources */,
+				86186ADE1C7B554600D406BB /* test_interstitial.png in Resources */,
+				86186AC01C7B554600D406BB /* icon_02.png in Resources */,
 				865BD1E31C7372F100F180D8 /* Main.storyboard in Resources */,
+				8659487E1C7DECFB009E6750 /* MobFoxSDKCore.bundle in Resources */,
+				86186AC31C7B554600D406BB /* icon_01.png in Resources */,
+				86186AE11C7B554600D406BB /* test_native.png in Resources */,
+				86186AD51C7B554600D406BB /* mobfox_icon.png in Resources */,
+				86186AD81C7B554600D406BB /* test_bg.png in Resources */,
+				86186ADB1C7B554600D406BB /* test_banner.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,8 +375,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865BD1EE1C7490C000F180D8 /* MobFoxSDKCore.bundle in Resources */,
+				86186AE51C7B554600D406BB /* title_mobfox.png in Resources */,
+				86186AEB1C7B554600D406BB /* test_video.png in Resources */,
+				86186AE81C7B554600D406BB /* icon_info.png in Resources */,
+				86186ADF1C7B554600D406BB /* test_interstitial.png in Resources */,
+				86186AC11C7B554600D406BB /* icon_02.png in Resources */,
 				865BD1E41C7372F100F180D8 /* Main.storyboard in Resources */,
+				8659487F1C7DECFB009E6750 /* MobFoxSDKCore.bundle in Resources */,
+				86186AC41C7B554600D406BB /* icon_01.png in Resources */,
+				86186AE21C7B554600D406BB /* test_native.png in Resources */,
+				86186AD61C7B554600D406BB /* mobfox_icon.png in Resources */,
+				86186AD91C7B554600D406BB /* test_bg.png in Resources */,
+				86186ADC1C7B554600D406BB /* test_banner.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +411,7 @@
 				865BD1C91C73728400F180D8 /* DemoAppSwiftTests.swift in Sources */,
 				865BD1E71C73735900F180D8 /* SettingsViewController.swift in Sources */,
 				865BD2331C74A72B00F180D8 /* CollectionViewCell.swift in Sources */,
+				86186AEC1C7B739900D406BB /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +422,7 @@
 				865BD1D41C73728400F180D8 /* DemoAppSwiftUITests.swift in Sources */,
 				865BD1E81C73735900F180D8 /* SettingsViewController.swift in Sources */,
 				865BD2341C74A72B00F180D8 /* CollectionViewCell.swift in Sources */,
+				86186AED1C7B739900D406BB /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
