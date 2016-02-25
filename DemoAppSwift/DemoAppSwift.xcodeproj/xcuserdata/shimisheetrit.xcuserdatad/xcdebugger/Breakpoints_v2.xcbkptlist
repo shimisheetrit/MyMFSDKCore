@@ -10,20 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DemoAppSwift/MainViewController.swift"
-<<<<<<< HEAD
             timestampString = "477502699.891752"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "348"
             endingLineNumber = "348"
-=======
-            timestampString = "478010780.47863"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "334"
-            endingLineNumber = "334"
->>>>>>> DemoApp
-            landmarkName = "initVideoAd()"
+            landmarkName = "removeVideoAd()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
