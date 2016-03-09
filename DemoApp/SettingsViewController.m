@@ -131,8 +131,11 @@
 #pragma mark AVCaptureMetadataOutputObjectsDelegate
 
 -(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
+    
     if (metadataObjects != nil && [metadataObjects count] > 0) {
+        
         AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex:0];
+        
         if ([[metadataObj type] isEqualToString:AVMetadataObjectTypeQRCode]) {
             
             [_statusLabel performSelectorOnMainThread:@selector(setText:) withObject:@"QR Code Reader is not running..." waitUntilDone:NO];
