@@ -10,8 +10,8 @@
 #import <MobFoxSDKCore/MobFoxSDKCore.h>
 //#import "MPInterstitialAdController.h"
 //#import "MoPubInterstitialAdapterMobFox.h"
-#import "MoPub.h"
-#import "MPNativeAd.h"
+//#import "MoPub.h"
+//#import "MPNativeAd.h"
 @import FBAudienceNetwork;
 
 

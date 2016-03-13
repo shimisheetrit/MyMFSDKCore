@@ -577,6 +577,7 @@
 		860C0FA11C95925B0001EEF3 /* MPRewardedVideoReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 860C0D6F1C95925B0001EEF3 /* MPRewardedVideoReward.m */; };
 		860C0FA21C95925B0001EEF3 /* MPRewardedVideoReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 860C0D6F1C95925B0001EEF3 /* MPRewardedVideoReward.m */; };
 		860C0FA31C95925B0001EEF3 /* MPRewardedVideoReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 860C0D6F1C95925B0001EEF3 /* MPRewardedVideoReward.m */; };
+		860C0FA41C95A48B0001EEF3 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 86186A281C79F0CB00D406BB /* libxml2.tbd */; };
 		865BD0DF1C68CF3500F180D8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865BD0DE1C68CF3500F180D8 /* AVFoundation.framework */; };
 		865BD1501C6CED9C00F180D8 /* NativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865BD14E1C6CED9C00F180D8 /* NativeAdViewController.m */; };
 		865BD1511C6CED9C00F180D8 /* NativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865BD14E1C6CED9C00F180D8 /* NativeAdViewController.m */; };
@@ -699,10 +700,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		860C0BCB1C9572370001EEF3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		860C0BCD1C95738D0001EEF3 /* libSystem.B.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.B.dylib; path = ../../../../../usr/lib/libSystem.B.dylib; sourceTree = "<group>"; };
 		860C0BCF1C9573D50001EEF3 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
-		860C0BD11C9573F50001EEF3 /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
 		860C0BD71C9576C60001EEF3 /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobFoxSDKCore.bundle; sourceTree = "<group>"; };
 		860C0BD81C9576C60001EEF3 /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCore.framework; sourceTree = "<group>"; };
 		860C0BE31C95925B0001EEF3 /* MPGoogleAdMobBannerCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGoogleAdMobBannerCustomEvent.h; sourceTree = "<group>"; };
@@ -1154,6 +1153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				860C0FA41C95A48B0001EEF3 /* libxml2.tbd in Frameworks */,
 				86F16C6C1C9020B10039F8DA /* CoreMotion.framework in Frameworks */,
 				86F8A2D11C79C20D00BDD8FD /* Social.framework in Frameworks */,
 				860C0D881C95925B0001EEF3 /* MMAdSDK.framework in Frameworks */,
@@ -1816,12 +1816,10 @@
 		865BD0E01C68DF7D00F180D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				860C0BD11C9573F50001EEF3 /* libz.1.tbd */,
+				86186A281C79F0CB00D406BB /* libxml2.tbd */,
 				860C0BCF1C9573D50001EEF3 /* libz.1.dylib */,
 				860C0BCD1C95738D0001EEF3 /* libSystem.B.dylib */,
-				860C0BCB1C9572370001EEF3 /* libz.tbd */,
 				86F16C661C901F350039F8DA /* Facebook */,
-				86186A281C79F0CB00D406BB /* libxml2.tbd */,
 				86F16C6B1C9020B10039F8DA /* CoreMotion.framework */,
 				86F8A2D01C79C20D00BDD8FD /* Social.framework */,
 				86F8A2CE1C79C20100BDD8FD /* PassKit.framework */,
