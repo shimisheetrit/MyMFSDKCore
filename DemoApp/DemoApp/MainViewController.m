@@ -95,6 +95,42 @@
     self.adVideoRect = CGRectMake((screenWidth - videoWidth)/2, self.collectionView.frame.size.height + videoTopMargin, videoWidth, videoHeight);
     [self initVideoAd];
     
+    
+    ////////////////
+    /*MPServerAdPositioning *positioning = [[MPServerAdPositioning alloc] init];
+    
+    self.placer = [MPCollectionViewAdPlacer placerWithCollectionView:self.collectionView
+                                                      viewController:self
+                                                       adPositioning:positioning
+                                             defaultAdRenderingClass:[YourNativeAdCell class]];
+    [self.placer loadAdsForAdUnitID:self.adUnitID];*/
+    
+    //MPNativeAd *native  = [MPNativeAd alloc] initWithAdAdapter:<#(id<MPNativeAdAdapter>)#>
+    /*
+    MPStaticNativeAdRendererSettings *settings = [[MPStaticNativeAdRendererSettings alloc] init];
+    settings.renderingViewClass = [self.view class];
+    MPNativeAdRendererConfiguration *config = [MPStaticNativeAdRenderer rendererConfigurationWithRendererSettings:settings];
+    MPNativeAdRequest *adRequest = [MPNativeAdRequest requestWithAdUnitIdentifier:@"ac0f139a2d9544fface76d06e27bc02a" rendererConfigurations:@[config]];
+
+    MPNativeAdRequestTargeting *targeting = [MPNativeAdRequestTargeting targeting];
+    targeting.desiredAssets = [NSSet setWithObjects:kAdTitleKey, kAdTextKey, kAdCTATextKey, kAdIconImageKey, kAdMainImageKey, kAdStarRatingKey, nil]; //The constants correspond to the 6 elements of MoPub native ads
+    
+    [adRequest startWithCompletionHandler:^(MPNativeAdRequest *request, MPNativeAd *response, NSError *error) {
+        if (error) {
+            // Handle error.
+        } else {
+            
+            NSLog(@"response: %@", response);
+     
+            //self.nativeAd = response;
+            //self.nativeAd.delegate = self;
+            //UIView *nativeAdView = [response retrieveAdViewWithError:nil];
+            //nativeAdView.frame = self.yourNativeAdViewContainer.bounds;
+            //[self.yourNativeAdViewContainer addSubview:nativeAdView];
+     
+        }
+    }];*/
+
 
     
     
