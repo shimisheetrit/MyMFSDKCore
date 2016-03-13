@@ -95,7 +95,6 @@
     self.adVideoRect = CGRectMake((screenWidth - videoWidth)/2, self.collectionView.frame.size.height + videoTopMargin, videoWidth, videoHeight);
     [self initVideoAd];
     
-
     
     
 }

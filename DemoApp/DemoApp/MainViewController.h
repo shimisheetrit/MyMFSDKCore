@@ -8,15 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import <MobFoxSDKCore/MobFoxSDKCore.h>
-#import "MPInterstitialAdController.h"
+//#import "MPInterstitialAdController.h"
 //#import "MoPubInterstitialAdapterMobFox.h"
+//#import "MoPub.h"
+//#import "MPNativeAd.h"
 @import FBAudienceNetwork;
 
 
-@interface MainViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, MobFoxAdDelegate, MobFoxInterstitialAdDelegate, MobFoxNativeAdDelegate, MPInterstitialAdControllerDelegate, FBAdViewDelegate>
+@interface MainViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, MobFoxAdDelegate, MobFoxInterstitialAdDelegate, MobFoxNativeAdDelegate, FBAdViewDelegate>
 
 @property (strong, nonatomic) NSString *invh;
-@property (strong, nonatomic) MPInterstitialAdController *interstitial;
+//@property (strong, nonatomic) MPInterstitialAdController *interstitial;
 
 @end
 
