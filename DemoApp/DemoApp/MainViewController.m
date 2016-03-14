@@ -271,6 +271,12 @@
     self.nativeAdDescription.text = adData.assetDescription;
     self.clickURL = [adData.clickURL absoluteURL];
     
+    //adData.callToActionText
+    NSLog(@"adData.assetHeadline: %@", adData.assetHeadline);
+    NSLog(@"adData.assetDescription: %@", adData.assetDescription);
+    NSLog(@"adData.callToActionText: %@", adData.callToActionText);
+    
+    
     for (MobFoxNativeTracker *tracker in adData.trackersArray) {
         
         // Fire tracking pixel

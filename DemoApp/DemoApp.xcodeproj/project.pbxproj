@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		860C0BD91C9576C60001EEF3 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 860C0BD71C9576C60001EEF3 /* MobFoxSDKCore.bundle */; };
-		860C0BDA1C9576C60001EEF3 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 860C0BD71C9576C60001EEF3 /* MobFoxSDKCore.bundle */; };
-		860C0BDB1C9576C60001EEF3 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 860C0BD71C9576C60001EEF3 /* MobFoxSDKCore.bundle */; };
-		860C0BDC1C9576C60001EEF3 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860C0BD81C9576C60001EEF3 /* MobFoxSDKCore.framework */; };
-		860C0BDD1C9576C60001EEF3 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860C0BD81C9576C60001EEF3 /* MobFoxSDKCore.framework */; };
-		860C0BDE1C9576C60001EEF3 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860C0BD81C9576C60001EEF3 /* MobFoxSDKCore.framework */; };
 		860C0D701C95925B0001EEF3 /* MPGoogleAdMobBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 860C0BE41C95925B0001EEF3 /* MPGoogleAdMobBannerCustomEvent.m */; };
 		860C0D711C95925B0001EEF3 /* MPGoogleAdMobBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 860C0BE41C95925B0001EEF3 /* MPGoogleAdMobBannerCustomEvent.m */; };
 		860C0D721C95925B0001EEF3 /* MPGoogleAdMobBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 860C0BE41C95925B0001EEF3 /* MPGoogleAdMobBannerCustomEvent.m */; };
@@ -577,7 +571,13 @@
 		860C0FA11C95925B0001EEF3 /* MPRewardedVideoReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 860C0D6F1C95925B0001EEF3 /* MPRewardedVideoReward.m */; };
 		860C0FA21C95925B0001EEF3 /* MPRewardedVideoReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 860C0D6F1C95925B0001EEF3 /* MPRewardedVideoReward.m */; };
 		860C0FA31C95925B0001EEF3 /* MPRewardedVideoReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 860C0D6F1C95925B0001EEF3 /* MPRewardedVideoReward.m */; };
-		860C0FA41C95A48B0001EEF3 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 86186A281C79F0CB00D406BB /* libxml2.tbd */; };
+		860C0FB91C96BA6F0001EEF3 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 86186A281C79F0CB00D406BB /* libxml2.tbd */; };
+		860C0FC61C96C1470001EEF3 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 860C0FC41C96C1470001EEF3 /* MobFoxSDKCore.bundle */; };
+		860C0FC71C96C1470001EEF3 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 860C0FC41C96C1470001EEF3 /* MobFoxSDKCore.bundle */; };
+		860C0FC81C96C1470001EEF3 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 860C0FC41C96C1470001EEF3 /* MobFoxSDKCore.bundle */; };
+		860C0FC91C96C1470001EEF3 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860C0FC51C96C1470001EEF3 /* MobFoxSDKCore.framework */; };
+		860C0FCA1C96C1470001EEF3 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860C0FC51C96C1470001EEF3 /* MobFoxSDKCore.framework */; };
+		860C0FCB1C96C1470001EEF3 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860C0FC51C96C1470001EEF3 /* MobFoxSDKCore.framework */; };
 		865BD0DF1C68CF3500F180D8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865BD0DE1C68CF3500F180D8 /* AVFoundation.framework */; };
 		865BD1501C6CED9C00F180D8 /* NativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865BD14E1C6CED9C00F180D8 /* NativeAdViewController.m */; };
 		865BD1511C6CED9C00F180D8 /* NativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865BD14E1C6CED9C00F180D8 /* NativeAdViewController.m */; };
@@ -702,8 +702,6 @@
 /* Begin PBXFileReference section */
 		860C0BCD1C95738D0001EEF3 /* libSystem.B.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.B.dylib; path = ../../../../../usr/lib/libSystem.B.dylib; sourceTree = "<group>"; };
 		860C0BCF1C9573D50001EEF3 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
-		860C0BD71C9576C60001EEF3 /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobFoxSDKCore.bundle; sourceTree = "<group>"; };
-		860C0BD81C9576C60001EEF3 /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCore.framework; sourceTree = "<group>"; };
 		860C0BE31C95925B0001EEF3 /* MPGoogleAdMobBannerCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGoogleAdMobBannerCustomEvent.h; sourceTree = "<group>"; };
 		860C0BE41C95925B0001EEF3 /* MPGoogleAdMobBannerCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGoogleAdMobBannerCustomEvent.m; sourceTree = "<group>"; };
 		860C0BE51C95925B0001EEF3 /* MPGoogleAdMobInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGoogleAdMobInterstitialCustomEvent.h; sourceTree = "<group>"; };
@@ -1077,6 +1075,9 @@
 		860C0D6D1C95925B0001EEF3 /* MPRewardedVideoError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPRewardedVideoError.m; sourceTree = "<group>"; };
 		860C0D6E1C95925B0001EEF3 /* MPRewardedVideoReward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPRewardedVideoReward.h; sourceTree = "<group>"; };
 		860C0D6F1C95925B0001EEF3 /* MPRewardedVideoReward.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPRewardedVideoReward.m; sourceTree = "<group>"; };
+		860C0FB71C96B9B00001EEF3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		860C0FC41C96C1470001EEF3 /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobFoxSDKCore.bundle; sourceTree = "<group>"; };
+		860C0FC51C96C1470001EEF3 /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCore.framework; sourceTree = "<group>"; };
 		86186A281C79F0CB00D406BB /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		865BD0DE1C68CF3500F180D8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		865BD14D1C6CED9C00F180D8 /* NativeAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NativeAdViewController.h; path = ../NativeAdViewController.h; sourceTree = "<group>"; };
@@ -1153,7 +1154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				860C0FA41C95A48B0001EEF3 /* libxml2.tbd in Frameworks */,
+				860C0FB91C96BA6F0001EEF3 /* libxml2.tbd in Frameworks */,
 				86F16C6C1C9020B10039F8DA /* CoreMotion.framework in Frameworks */,
 				86F8A2D11C79C20D00BDD8FD /* Social.framework in Frameworks */,
 				860C0D881C95925B0001EEF3 /* MMAdSDK.framework in Frameworks */,
@@ -1168,8 +1169,8 @@
 				86F8A2BF1C79BBFE00BDD8FD /* StoreKit.framework in Frameworks */,
 				86F8A2BD1C79BBF400BDD8FD /* QuartzCore.framework in Frameworks */,
 				86F8A2BB1C79BBE700BDD8FD /* MediaPlayer.framework in Frameworks */,
-				860C0BDC1C9576C60001EEF3 /* MobFoxSDKCore.framework in Frameworks */,
 				86F8A2B91C79BBDC00BDD8FD /* Foundation.framework in Frameworks */,
+				860C0FC91C96C1470001EEF3 /* MobFoxSDKCore.framework in Frameworks */,
 				86F8A2B71C79BBC700BDD8FD /* EventKitUI.framework in Frameworks */,
 				86F8A2B51C79BBB300BDD8FD /* EventKit.framework in Frameworks */,
 				86F8A2B31C79BBA800BDD8FD /* CoreTelephony.framework in Frameworks */,
@@ -1188,7 +1189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				860C0D771C95925B0001EEF3 /* GoogleMobileAds.framework in Frameworks */,
-				860C0BDD1C9576C60001EEF3 /* MobFoxSDKCore.framework in Frameworks */,
+				860C0FCA1C96C1470001EEF3 /* MobFoxSDKCore.framework in Frameworks */,
 				860C0D891C95925B0001EEF3 /* MMAdSDK.framework in Frameworks */,
 				86F16C691C901F450039F8DA /* FBAudienceNetwork.framework in Frameworks */,
 			);
@@ -1199,7 +1200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				860C0D781C95925B0001EEF3 /* GoogleMobileAds.framework in Frameworks */,
-				860C0BDE1C9576C60001EEF3 /* MobFoxSDKCore.framework in Frameworks */,
+				860C0FCB1C96C1470001EEF3 /* MobFoxSDKCore.framework in Frameworks */,
 				860C0D8A1C95925B0001EEF3 /* MMAdSDK.framework in Frameworks */,
 				86F16C6A1C901F460039F8DA /* FBAudienceNetwork.framework in Frameworks */,
 			);
@@ -1208,15 +1209,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		860C0BD61C9576C60001EEF3 /* MobFoxSDKCoreDynamic.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				860C0BD71C9576C60001EEF3 /* MobFoxSDKCore.bundle */,
-				860C0BD81C9576C60001EEF3 /* MobFoxSDKCore.framework */,
-			);
-			path = MobFoxSDKCoreDynamic.embeddedframework;
-			sourceTree = "<group>";
-		};
 		860C0BDF1C9590E80001EEF3 /* Mopub */ = {
 			isa = PBXGroup;
 			children = (
@@ -1813,9 +1805,19 @@
 			path = Internal;
 			sourceTree = "<group>";
 		};
+		860C0FC31C96C1470001EEF3 /* MobFoxSDKCore.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				860C0FC41C96C1470001EEF3 /* MobFoxSDKCore.bundle */,
+				860C0FC51C96C1470001EEF3 /* MobFoxSDKCore.framework */,
+			);
+			path = MobFoxSDKCore.embeddedframework;
+			sourceTree = "<group>";
+		};
 		865BD0E01C68DF7D00F180D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				860C0FB71C96B9B00001EEF3 /* libz.tbd */,
 				86186A281C79F0CB00D406BB /* libxml2.tbd */,
 				860C0BCF1C9573D50001EEF3 /* libz.1.dylib */,
 				860C0BCD1C95738D0001EEF3 /* libSystem.B.dylib */,
@@ -1849,7 +1851,7 @@
 		86891E051C5FA8250098C602 = {
 			isa = PBXGroup;
 			children = (
-				860C0BD61C9576C60001EEF3 /* MobFoxSDKCoreDynamic.embeddedframework */,
+				860C0FC31C96C1470001EEF3 /* MobFoxSDKCore.embeddedframework */,
 				86F16C901C904CFA0039F8DA /* MobFox Custom Events */,
 				865BD0E01C68DF7D00F180D8 /* Frameworks */,
 				86891E101C5FA8250098C602 /* DemoApp */,
@@ -2120,8 +2122,8 @@
 				860C0F8F1C95925B0001EEF3 /* MRAID.bundle in Resources */,
 				86891ED11C639C190098C602 /* img_03.png in Resources */,
 				860C0F5F1C95925B0001EEF3 /* MPCloseBtn@3x.png in Resources */,
+				860C0FC61C96C1470001EEF3 /* MobFoxSDKCore.bundle in Resources */,
 				860C0F711C95925B0001EEF3 /* MPDAAIcon@3x.png in Resources */,
-				860C0BD91C9576C60001EEF3 /* MobFoxSDKCore.bundle in Resources */,
 				86891E971C6106870098C602 /* test_interstitial.png in Resources */,
 				86891ED61C63AAC10098C602 /* img_04.png in Resources */,
 				86891EA21C6106970098C602 /* mobfox_icon.png in Resources */,
@@ -2136,7 +2138,7 @@
 				860C0F841C95925B0001EEF3 /* MPPlayBtn@3x.png in Resources */,
 				865BD1541C6CED9C00F180D8 /* NativeAdViewController.xib in Resources */,
 				860C0DA71C95925B0001EEF3 /* MPAdBrowserController.xib in Resources */,
-				860C0BDA1C9576C60001EEF3 /* MobFoxSDKCore.bundle in Resources */,
+				860C0FC71C96C1470001EEF3 /* MobFoxSDKCore.bundle in Resources */,
 				860C0F721C95925B0001EEF3 /* MPDAAIcon@3x.png in Resources */,
 				86891EA31C6106970098C602 /* mobfox_icon.png in Resources */,
 				860C0F631C95925B0001EEF3 /* MPCloseButtonX.png in Resources */,
@@ -2182,7 +2184,7 @@
 				860C0F851C95925B0001EEF3 /* MPPlayBtn@3x.png in Resources */,
 				865BD1551C6CED9C00F180D8 /* NativeAdViewController.xib in Resources */,
 				860C0DA81C95925B0001EEF3 /* MPAdBrowserController.xib in Resources */,
-				860C0BDB1C9576C60001EEF3 /* MobFoxSDKCore.bundle in Resources */,
+				860C0FC81C96C1470001EEF3 /* MobFoxSDKCore.bundle in Resources */,
 				860C0F731C95925B0001EEF3 /* MPDAAIcon@3x.png in Resources */,
 				86891EA41C6106970098C602 /* mobfox_icon.png in Resources */,
 				860C0F641C95925B0001EEF3 /* MPCloseButtonX.png in Resources */,
@@ -2898,7 +2900,7 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = DemoApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-all_load";
@@ -2929,7 +2931,7 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = DemoApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-all_load";
