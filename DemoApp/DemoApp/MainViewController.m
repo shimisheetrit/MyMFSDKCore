@@ -149,15 +149,15 @@
     }];
     
     // TEST: native ad adapter
-    
+      /*
     MobFoxNativeAd *nativeAd = [[MobFoxNativeAd alloc] init:MOBFOX_HASH_NATIVE];
     NSLog(@"nativeAd: %@", nativeAd);
-    /*
+  
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         MobFoxNativeAd *nativeAd = [[MobFoxNativeAd alloc] init:MOBFOX_HASH_NATIVE];
         NSLog(@"nativeAd: %@", nativeAd);
 
-    });*/
+    });
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     
@@ -165,7 +165,7 @@
         nativeAdAdapter.delegate = self;
         [nativeAdAdapter requestAdWithCustomEventInfo:nil];
         
-    });
+    }); */
 
     
 }
