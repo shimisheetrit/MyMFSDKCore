@@ -10,17 +10,20 @@
 #import "CollectionViewCell.h"
 #import "SettingsViewController.h"
 #import "NativeAdViewController.h"
+#import "MPMobFoxNativeAdRenderer.h"
+#import "MoPubNativeAdapterMobFox.h"
 
 #define ADS_TYPE_NUM 4
 #define AD_REFRESH 0
 
 
-#define MOBFOX_HASH_BANNER @"fe96717d9875b9da4339ea5367eff1ec" // @"9c09794cc85e7c9f9205e7a26f03234c"
+#define MOBFOX_HASH_BANNER @"9c09794cc85e7c9f9205e7a26f03234c" //@"fe96717d9875b9da4339ea5367eff1ec" // @"9c09794cc85e7c9f9205e7a26f03234c"
 #define MOBFOX_HASH_INTER @"267d72ac3f77a3f447b32cf7ebf20673"  // @"145849979b4c7a12916c7f06d25b75e3"
 #define MOBFOX_HASH_NATIVE @"80187188f458cfde788d961b6882fd53" // @"4c3ea57788c5858881dc42cfafe8c0ab" 
 #define MOBFOX_HASH_VIDEO @"651586294dac23e245f26789c4043aa9"
 
 
+#define MOPUB_HASH_NATIVE @"ac0f139a2d9544fface76d06e27bc02a"
 
 @interface MainViewController ()
 
@@ -95,8 +98,81 @@
     self.adVideoRect = CGRectMake((screenWidth - videoWidth)/2, self.collectionView.frame.size.height + videoTopMargin, videoWidth, videoHeight);
     [self initVideoAd];
     
+    //
     
+    MPStaticNativeAdRendererSettings *settings = [[MPStaticNativeAdRendererSettings alloc] init];
+    settings.renderingViewClass = [MoPubNativeAdView class];
+    settings.viewSizeHandler = ^(CGFloat maximumWidth) {
+        return CGSizeMake(maximumWidth, 77.0f);
+    };
     
+    MPNativeAdRendererConfiguration *config = [MPMobFoxNativeAdRenderer rendererConfigurationWithRendererSettings:settings];
+    
+    /*
+    UICollectionViewFlowLayout* flowLayout = [[UICollectionViewFlowLayout alloc]init];
+    flowLayout.itemSize = CGSizeMake(100, 100);
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    self.collectionView_new = [[UICollectionView alloc] initWithFrame:self.view.frame collectionViewLayout:flowLayout];
+    
+    //[self.collectionView registerClass:[CollectionCell class] forCellWithReuseIdentifier:@"cell"];
+    
+    self.placer = [MPCollectionViewAdPlacer placerWithCollectionView:self.collectionView_new
+                                                      viewController:self
+                                              rendererConfigurations:@[config]];
+    self.placer.delegate = self;
+    [self.placer loadAdsForAdUnitID:@"ac0f139a2d9544fface76d06e27bc02a"];
+     */
+    
+    //
+    
+    MPNativeAdRequest *adRequest = [MPNativeAdRequest requestWithAdUnitIdentifier:MOPUB_HASH_NATIVE rendererConfigurations:@[config]];
+
+    MPNativeAdRequestTargeting *targeting = [MPNativeAdRequestTargeting targeting];
+    
+    targeting.desiredAssets = [NSSet setWithObjects:kAdTitleKey, kAdTextKey, kAdCTATextKey, kAdIconImageKey, kAdMainImageKey, kAdStarRatingKey, nil]; //The constants correspond to the 6 elements of MoPub native ads
+    
+    [adRequest startWithCompletionHandler:^(MPNativeAdRequest *request, MPNativeAd *response, NSError *error) {
+        if (error) {
+            // Handle error.
+        } else {
+            
+            NSLog(@"request: %@", request);
+            NSLog(@"response.properties: %@", response.properties);
+            
+            //self.nativeAd = response;
+            //self.nativeAd.delegate = self;
+            //UIView *nativeAdView = [response retrieveAdViewWithError:nil];
+            //nativeAdView.frame = self.yourNativeAdViewContainer.bounds;
+            //[self.yourNativeAdViewContainer addSubview:nativeAdView];
+            
+        }
+    }];
+    
+    // TEST: native ad adapter
+    
+    MobFoxNativeAd *nativeAd = [[MobFoxNativeAd alloc] init:MOBFOX_HASH_NATIVE];
+    NSLog(@"nativeAd: %@", nativeAd);
+    /*
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        MobFoxNativeAd *nativeAd = [[MobFoxNativeAd alloc] init:MOBFOX_HASH_NATIVE];
+        NSLog(@"nativeAd: %@", nativeAd);
+
+    });*/
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    
+        MoPubNativeAdapterMobFox *nativeAdAdapter = [[MoPubNativeAdapterMobFox alloc] init];
+        nativeAdAdapter.delegate = self;
+        [nativeAdAdapter requestAdWithCustomEventInfo:nil];
+        
+    });
+
+    
+}
+
+- (UIViewController *)viewControllerForPresentingModalView {
+    
+    return self;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -449,6 +525,19 @@
     
 }
 
+-(void)nativeAdWillPresentModalForCollectionViewAdPlacer:(MPCollectionViewAdPlacer *)placer{
+    NSLog(@">> first");
+}
+
+
+-(void)nativeAdDidDismissModalForCollectionViewAdPlacer:(MPCollectionViewAdPlacer *)placer{
+    NSLog(@">> second");
+}
+
+
+-(void)nativeAdWillLeaveApplicationFromCollectionViewAdPlacer:(MPCollectionViewAdPlacer *)placer{
+    NSLog(@">> third");
+}
 
 @end
 

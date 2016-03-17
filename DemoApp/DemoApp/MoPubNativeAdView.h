@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MoPub.h"
 
-@interface MoPubNativeAdView : UIView
+@interface MoPubNativeAdView : UIView <MPNativeAdRendering>
+
+@property (strong, nonatomic) UILabel *titleLabel;
+@property (strong, nonatomic) UILabel *mainTextLabel;
+@property (strong, nonatomic) UILabel *callToActionLabel;
+@property (strong, nonatomic) UIImageView *iconImageView;
+@property (strong, nonatomic) UIImageView *mainImageView;
+@property (strong, nonatomic) UIImageView *privacyInformationIconImageView;
 
 @end

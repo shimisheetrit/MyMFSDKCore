@@ -18,4 +18,40 @@
 }
 */
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    // layout your views
+}
+
+- (UILabel *)nativeMainTextLabel
+{
+    return self.mainTextLabel;
+}
+
+- (UILabel *)nativeTitleTextLabel
+{
+    return self.titleLabel;
+}
+
+- (UILabel *)nativeCallToActionTextLabel
+{
+    return self.callToActionLabel;
+}
+
+- (UIImageView *)nativeIconImageView
+{
+    return self.iconImageView;
+}
+
+- (UIImageView *)nativeMainImageView
+{
+    return self.mainImageView;
+}
+
+- (UIImageView *)nativePrivacyInformationIconImageView
+{
+    return self.privacyInformationIconImageView;
+}
+
 @end
