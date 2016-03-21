@@ -20,6 +20,8 @@
 #import "MPCollectionViewAdPlacer.h"
 
 @import FBAudienceNetwork;
+@import GoogleMobileAds;
+
 
 
 @interface MainViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, MobFoxAdDelegate, MobFoxInterstitialAdDelegate, MobFoxNativeAdDelegate, FBAdViewDelegate, MPNativeAdDelegate, MPNativeAdAdapterDelegate, MPCollectionViewAdPlacerDelegate, MPNativeCustomEventDelegate>
@@ -30,6 +32,15 @@
 @property (nonatomic, retain) MPAdView *adView;
 @property (nonatomic, retain) MPCollectionViewAdPlacer* placer;
 @property (nonatomic, retain) UICollectionView* collectionView_new;
+
+@property (nonatomic, strong) GADBannerView *gadBannerView;
+@property (nonatomic, strong) DFPBannerView *dfpBannerView;
+
+@property (nonatomic, strong) GADInterstitial *gadInterstitial;
+@property (nonatomic, strong) DFPInterstitial *dfpInterstitial;
+
+
+
 
 @end
 

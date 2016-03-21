@@ -8,6 +8,7 @@
 
 import UIKit
 import MobFoxSDKCore
+import GoogleMobileAds
 
 
 let AdsTypeNum = 4
@@ -35,19 +36,19 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     private var clickURL: NSURL?
     private var adVideoRect: CGRect!
     
+    // MobFox.
     private var mobfoxAd: MobFoxAd!
     private var mobfoxInterAd: MobFoxInterstitialAd!
     private var mobfoxNativeAd: MobFoxNativeAd!
     private var mobfoxVideoAd: MobFoxAd!
     
+    // AdMob.
+    private var bannerView: GADBannerView!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        print("invh: %@", invh)
-        print("collectionView: %@", collectionView)
 
         
         self.nativeAdView.hidden = true
@@ -82,6 +83,19 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let videoTopMargin = CGFloat(UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad ? 200.0 : 80.0)
         self.adVideoRect = CGRectMake((screenWidth - videoWidth)/2, self.collectionView.frame.size.height + videoTopMargin, videoWidth, videoHeight)
         self.initVideoAd()
+        
+        /*** AdMob ***/
+        bannerView = GADBannerView.init(adSize: kGADAdSizeBanner, origin: CGPointMake(0, 0))
+        bannerView.adUnitID = "ca-app-pub-6224828323195096/5240875564​" // "ca-app-pub-3940256099942544/2934735716"
+        bannerView.frame = CGRectMake(0, 0, 320, 50)
+        bannerView.rootViewController = self
+        let request = GADRequest()
+        //request.testDevices = ["221e6c438e8184e0556942ea14bb214b"] // kGADSimulatorID
+        bannerView.loadRequest(request)
+        self.view.addSubview(bannerView)
+        
+     
+        
         
     }
 

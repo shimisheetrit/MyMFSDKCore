@@ -13,6 +13,7 @@
 #import "MPMobFoxNativeAdRenderer.h"
 #import "MoPubNativeAdapterMobFox.h"
 
+
 #define ADS_TYPE_NUM 4
 #define AD_REFRESH 0
 
@@ -99,7 +100,7 @@
     [self initVideoAd];
     
     //
-    
+    /*
     MPStaticNativeAdRendererSettings *settings = [[MPStaticNativeAdRendererSettings alloc] init];
     settings.renderingViewClass = [MoPubNativeAdView class];
     settings.viewSizeHandler = ^(CGFloat maximumWidth) {
@@ -107,26 +108,7 @@
     };
     
     MPNativeAdRendererConfiguration *config = [MPMobFoxNativeAdRenderer rendererConfigurationWithRendererSettings:settings];
-    
-    /*
-    UICollectionViewFlowLayout* flowLayout = [[UICollectionViewFlowLayout alloc]init];
-    flowLayout.itemSize = CGSizeMake(100, 100);
-    [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
-    self.collectionView_new = [[UICollectionView alloc] initWithFrame:self.view.frame collectionViewLayout:flowLayout];
-    
-    //[self.collectionView registerClass:[CollectionCell class] forCellWithReuseIdentifier:@"cell"];
-    
-    self.placer = [MPCollectionViewAdPlacer placerWithCollectionView:self.collectionView_new
-                                                      viewController:self
-                                              rendererConfigurations:@[config]];
-    self.placer.delegate = self;
-    [self.placer loadAdsForAdUnitID:@"ac0f139a2d9544fface76d06e27bc02a"];
-     */
-    
-    //
-    
     MPNativeAdRequest *adRequest = [MPNativeAdRequest requestWithAdUnitIdentifier:MOPUB_HASH_NATIVE rendererConfigurations:@[config]];
-
     MPNativeAdRequestTargeting *targeting = [MPNativeAdRequestTargeting targeting];
     
     targeting.desiredAssets = [NSSet setWithObjects:kAdTitleKey, kAdTextKey, kAdCTATextKey, kAdIconImageKey, kAdMainImageKey, kAdStarRatingKey, nil]; //The constants correspond to the 6 elements of MoPub native ads
@@ -147,6 +129,26 @@
             
         }
     }];
+     */
+    
+    /*
+    UICollectionViewFlowLayout* flowLayout = [[UICollectionViewFlowLayout alloc]init];
+    flowLayout.itemSize = CGSizeMake(100, 100);
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    self.collectionView_new = [[UICollectionView alloc] initWithFrame:self.view.frame collectionViewLayout:flowLayout];
+    
+    //[self.collectionView registerClass:[CollectionCell class] forCellWithReuseIdentifier:@"cell"];
+    
+    self.placer = [MPCollectionViewAdPlacer placerWithCollectionView:self.collectionView_new
+                                                      viewController:self
+                                              rendererConfigurations:@[config]];
+    self.placer.delegate = self;
+    [self.placer loadAdsForAdUnitID:@"ac0f139a2d9544fface76d06e27bc02a"];
+     */
+    
+    //
+    
+
     
     // TEST: native ad adapter
       /*
@@ -166,6 +168,45 @@
         [nativeAdAdapter requestAdWithCustomEventInfo:nil];
         
     }); */
+    
+    // AdMob.
+    
+    // banner.
+    /*
+    self.gadBannerView = [[GADBannerView alloc] initWithFrame:CGRectMake(0,430,320,50)];
+     NSLog(@"AdMob >>> init banner");
+    //self.bannerView.frame = CGRectMake(0.0,0.0,size.width,size.height);
+    
+    self.gadBannerView.adUnitID = @"ca-app-pub-6224828323195096/5240875564";
+    self.gadBannerView.rootViewController = self;
+    [self.view addSubview: self.gadBannerView];
+    GADRequest *request = [[GADRequest alloc] init];
+    //request.testDevices = @[ @"221e6c438e8184e0556942ea14bb214b" ];
+    [self.gadBannerView loadRequest:request];
+    
+    // interstitial
+    self.gadInterstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-6224828323195096/7876284361"];
+    GADRequest *request_interstitial = [GADRequest request];
+    // Requests test ads on test devices.
+    //request.testDevice @[@"2077ef9a63d2b398840261c8221a0c9b"];
+    [self.gadInterstitial loadRequest:request_interstitial];
+    */
+    
+    
+    // DFP request.
+    self.dfpBannerView = [[DFPBannerView alloc] initWithFrame:CGRectMake(0,330,320,50)];
+    self.dfpBannerView.adUnitID = @"ca-app-pub-6224828323195096/5240875564";
+    self.dfpBannerView.rootViewController = self;
+    [self.dfpBannerView loadRequest:[DFPRequest request]];
+    [self.view addSubview: self.dfpBannerView];
+    
+    self.dfpInterstitial = [[DFPInterstitial alloc] initWithAdUnitID:@"ca-app-pub-6224828323195096/7876284361"];
+    DFPRequest *request_inter = [DFPRequest request];
+    // Requests test ads on test devices.
+    //request.testDevice @[@"2077ef9a63d2b398840261c8221a0c9b"];
+    [self.dfpInterstitial loadRequest:request_inter];
+    
+    
 
     
 }
@@ -219,6 +260,12 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
+    
+    if ([self.dfpInterstitial isReady]) {
+        [self.dfpInterstitial presentFromRootViewController:self];
+    }
+    
+    return ;
     
     UICollectionViewCell* cell = [collectionView  cellForItemAtIndexPath:indexPath];
     cell.backgroundColor = [UIColor lightGrayColor];
