@@ -20,7 +20,7 @@
 
 #define MOBFOX_HASH_BANNER @"9c09794cc85e7c9f9205e7a26f03234c" //@"fe96717d9875b9da4339ea5367eff1ec" // @"9c09794cc85e7c9f9205e7a26f03234c"
 #define MOBFOX_HASH_INTER @"267d72ac3f77a3f447b32cf7ebf20673"  // @"145849979b4c7a12916c7f06d25b75e3"
-#define MOBFOX_HASH_NATIVE @"80187188f458cfde788d961b6882fd53" // @"4c3ea57788c5858881dc42cfafe8c0ab" 
+#define MOBFOX_HASH_NATIVE @"4c3ea57788c5858881dc42cfafe8c0ab" //@"9c09794cc85e7c9f9205e7a26f03234c" // @"4c3ea57788c5858881dc42cfafe8c0ab"
 #define MOBFOX_HASH_VIDEO @"651586294dac23e245f26789c4043aa9"
 
 
@@ -192,7 +192,7 @@
     [self.gadInterstitial loadRequest:request_interstitial];
     */
     
-    
+    /*
     // DFP request.
     self.dfpBannerView = [[DFPBannerView alloc] initWithFrame:CGRectMake(0,330,320,50)];
     self.dfpBannerView.adUnitID = @"ca-app-pub-6224828323195096/5240875564";
@@ -205,6 +205,7 @@
     // Requests test ads on test devices.
     //request.testDevice @[@"2077ef9a63d2b398840261c8221a0c9b"];
     [self.dfpInterstitial loadRequest:request_inter];
+     */
     
     
 
@@ -260,12 +261,13 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    
+    /*
     if ([self.dfpInterstitial isReady]) {
         [self.dfpInterstitial presentFromRootViewController:self];
     }
     
     return ;
+     */
     
     UICollectionViewCell* cell = [collectionView  cellForItemAtIndexPath:indexPath];
     cell.backgroundColor = [UIColor lightGrayColor];
@@ -399,22 +401,36 @@
     NSLog(@"adData.assetDescription: %@", adData.assetDescription);
     NSLog(@"adData.callToActionText: %@", adData.callToActionText);
     
-    
     for (MobFoxNativeTracker *tracker in adData.trackersArray) {
         
-        // Fire tracking pixel
-        UIWebView* wv = [[UIWebView alloc] initWithFrame:CGRectZero];
-        NSString* userAgent = [wv stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
-        NSURLSessionConfiguration* conf = [NSURLSessionConfiguration defaultSessionConfiguration];
-        [conf.HTTPAdditionalHeaders setValue:userAgent forKey:@"User-Agent"];
-        NSURLSession* session = [NSURLSession sessionWithConfiguration:conf];
-        NSURLSessionDataTask* task = [session dataTaskWithURL:tracker.url completionHandler:
-                                      ^(NSData *data,NSURLResponse *response, NSError *error){
-                                          
-                                          if(error) NSLog(@"err %@",[error description]);
+        NSLog(@"tracker: %@", tracker);
+        NSLog(@"tracker.url: %@", tracker.url);
 
-                                      }];
-        [task resume];
+        if ([tracker.url absoluteString].length > 0)
+        {
+            
+            // Fire tracking pixel
+            UIWebView* wv = [[UIWebView alloc] initWithFrame:CGRectZero];
+            NSString* userAgent = [wv stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
+            NSLog(@"userAgent: %@", userAgent);
+            NSURLSessionConfiguration* conf = [NSURLSessionConfiguration defaultSessionConfiguration];
+            //[conf.HTTPAdditionalHeaders setValue:userAgent forKey:@"User-Agent"];
+            
+            conf.HTTPAdditionalHeaders = @{
+                                           @"User-Agent" : userAgent,
+                                           };
+            
+            NSURLSession* session = [NSURLSession sessionWithConfiguration:conf];
+            NSURLSessionDataTask* task = [session dataTaskWithURL:tracker.url completionHandler:
+                                          ^(NSData *data,NSURLResponse *response, NSError *error){
+                                          
+                                          
+                                              if(error) NSLog(@"err %@",[error description]);
+
+                                          }];
+            [task resume];
+            
+        }
         
     }
     

@@ -20,9 +20,6 @@
 		864081881C9EF92C002BD1E4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864081871C9EF92C002BD1E4 /* MessageUI.framework */; };
 		8640818A1C9EF935002BD1E4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864081891C9EF935002BD1E4 /* StoreKit.framework */; };
 		8640818C1C9EF941002BD1E4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8640818B1C9EF941002BD1E4 /* SystemConfiguration.framework */; };
-		864081901C9EFF17002BD1E4 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8640818F1C9EFF17002BD1E4 /* GoogleMobileAds.framework */; };
-		864081911C9EFF17002BD1E4 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8640818F1C9EFF17002BD1E4 /* GoogleMobileAds.framework */; };
-		864081921C9EFF17002BD1E4 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8640818F1C9EFF17002BD1E4 /* GoogleMobileAds.framework */; };
 		8659487D1C7DECFB009E6750 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8659487B1C7DECFB009E6750 /* MobFoxSDKCore.bundle */; };
 		8659487E1C7DECFB009E6750 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8659487B1C7DECFB009E6750 /* MobFoxSDKCore.bundle */; };
 		8659487F1C7DECFB009E6750 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8659487B1C7DECFB009E6750 /* MobFoxSDKCore.bundle */; };
@@ -45,6 +42,9 @@
 		865BD2321C74A72B00F180D8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD2311C74A72B00F180D8 /* CollectionViewCell.swift */; };
 		865BD2331C74A72B00F180D8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD2311C74A72B00F180D8 /* CollectionViewCell.swift */; };
 		865BD2341C74A72B00F180D8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD2311C74A72B00F180D8 /* CollectionViewCell.swift */; };
+		86A31C1D1CA28AC900FD6959 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A31C1C1CA28AC900FD6959 /* GoogleMobileAds.framework */; };
+		86A31C1E1CA28AC900FD6959 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A31C1C1CA28AC900FD6959 /* GoogleMobileAds.framework */; };
+		86A31C1F1CA28AC900FD6959 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A31C1C1CA28AC900FD6959 /* GoogleMobileAds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +76,6 @@
 		864081871C9EF92C002BD1E4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		864081891C9EF935002BD1E4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		8640818B1C9EF941002BD1E4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		8640818F1C9EFF17002BD1E4 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		8659487B1C7DECFB009E6750 /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobFoxSDKCore.bundle; sourceTree = "<group>"; };
 		8659487C1C7DECFB009E6750 /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCore.framework; sourceTree = "<group>"; };
 		865BD1B01C73728400F180D8 /* DemoAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +94,7 @@
 		865BD1E51C73735900F180D8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		865BD1F21C7495B100F180D8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		865BD2311C74A72B00F180D8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		86A31C1C1CA28AC900FD6959 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,7 @@
 				8640817A1C9EF8C3002BD1E4 /* AVFoundation.framework in Frameworks */,
 				864081781C9EF8B9002BD1E4 /* AudioToolbox.framework in Frameworks */,
 				865BD1F31C7495B100F180D8 /* AdSupport.framework in Frameworks */,
-				864081901C9EFF17002BD1E4 /* GoogleMobileAds.framework in Frameworks */,
+				86A31C1D1CA28AC900FD6959 /* GoogleMobileAds.framework in Frameworks */,
 				865948801C7DECFB009E6750 /* MobFoxSDKCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				864081911C9EFF17002BD1E4 /* GoogleMobileAds.framework in Frameworks */,
+				86A31C1E1CA28AC900FD6959 /* GoogleMobileAds.framework in Frameworks */,
 				865948811C7DECFB009E6750 /* MobFoxSDKCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,7 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				864081921C9EFF17002BD1E4 /* GoogleMobileAds.framework in Frameworks */,
+				86A31C1F1CA28AC900FD6959 /* GoogleMobileAds.framework in Frameworks */,
 				865948821C7DECFB009E6750 /* MobFoxSDKCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,7 +215,7 @@
 		865BD2351C74CFC900F180D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8640818F1C9EFF17002BD1E4 /* GoogleMobileAds.framework */,
+				86A31C1C1CA28AC900FD6959 /* GoogleMobileAds.framework */,
 				8640818B1C9EF941002BD1E4 /* SystemConfiguration.framework */,
 				864081891C9EF935002BD1E4 /* StoreKit.framework */,
 				864081871C9EF92C002BD1E4 /* MessageUI.framework */,
