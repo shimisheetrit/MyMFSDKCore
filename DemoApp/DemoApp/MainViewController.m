@@ -414,16 +414,10 @@
             NSString* userAgent = [wv stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
             NSLog(@"userAgent: %@", userAgent);
             NSURLSessionConfiguration* conf = [NSURLSessionConfiguration defaultSessionConfiguration];
-            //[conf.HTTPAdditionalHeaders setValue:userAgent forKey:@"User-Agent"];
-            
-            conf.HTTPAdditionalHeaders = @{
-                                           @"User-Agent" : userAgent,
-                                           };
-            
+            conf.HTTPAdditionalHeaders = @{ @"User-Agent" : userAgent };
             NSURLSession* session = [NSURLSession sessionWithConfiguration:conf];
             NSURLSessionDataTask* task = [session dataTaskWithURL:tracker.url completionHandler:
                                           ^(NSData *data,NSURLResponse *response, NSError *error){
-                                          
                                           
                                               if(error) NSLog(@"err %@",[error description]);
 
