@@ -14,7 +14,6 @@
 #import "MPNativeAdConstants.h"
 #import "MoPubNativeAdView.h"
 #import "MoPubNativeAdapterMobFox.h"
-//#import "MPNativeAd.h"
 
 #import "MPAdView.h"
 #import "MPCollectionViewAdPlacer.h"
@@ -27,7 +26,6 @@
 @interface MainViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, MobFoxAdDelegate, MobFoxInterstitialAdDelegate, MobFoxNativeAdDelegate, FBAdViewDelegate, MPNativeAdDelegate, MPNativeAdAdapterDelegate, MPCollectionViewAdPlacerDelegate, MPNativeCustomEventDelegate>
 
 @property (strong, nonatomic) NSString *invh;
-//@property (strong, nonatomic) MPInterstitialAdController *interstitial;
 
 @property (nonatomic, retain) MPAdView *adView;
 @property (nonatomic, retain) MPCollectionViewAdPlacer* placer;

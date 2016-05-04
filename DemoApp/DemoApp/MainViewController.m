@@ -18,13 +18,11 @@
 #define AD_REFRESH 0
 
 
-#define MOBFOX_HASH_BANNER @"9c09794cc85e7c9f9205e7a26f03234c" //@"fe96717d9875b9da4339ea5367eff1ec" // @"9c09794cc85e7c9f9205e7a26f03234c"
-#define MOBFOX_HASH_INTER @"267d72ac3f77a3f447b32cf7ebf20673"  // @"145849979b4c7a12916c7f06d25b75e3"
-#define MOBFOX_HASH_NATIVE @"4c3ea57788c5858881dc42cfafe8c0ab" //@"9c09794cc85e7c9f9205e7a26f03234c" // @"4c3ea57788c5858881dc42cfafe8c0ab"
-#define MOBFOX_HASH_VIDEO @"651586294dac23e245f26789c4043aa9"
+#define MOBFOX_HASH_BANNER @"fe96717d9875b9da4339ea5367eff1ec"
+#define MOBFOX_HASH_INTER @"267d72ac3f77a3f447b32cf7ebf20673"
+#define MOBFOX_HASH_NATIVE @"4c3ea57788c5858881dc42cfafe8c0ab"
+#define MOBFOX_HASH_VIDEO @"80187188f458cfde788d961b6882fd53"
 
-
-#define MOPUB_HASH_NATIVE @"ac0f139a2d9544fface76d06e27bc02a"
 
 @interface MainViewController ()
 
@@ -43,7 +41,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *nativeAdTitle;
 @property (weak, nonatomic) IBOutlet UILabel *nativeAdDescription;
 
-@property (nonatomic) CGRect adVideoRect;
+@property (nonatomic) CGRect videoAdRect;
 
 
 
@@ -73,16 +71,12 @@
     float bannerHeight = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 90.0 : 50.0;
     float videoWidth = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 500.0 : 300.0;
     float videoHeight = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 450.0 : 250.0;
-
     
     /*** Banner ***/
     CGRect adRect = CGRectMake((screenWidth-bannerWidth)/2, screenHeight-bannerHeight, bannerWidth, bannerHeight);
     self.mobfoxAd = [[MobFoxAd alloc] init:MOBFOX_HASH_BANNER withFrame:adRect];
     self.mobfoxAd.delegate = self;
     self.mobfoxAd.refresh = [NSNumber numberWithInt:AD_REFRESH];
-    //self.mobfoxAd.type = @"video";
-    //self.mobfoxAd.v_dur_min = [NSNumber numberWithInt:10];
-    //self.mobfoxAd.v_dur_max = [NSNumber numberWithInt:2000];
     [self.view addSubview:self.mobfoxAd];
     
     /*** Interstitial ***/
@@ -96,118 +90,12 @@
     
     /*** Video ***/
     float videoTopMargin = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 200.0 : 80.0;
-    self.adVideoRect = CGRectMake((screenWidth - videoWidth)/2, self.collectionView.frame.size.height + videoTopMargin, videoWidth, videoHeight);
-    [self initVideoAd];
-    
-    //
-    /*
-    MPStaticNativeAdRendererSettings *settings = [[MPStaticNativeAdRendererSettings alloc] init];
-    settings.renderingViewClass = [MoPubNativeAdView class];
-    settings.viewSizeHandler = ^(CGFloat maximumWidth) {
-        return CGSizeMake(maximumWidth, 77.0f);
-    };
-    
-    MPNativeAdRendererConfiguration *config = [MPMobFoxNativeAdRenderer rendererConfigurationWithRendererSettings:settings];
-    MPNativeAdRequest *adRequest = [MPNativeAdRequest requestWithAdUnitIdentifier:MOPUB_HASH_NATIVE rendererConfigurations:@[config]];
-    MPNativeAdRequestTargeting *targeting = [MPNativeAdRequestTargeting targeting];
-    
-    targeting.desiredAssets = [NSSet setWithObjects:kAdTitleKey, kAdTextKey, kAdCTATextKey, kAdIconImageKey, kAdMainImageKey, kAdStarRatingKey, nil]; //The constants correspond to the 6 elements of MoPub native ads
-    
-    [adRequest startWithCompletionHandler:^(MPNativeAdRequest *request, MPNativeAd *response, NSError *error) {
-        if (error) {
-            // Handle error.
-        } else {
-            
-            NSLog(@"request: %@", request);
-            NSLog(@"response.properties: %@", response.properties);
-            
-            //self.nativeAd = response;
-            //self.nativeAd.delegate = self;
-            //UIView *nativeAdView = [response retrieveAdViewWithError:nil];
-            //nativeAdView.frame = self.yourNativeAdViewContainer.bounds;
-            //[self.yourNativeAdViewContainer addSubview:nativeAdView];
-            
-        }
-    }];
-     */
-    
-    /*
-    UICollectionViewFlowLayout* flowLayout = [[UICollectionViewFlowLayout alloc]init];
-    flowLayout.itemSize = CGSizeMake(100, 100);
-    [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
-    self.collectionView_new = [[UICollectionView alloc] initWithFrame:self.view.frame collectionViewLayout:flowLayout];
-    
-    //[self.collectionView registerClass:[CollectionCell class] forCellWithReuseIdentifier:@"cell"];
-    
-    self.placer = [MPCollectionViewAdPlacer placerWithCollectionView:self.collectionView_new
-                                                      viewController:self
-                                              rendererConfigurations:@[config]];
-    self.placer.delegate = self;
-    [self.placer loadAdsForAdUnitID:@"ac0f139a2d9544fface76d06e27bc02a"];
-     */
-    
-    //
-    
-
-    
-    // TEST: native ad adapter
-      /*
-    MobFoxNativeAd *nativeAd = [[MobFoxNativeAd alloc] init:MOBFOX_HASH_NATIVE];
-    NSLog(@"nativeAd: %@", nativeAd);
-  
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        MobFoxNativeAd *nativeAd = [[MobFoxNativeAd alloc] init:MOBFOX_HASH_NATIVE];
-        NSLog(@"nativeAd: %@", nativeAd);
-
-    });
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-    
-        MoPubNativeAdapterMobFox *nativeAdAdapter = [[MoPubNativeAdapterMobFox alloc] init];
-        nativeAdAdapter.delegate = self;
-        [nativeAdAdapter requestAdWithCustomEventInfo:nil];
-        
-    }); */
-    
-    // AdMob.
-    
-    // banner.
-    /*
-    self.gadBannerView = [[GADBannerView alloc] initWithFrame:CGRectMake(0,430,320,50)];
-     NSLog(@"AdMob >>> init banner");
-    //self.bannerView.frame = CGRectMake(0.0,0.0,size.width,size.height);
-    
-    self.gadBannerView.adUnitID = @"ca-app-pub-6224828323195096/5240875564";
-    self.gadBannerView.rootViewController = self;
-    [self.view addSubview: self.gadBannerView];
-    GADRequest *request = [[GADRequest alloc] init];
-    //request.testDevices = @[ @"221e6c438e8184e0556942ea14bb214b" ];
-    [self.gadBannerView loadRequest:request];
-    
-    // interstitial
-    self.gadInterstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-6224828323195096/7876284361"];
-    GADRequest *request_interstitial = [GADRequest request];
-    // Requests test ads on test devices.
-    //request.testDevice @[@"2077ef9a63d2b398840261c8221a0c9b"];
-    [self.gadInterstitial loadRequest:request_interstitial];
-    */
-    
-    /*
-    // DFP request.
-    self.dfpBannerView = [[DFPBannerView alloc] initWithFrame:CGRectMake(0,330,320,50)];
-    self.dfpBannerView.adUnitID = @"ca-app-pub-6224828323195096/5240875564";
-    self.dfpBannerView.rootViewController = self;
-    [self.dfpBannerView loadRequest:[DFPRequest request]];
-    [self.view addSubview: self.dfpBannerView];
-    
-    self.dfpInterstitial = [[DFPInterstitial alloc] initWithAdUnitID:@"ca-app-pub-6224828323195096/7876284361"];
-    DFPRequest *request_inter = [DFPRequest request];
-    // Requests test ads on test devices.
-    //request.testDevice @[@"2077ef9a63d2b398840261c8221a0c9b"];
-    [self.dfpInterstitial loadRequest:request_inter];
-     */
-    
-    
+    self.videoAdRect = CGRectMake((screenWidth - videoWidth)/2, self.collectionView.frame.size.height + videoTopMargin, videoWidth, videoHeight);
+    self.mobfoxVideoAd = [[MobFoxAd alloc] init:MOBFOX_HASH_VIDEO withFrame:self.videoAdRect];
+    self.mobfoxVideoAd.delegate = self;
+    self.mobfoxVideoAd.type = @"video";
+    self.mobfoxVideoAd.auto_pilot = false;
+    [self.view addSubview:self.mobfoxVideoAd];
 
     
 }
@@ -222,7 +110,7 @@
     NSLog(@"viewWillDisappear");
     
     [super viewWillDisappear:animated];
-    [self removeVideoAd];
+    [self.mobfoxVideoAd pause];
     
 }
 
@@ -261,13 +149,6 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    /*
-    if ([self.dfpInterstitial isReady]) {
-        [self.dfpInterstitial presentFromRootViewController:self];
-    }
-    
-    return ;
-     */
     
     UICollectionViewCell* cell = [collectionView  cellForItemAtIndexPath:indexPath];
     cell.backgroundColor = [UIColor lightGrayColor];
@@ -276,38 +157,36 @@
     switch (indexPath.item) {
         case 0:
             [self hideAds:indexPath];
-            [self removeVideoAd];
+            [self.mobfoxVideoAd pause];
             self.mobfoxAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_BANNER;
-            [self resumeAdRefresh];
+            [self.mobfoxAd loadAd];
+            
             break;
             
         case 1:
             
             [self hideAds:indexPath];
-            [self pauseAdRefresh];
-            [self removeVideoAd];
+            [self.mobfoxVideoAd pause];
             self.mobfoxInterAd.ad.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_INTER;
             [self.mobfoxInterAd loadAd];
             break;
             
         case 2:
             [self hideAds:indexPath];
-            [self pauseAdRefresh];
-            [self removeVideoAd];
+            [self.mobfoxVideoAd pause];
             self.mobfoxNativeAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_NATIVE;
             [self.mobfoxNativeAd loadAd];
-            //[self presentViewController];
             
             break;
             
         case 3:
             
             [self hideAds:indexPath];
-            [self pauseAdRefresh];
-            [self removeVideoAd];
-            [self initVideoAd];
+            [self.mobfoxVideoAd pause];
+
             self.mobfoxVideoAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_VIDEO;
             [self.mobfoxVideoAd loadAd];
+
             break;
             
         default:
@@ -527,51 +406,6 @@
 - (void)handleGesture:(UIGestureRecognizer *)gestureRecognizer {
     
     [[UIApplication sharedApplication] openURL:self.clickURL];
-    
-}
-
-- (void)initVideoAd {
-    
-    if (self.mobfoxVideoAd == nil) {
-        
-        self.mobfoxVideoAd = [[MobFoxAd alloc] init:MOBFOX_HASH_VIDEO withFrame:self.adVideoRect];
-        self.mobfoxVideoAd.delegate = self;
-        self.mobfoxVideoAd.type = @"video";
-        
-        [self.view addSubview:self.mobfoxVideoAd];
-    }
-    
-}
-
-- (void)pauseAdRefresh {
-    
-    if (AD_REFRESH > 0) {
-        
-        self.mobfoxAd.refresh = [NSNumber numberWithInt:0];
-        [self.mobfoxAd loadAd];
-        [self.mobfoxAd removeFromSuperview];
-    }
-}
-
-- (void)resumeAdRefresh {
-    
-    if (AD_REFRESH > 0) {
-        
-        [self.view addSubview:self.mobfoxAd];
-        self.mobfoxAd.refresh = [NSNumber numberWithInt:AD_REFRESH];
-        [self.mobfoxAd loadAd];
-        
-    } else {
-        
-        self.mobfoxAd.refresh = [NSNumber numberWithInt:AD_REFRESH];
-        [self.mobfoxAd loadAd];
-    }
-}
-
-- (void)removeVideoAd {
-    
-    [self.mobfoxVideoAd stopPlayback];
-    self.mobfoxVideoAd = nil;
     
 }
 

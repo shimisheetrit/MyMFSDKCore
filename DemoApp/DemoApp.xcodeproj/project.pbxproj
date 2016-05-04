@@ -672,8 +672,12 @@
 		86A31C191CA183C000FD6959 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A31C181CA183C000FD6959 /* FBAudienceNetwork.framework */; };
 		86A31C1A1CA183C000FD6959 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A31C181CA183C000FD6959 /* FBAudienceNetwork.framework */; };
 		86A31C1B1CA183C000FD6959 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A31C181CA183C000FD6959 /* FBAudienceNetwork.framework */; };
-		86EFECCC1CAADDF200EEF8D7 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EFECC61CAADD1B00EEF8D7 /* MobFoxSDKCore.framework */; };
-		86EFECD61CABCAE400EEF8D7 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86EFECD51CABCAE400EEF8D7 /* MobFoxSDKCore.bundle */; };
+		86D1D7B61CDA310500878093 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86D1D7B41CDA310500878093 /* MobFoxSDKCore.bundle */; };
+		86D1D7B71CDA310500878093 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86D1D7B41CDA310500878093 /* MobFoxSDKCore.bundle */; };
+		86D1D7B81CDA310500878093 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86D1D7B41CDA310500878093 /* MobFoxSDKCore.bundle */; };
+		86D1D7B91CDA310500878093 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1D7B51CDA310500878093 /* MobFoxSDKCore.framework */; };
+		86D1D7BA1CDA310500878093 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1D7B51CDA310500878093 /* MobFoxSDKCore.framework */; };
+		86D1D7BB1CDA310500878093 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D1D7B51CDA310500878093 /* MobFoxSDKCore.framework */; };
 		86F16C1A1C8D84F50039F8DA /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 86F16C191C8D84F50039F8DA /* response.json */; };
 		86F16C1B1C8D84F50039F8DA /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 86F16C191C8D84F50039F8DA /* response.json */; };
 		86F16C1C1C8D84F50039F8DA /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 86F16C191C8D84F50039F8DA /* response.json */; };
@@ -722,27 +726,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 86891E0D1C5FA8250098C602;
 			remoteInfo = DemoApp;
-		};
-		86EFECC51CAADD1B00EEF8D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 86EFECBC1CAADD1A00EEF8D7 /* MobFoxSDKCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E741E4941B98750400D9D655;
-			remoteInfo = MobFoxSDKCore;
-		};
-		86EFECC71CAADD1B00EEF8D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 86EFECBC1CAADD1A00EEF8D7 /* MobFoxSDKCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E762C8781BD8B89C009D31EA;
-			remoteInfo = MobFoxSDKCoreDynamic;
-		};
-		86EFECC91CAADD1B00EEF8D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 86EFECBC1CAADD1A00EEF8D7 /* MobFoxSDKCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E741E49F1B98750500D9D655;
-			remoteInfo = MobFoxSDKCoreTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1186,8 +1169,8 @@
 		86891EE01C6737EC0098C602 /* icon_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_02.png; sourceTree = "<group>"; };
 		86891EFF1C677EA10098C602 /* test_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_video.png; sourceTree = "<group>"; };
 		86A31C181CA183C000FD6959 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
-		86EFECBC1CAADD1A00EEF8D7 /* MobFoxSDKCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MobFoxSDKCore.xcodeproj; path = "../../../Desktop/MobFox-iOS-SDK-Core/MobFoxSDKCore.xcodeproj"; sourceTree = "<group>"; };
-		86EFECD51CABCAE400EEF8D7 /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MobFoxSDKCore.bundle; path = "../../../Desktop/MobFox-iOS-SDK-Core/MobFoxSDKCore/MobFoxSDKCore.bundle"; sourceTree = "<group>"; };
+		86D1D7B41CDA310500878093 /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobFoxSDKCore.bundle; sourceTree = "<group>"; };
+		86D1D7B51CDA310500878093 /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCore.framework; sourceTree = "<group>"; };
 		86F16C191C8D84F50039F8DA /* response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
 		86F16C6B1C9020B10039F8DA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		86F16C921C9050210039F8DA /* MobFoxCustomEventFacebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobFoxCustomEventFacebook.h; sourceTree = "<group>"; };
@@ -1222,7 +1205,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86EFECCC1CAADDF200EEF8D7 /* MobFoxSDKCore.framework in Frameworks */,
 				860CA4DE1CA028FC00A32EAF /* GoogleMobileAds.framework in Frameworks */,
 				86F8A2C11C79BC2700BDD8FD /* SystemConfiguration.framework in Frameworks */,
 				86F8A2BF1C79BBFE00BDD8FD /* StoreKit.framework in Frameworks */,
@@ -1245,6 +1227,7 @@
 				86F8A2C71C79BC6900BDD8FD /* iAd.framework in Frameworks */,
 				86F8A2C31C79BC3200BDD8FD /* UIKit.framework in Frameworks */,
 				86F8A2BD1C79BBF400BDD8FD /* QuartzCore.framework in Frameworks */,
+				86D1D7B91CDA310500878093 /* MobFoxSDKCore.framework in Frameworks */,
 				86F8A2B91C79BBDC00BDD8FD /* Foundation.framework in Frameworks */,
 				86A31C191CA183C000FD6959 /* FBAudienceNetwork.framework in Frameworks */,
 				86F8A2AF1C79BB9000BDD8FD /* CoreLocation.framework in Frameworks */,
@@ -1257,6 +1240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				860C0D891C95925B0001EEF3 /* MMAdSDK.framework in Frameworks */,
+				86D1D7BA1CDA310500878093 /* MobFoxSDKCore.framework in Frameworks */,
 				860CA4DF1CA028FC00A32EAF /* GoogleMobileAds.framework in Frameworks */,
 				86A31C1A1CA183C000FD6959 /* FBAudienceNetwork.framework in Frameworks */,
 			);
@@ -1267,6 +1251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				860C0D8A1C95925B0001EEF3 /* MMAdSDK.framework in Frameworks */,
+				86D1D7BB1CDA310500878093 /* MobFoxSDKCore.framework in Frameworks */,
 				860CA4E01CA028FC00A32EAF /* GoogleMobileAds.framework in Frameworks */,
 				86A31C1B1CA183C000FD6959 /* FBAudienceNetwork.framework in Frameworks */,
 			);
@@ -1959,8 +1944,7 @@
 		86891E051C5FA8250098C602 = {
 			isa = PBXGroup;
 			children = (
-				86EFECD51CABCAE400EEF8D7 /* MobFoxSDKCore.bundle */,
-				86EFECBC1CAADD1A00EEF8D7 /* MobFoxSDKCore.xcodeproj */,
+				86D1D7B31CDA310500878093 /* MobFoxSDKCore.embeddedframework */,
 				860C0FCC1C96F1280001EEF3 /* MobFox Adapters */,
 				86F16C901C904CFA0039F8DA /* MobFox Custom Events */,
 				865BD0E01C68DF7D00F180D8 /* Frameworks */,
@@ -2063,14 +2047,13 @@
 			name = images;
 			sourceTree = "<group>";
 		};
-		86EFECBD1CAADD1A00EEF8D7 /* Products */ = {
+		86D1D7B31CDA310500878093 /* MobFoxSDKCore.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
-				86EFECC61CAADD1B00EEF8D7 /* MobFoxSDKCore.framework */,
-				86EFECC81CAADD1B00EEF8D7 /* MobFoxSDKCore.framework */,
-				86EFECCA1CAADD1B00EEF8D7 /* MobFoxSDKCore.xctest */,
+				86D1D7B41CDA310500878093 /* MobFoxSDKCore.bundle */,
+				86D1D7B51CDA310500878093 /* MobFoxSDKCore.framework */,
 			);
-			name = Products;
+			path = MobFoxSDKCore.embeddedframework;
 			sourceTree = "<group>";
 		};
 		86F16C901C904CFA0039F8DA /* MobFox Custom Events */ = {
@@ -2185,12 +2168,6 @@
 			mainGroup = 86891E051C5FA8250098C602;
 			productRefGroup = 86891E0F1C5FA8250098C602 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 86EFECBD1CAADD1A00EEF8D7 /* Products */;
-					ProjectRef = 86EFECBC1CAADD1A00EEF8D7 /* MobFoxSDKCore.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				86891E0D1C5FA8250098C602 /* DemoApp */,
@@ -2200,36 +2177,11 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		86EFECC61CAADD1B00EEF8D7 /* MobFoxSDKCore.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MobFoxSDKCore.framework;
-			remoteRef = 86EFECC51CAADD1B00EEF8D7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		86EFECC81CAADD1B00EEF8D7 /* MobFoxSDKCore.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MobFoxSDKCore.framework;
-			remoteRef = 86EFECC71CAADD1B00EEF8D7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		86EFECCA1CAADD1B00EEF8D7 /* MobFoxSDKCore.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = MobFoxSDKCore.xctest;
-			remoteRef = 86EFECC91CAADD1B00EEF8D7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		86891E0C1C5FA8250098C602 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86EFECD61CABCAE400EEF8D7 /* MobFoxSDKCore.bundle in Resources */,
 				86891E9A1C6106870098C602 /* test_native.png in Resources */,
 				86891E9D1C6106870098C602 /* title_mobfox.png in Resources */,
 				860C0F801C95925B0001EEF3 /* MPPlayBtn@2x.png in Resources */,
@@ -2266,6 +2218,7 @@
 				860C0F8F1C95925B0001EEF3 /* MRAID.bundle in Resources */,
 				86891ED11C639C190098C602 /* img_03.png in Resources */,
 				860C0F5F1C95925B0001EEF3 /* MPCloseBtn@3x.png in Resources */,
+				86D1D7B61CDA310500878093 /* MobFoxSDKCore.bundle in Resources */,
 				860C0F711C95925B0001EEF3 /* MPDAAIcon@3x.png in Resources */,
 				86891E971C6106870098C602 /* test_interstitial.png in Resources */,
 				86891ED61C63AAC10098C602 /* img_04.png in Resources */,
@@ -2281,6 +2234,7 @@
 				860C0F841C95925B0001EEF3 /* MPPlayBtn@3x.png in Resources */,
 				865BD1541C6CED9C00F180D8 /* NativeAdViewController.xib in Resources */,
 				860C0DA71C95925B0001EEF3 /* MPAdBrowserController.xib in Resources */,
+				86D1D7B71CDA310500878093 /* MobFoxSDKCore.bundle in Resources */,
 				860C0F721C95925B0001EEF3 /* MPDAAIcon@3x.png in Resources */,
 				86891EA31C6106970098C602 /* mobfox_icon.png in Resources */,
 				860C0F631C95925B0001EEF3 /* MPCloseButtonX.png in Resources */,
@@ -2326,6 +2280,7 @@
 				860C0F851C95925B0001EEF3 /* MPPlayBtn@3x.png in Resources */,
 				865BD1551C6CED9C00F180D8 /* NativeAdViewController.xib in Resources */,
 				860C0DA81C95925B0001EEF3 /* MPAdBrowserController.xib in Resources */,
+				86D1D7B81CDA310500878093 /* MobFoxSDKCore.bundle in Resources */,
 				860C0F731C95925B0001EEF3 /* MPDAAIcon@3x.png in Resources */,
 				86891EA41C6106970098C602 /* mobfox_icon.png in Resources */,
 				860C0F641C95925B0001EEF3 /* MPCloseButtonX.png in Resources */,
