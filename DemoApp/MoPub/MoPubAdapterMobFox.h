@@ -9,9 +9,9 @@
 #import "MPBannerCustomEvent.h"
 #endif
 
-@interface MoPubAdapterMobFox : MPBannerCustomEvent<MobFoxAdDelegate>
+@interface MoPubAdapterMobFox : MPBannerCustomEvent <MobFoxAdDelegate>
 
-@property MobFoxAd* ad;
+@property (strong, nonatomic) MobFoxAd* ad;
 
 - (id) init;
 

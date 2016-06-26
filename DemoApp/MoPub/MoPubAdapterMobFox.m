@@ -1,14 +1,19 @@
 #import "MoPubAdapterMobFox.h"
 
+
 @implementation MoPubAdapterMobFox
 
 
 - (void)requestAdWithSize:(CGSize)size customEventInfo:(NSDictionary *)info{
      NSLog(@"MoPub >> MobFox >> init");
      NSLog(@"MoPub >> MobFox >> data: %@",[info description]);
+    
+    
     self.ad = [[MobFoxAd alloc] init:[info valueForKey:@"invh"] withFrame:CGRectMake(0, 0, size.width, size.height)];
     self.ad.delegate = self;
     [self.ad loadAd];
+
+    
 }
 
 - (void)MobFoxAdDidLoad:(MobFoxAd *)banner{
@@ -31,6 +36,12 @@
 
 - (void)MobFoxAdFinished{
     [self.delegate bannerCustomEventDidFinishAction:self];
+}
+
+- (void)dealloc {
+    
+    self.ad.bridge = nil;
+    self.ad        = nil;
 }
 
 

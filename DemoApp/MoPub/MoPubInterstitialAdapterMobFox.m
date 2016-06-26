@@ -9,7 +9,7 @@
     self.mobFoxInterAd = [[MobFoxInterstitialAd alloc] init:[info valueForKey:@"invh"]];
     self.mobFoxInterAd.delegate = self;
     [self.mobFoxInterAd loadAd];
-    
+        
 }
 
 - (void)showInterstitialFromRootViewController:(UIViewController *)rootViewController{
@@ -43,6 +43,15 @@
 }
 
 - (void)MobFoxInterstitialAdFinished{
-    }
+}
+
+- (void)dealloc {
+    
+    self.mobFoxInterAd.ad.bridge = nil;
+    self.mobFoxInterAd.ad        = nil;
+    self.mobFoxInterAd           = nil;
+
+}
+
 
 @end
