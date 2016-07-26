@@ -45,6 +45,8 @@
 		86A31C1D1CA28AC900FD6959 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A31C1C1CA28AC900FD6959 /* GoogleMobileAds.framework */; };
 		86A31C1E1CA28AC900FD6959 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A31C1C1CA28AC900FD6959 /* GoogleMobileAds.framework */; };
 		86A31C1F1CA28AC900FD6959 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A31C1C1CA28AC900FD6959 /* GoogleMobileAds.framework */; };
+		86D62BDA1D47A01700CA5C12 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8659487C1C7DECFB009E6750 /* MobFoxSDKCore.framework */; };
+		86D62BDB1D47A01700CA5C12 /* MobFoxSDKCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8659487C1C7DECFB009E6750 /* MobFoxSDKCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,20 @@
 			remoteInfo = DemoAppSwift;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		86D62BDC1D47A01700CA5C12 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				86D62BDB1D47A01700CA5C12 /* MobFoxSDKCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		864081771C9EF8B9002BD1E4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -109,6 +125,7 @@
 				864081841C9EF90C002BD1E4 /* EventKitUI.framework in Frameworks */,
 				864081821C9EF8FC002BD1E4 /* EventKit.framework in Frameworks */,
 				864081801C9EF8E7002BD1E4 /* CoreTelephony.framework in Frameworks */,
+				86D62BDA1D47A01700CA5C12 /* MobFoxSDKCore.framework in Frameworks */,
 				8640817E1C9EF8DD002BD1E4 /* CoreMedia.framework in Frameworks */,
 				8640817C1C9EF8D4002BD1E4 /* CoreGraphics.framework in Frameworks */,
 				8640817A1C9EF8C3002BD1E4 /* AVFoundation.framework in Frameworks */,
@@ -242,6 +259,7 @@
 				865BD1AC1C73728400F180D8 /* Sources */,
 				865BD1AD1C73728400F180D8 /* Frameworks */,
 				865BD1AE1C73728400F180D8 /* Resources */,
+				86D62BDC1D47A01700CA5C12 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -360,7 +360,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         if self.mobfoxVideoAd != nil {
         
-        self.mobfoxVideoAd.stopPlayback()
+        //self.mobfoxVideoAd.stopPlayback()
         self.mobfoxAd.removeFromSuperview()
         self.mobfoxVideoAd = nil
         
