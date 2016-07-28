@@ -690,17 +690,16 @@
 		86B9C4CA1CC3AB14002109CB /* MPRewardedVideoReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B9C2951CC3AB14002109CB /* MPRewardedVideoReward.m */; };
 		86B9C4CB1CC3AB14002109CB /* MPRewardedVideoReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B9C2951CC3AB14002109CB /* MPRewardedVideoReward.m */; };
 		86B9C4CC1CC3AB14002109CB /* MPRewardedVideoReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B9C2951CC3AB14002109CB /* MPRewardedVideoReward.m */; };
-		86D62BC01D4786DC00CA5C12 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86D62BBE1D4786DC00CA5C12 /* MobFoxSDKCore.bundle */; };
-		86D62BC11D4786DC00CA5C12 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86D62BBE1D4786DC00CA5C12 /* MobFoxSDKCore.bundle */; };
-		86D62BC21D4786DC00CA5C12 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86D62BBE1D4786DC00CA5C12 /* MobFoxSDKCore.bundle */; };
-		86D62BC41D4786DC00CA5C12 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D62BBF1D4786DC00CA5C12 /* MobFoxSDKCore.framework */; };
-		86D62BC51D4786DC00CA5C12 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D62BBF1D4786DC00CA5C12 /* MobFoxSDKCore.framework */; };
+		86D043651D4A376C00655C9E /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86D043631D4A376C00655C9E /* MobFoxSDKCore.bundle */; };
+		86D043661D4A376C00655C9E /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86D043631D4A376C00655C9E /* MobFoxSDKCore.bundle */; };
+		86D043671D4A376C00655C9E /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86D043631D4A376C00655C9E /* MobFoxSDKCore.bundle */; };
+		86D043681D4A376C00655C9E /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D043641D4A376C00655C9E /* MobFoxSDKCore.framework */; };
+		86D043691D4A376C00655C9E /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D043641D4A376C00655C9E /* MobFoxSDKCore.framework */; };
+		86D0436A1D4A376C00655C9E /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D043641D4A376C00655C9E /* MobFoxSDKCore.framework */; };
 		86D62BC71D4788C200CA5C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D62BC61D4788C200CA5C12 /* Main.storyboard */; };
 		86D62BC81D4788C200CA5C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D62BC61D4788C200CA5C12 /* Main.storyboard */; };
 		86D62BC91D4788C200CA5C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D62BC61D4788C200CA5C12 /* Main.storyboard */; };
-		86D62BCA1D47894500CA5C12 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D62BBF1D4786DC00CA5C12 /* MobFoxSDKCore.framework */; };
 		86D62BCC1D47898600CA5C12 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D62BBF1D4786DC00CA5C12 /* MobFoxSDKCore.framework */; };
-		86D62BCD1D47898600CA5C12 /* MobFoxSDKCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86D62BBF1D4786DC00CA5C12 /* MobFoxSDKCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		86F16C1A1C8D84F50039F8DA /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 86F16C191C8D84F50039F8DA /* response.json */; };
 		86F16C1B1C8D84F50039F8DA /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 86F16C191C8D84F50039F8DA /* response.json */; };
 		86F16C1C1C8D84F50039F8DA /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 86F16C191C8D84F50039F8DA /* response.json */; };
@@ -748,7 +747,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				86D62BCD1D47898600CA5C12 /* MobFoxSDKCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1212,8 +1210,9 @@
 		86B9C2931CC3AB14002109CB /* MPRewardedVideoError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPRewardedVideoError.m; sourceTree = "<group>"; };
 		86B9C2941CC3AB14002109CB /* MPRewardedVideoReward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPRewardedVideoReward.h; sourceTree = "<group>"; };
 		86B9C2951CC3AB14002109CB /* MPRewardedVideoReward.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPRewardedVideoReward.m; sourceTree = "<group>"; };
-		86D62BBE1D4786DC00CA5C12 /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobFoxSDKCore.bundle; sourceTree = "<group>"; };
-		86D62BBF1D4786DC00CA5C12 /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCore.framework; sourceTree = "<group>"; };
+		86D043631D4A376C00655C9E /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobFoxSDKCore.bundle; sourceTree = "<group>"; };
+		86D043641D4A376C00655C9E /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCore.framework; sourceTree = "<group>"; };
+		86D62BBF1D4786DC00CA5C12 /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobFoxSDKCore.framework; path = "/Users/shimisheetrit/Developer/MobFox-iOS-SDK-Core-Lib/DemoApp/MobFoxSDKCore.framework"; sourceTree = "<absolute>"; };
 		86D62BC61D4788C200CA5C12 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		86F16C191C8D84F50039F8DA /* response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
 		86F16C6B1C9020B10039F8DA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -1260,8 +1259,8 @@
 				86F8A2C91C79BC9700BDD8FD /* CoreBluetooth.framework in Frameworks */,
 				86F8A2C71C79BC6900BDD8FD /* iAd.framework in Frameworks */,
 				86F8A2BD1C79BBF400BDD8FD /* QuartzCore.framework in Frameworks */,
+				86D043681D4A376C00655C9E /* MobFoxSDKCore.framework in Frameworks */,
 				86D62BCC1D47898600CA5C12 /* MobFoxSDKCore.framework in Frameworks */,
-				86D62BCA1D47894500CA5C12 /* MobFoxSDKCore.framework in Frameworks */,
 				86F8A2C31C79BC3200BDD8FD /* UIKit.framework in Frameworks */,
 				86F8A2B91C79BBDC00BDD8FD /* Foundation.framework in Frameworks */,
 				86A31C191CA183C000FD6959 /* FBAudienceNetwork.framework in Frameworks */,
@@ -1275,7 +1274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86B9C2AF1CC3AB14002109CB /* MMAdSDK.framework in Frameworks */,
-				86D62BC41D4786DC00CA5C12 /* MobFoxSDKCore.framework in Frameworks */,
+				86D043691D4A376C00655C9E /* MobFoxSDKCore.framework in Frameworks */,
 				86A31C1A1CA183C000FD6959 /* FBAudienceNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1285,7 +1284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86B9C2B01CC3AB14002109CB /* MMAdSDK.framework in Frameworks */,
-				86D62BC51D4786DC00CA5C12 /* MobFoxSDKCore.framework in Frameworks */,
+				86D0436A1D4A376C00655C9E /* MobFoxSDKCore.framework in Frameworks */,
 				86A31C1B1CA183C000FD6959 /* FBAudienceNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1368,6 +1367,8 @@
 		865BD0E01C68DF7D00F180D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				86D043621D4A376C00655C9E /* MobFoxSDKCore.embeddedframework */,
+				868823C01D1FCDB200D24DAC /* GoogleMobileAds.framework */,
 				86B9C1031CC3AB13002109CB /* MoPubSDK */,
 				86A31C181CA183C000FD6959 /* FBAudienceNetwork.framework */,
 				860C0FB71C96B9B00001EEF3 /* libz.tbd */,
@@ -1401,9 +1402,6 @@
 		86891E051C5FA8250098C602 = {
 			isa = PBXGroup;
 			children = (
-				86D62BBE1D4786DC00CA5C12 /* MobFoxSDKCore.bundle */,
-				86D62BBF1D4786DC00CA5C12 /* MobFoxSDKCore.framework */,
-				868823C01D1FCDB200D24DAC /* GoogleMobileAds.framework */,
 				861B1F461D1AB523003739FA /* Mediation Adapters */,
 				8643A9571CBEA0EC00D0CD85 /* Custom Events */,
 				860C0FCC1C96F1280001EEF3 /* MobFox Adapters */,
@@ -2122,6 +2120,15 @@
 			path = Internal;
 			sourceTree = "<group>";
 		};
+		86D043621D4A376C00655C9E /* MobFoxSDKCore.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				86D043631D4A376C00655C9E /* MobFoxSDKCore.bundle */,
+				86D043641D4A376C00655C9E /* MobFoxSDKCore.framework */,
+			);
+			path = MobFoxSDKCore.embeddedframework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2262,7 +2269,7 @@
 				86B9C4AC1CC3AB14002109CB /* MPUnmutedBtn@1x.png in Resources */,
 				86891EDD1C63B1230098C602 /* icon_01.png in Resources */,
 				86891EE11C6737EC0098C602 /* icon_02.png in Resources */,
-				86D62BC01D4786DC00CA5C12 /* MobFoxSDKCore.bundle in Resources */,
+				86D043651D4A376C00655C9E /* MobFoxSDKCore.bundle in Resources */,
 				86D62BC71D4788C200CA5C12 /* Main.storyboard in Resources */,
 				86B9C4911CC3AB14002109CB /* MPDAAIcon.png in Resources */,
 				86B9C3351CC3AB14002109CB /* LICENSE in Resources */,
@@ -2318,12 +2325,12 @@
 				86B9C4A41CC3AB14002109CB /* MPPlayBtn.png in Resources */,
 				86B9C4AA1CC3AB14002109CB /* MPPlayBtn@3x.png in Resources */,
 				86891E981C6106870098C602 /* test_interstitial.png in Resources */,
-				86D62BC11D4786DC00CA5C12 /* MobFoxSDKCore.bundle in Resources */,
 				86B9C4981CC3AB14002109CB /* MPDAAIcon@3x.png in Resources */,
 				86B9C49B1CC3AB14002109CB /* MPMutedBtn@1x.png in Resources */,
 				86B9C4951CC3AB14002109CB /* MPDAAIcon@2x.png in Resources */,
 				86B9C48F1CC3AB14002109CB /* MPCloseButtonX@3x.png in Resources */,
 				86B9C4B01CC3AB14002109CB /* MPUnmutedBtn@2x.png in Resources */,
+				86D043661D4A376C00655C9E /* MobFoxSDKCore.bundle in Resources */,
 				86891ED71C63AAC10098C602 /* img_04.png in Resources */,
 				86891EE21C6737EC0098C602 /* icon_02.png in Resources */,
 				86F16C1B1C8D84F50039F8DA /* response.json in Resources */,
@@ -2367,12 +2374,12 @@
 				86B9C4A51CC3AB14002109CB /* MPPlayBtn.png in Resources */,
 				86B9C4AB1CC3AB14002109CB /* MPPlayBtn@3x.png in Resources */,
 				86891E991C6106870098C602 /* test_interstitial.png in Resources */,
-				86D62BC21D4786DC00CA5C12 /* MobFoxSDKCore.bundle in Resources */,
 				86B9C4991CC3AB14002109CB /* MPDAAIcon@3x.png in Resources */,
 				86B9C49C1CC3AB14002109CB /* MPMutedBtn@1x.png in Resources */,
 				86B9C4961CC3AB14002109CB /* MPDAAIcon@2x.png in Resources */,
 				86B9C4901CC3AB14002109CB /* MPCloseButtonX@3x.png in Resources */,
 				86B9C4B11CC3AB14002109CB /* MPUnmutedBtn@2x.png in Resources */,
+				86D043671D4A376C00655C9E /* MobFoxSDKCore.bundle in Resources */,
 				86891ED81C63AAC10098C602 /* img_04.png in Resources */,
 				86891EE31C6737EC0098C602 /* icon_02.png in Resources */,
 				86F16C1C1C8D84F50039F8DA /* response.json in Resources */,
