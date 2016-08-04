@@ -8,13 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <MobFoxSDKCore/MobFoxSDKCore.h>
-//#import "MPInterstitialAdController.h"
-//#import "MoPubInterstitialAdapterMobFox.h"
 #import "MoPub.h"
 #import "MPNativeAdConstants.h"
 #import "MoPubNativeAdView.h"
 #import "MoPubNativeAdapterMobFox.h"
-//#import "MPNativeAd.h"
 
 #import "MPAdView.h"
 #import "MPCollectionViewAdPlacer.h"

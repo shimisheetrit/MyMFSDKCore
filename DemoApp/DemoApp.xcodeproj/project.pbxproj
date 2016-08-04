@@ -11,9 +11,14 @@
 		860C0FEA1C96F5D30001EEF3 /* MoPubNativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 860C0FE91C96F5D30001EEF3 /* MoPubNativeAdView.m */; };
 		860C0FEB1C96F5D30001EEF3 /* MoPubNativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 860C0FE91C96F5D30001EEF3 /* MoPubNativeAdView.m */; };
 		860C0FEC1C96F5D30001EEF3 /* MoPubNativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 860C0FE91C96F5D30001EEF3 /* MoPubNativeAdView.m */; };
+		860F6DBE1D2CFFD400E62984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860F6DBD1D2CFFD400E62984 /* Main.storyboard */; };
+		860F6DBF1D2CFFD400E62984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860F6DBD1D2CFFD400E62984 /* Main.storyboard */; };
+		860F6DC01D2CFFD400E62984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860F6DBD1D2CFFD400E62984 /* Main.storyboard */; };
 		861204F01D084DB000EDDAF8 /* response_waterfalls.txt in Resources */ = {isa = PBXBuildFile; fileRef = 861204EF1D084DB000EDDAF8 /* response_waterfalls.txt */; };
 		861204F11D084DB000EDDAF8 /* response_waterfalls.txt in Resources */ = {isa = PBXBuildFile; fileRef = 861204EF1D084DB000EDDAF8 /* response_waterfalls.txt */; };
 		861204F21D084DB000EDDAF8 /* response_waterfalls.txt in Resources */ = {isa = PBXBuildFile; fileRef = 861204EF1D084DB000EDDAF8 /* response_waterfalls.txt */; };
+		86163E151D16D6EE00A30C35 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86163E131D16D6EE00A30C35 /* MobFoxSDKCore.bundle */; };
+		86163E161D16D6EE00A30C35 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86163E131D16D6EE00A30C35 /* MobFoxSDKCore.bundle */; };
 		861B1F241D1A9010003739FA /* GADMAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = 861B1F231D1A9010003739FA /* GADMAdapterMobFox.m */; };
 		861B1F251D1A9010003739FA /* GADMAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = 861B1F231D1A9010003739FA /* GADMAdapterMobFox.m */; };
 		861B1F261D1A9010003739FA /* GADMAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = 861B1F231D1A9010003739FA /* GADMAdapterMobFox.m */; };
@@ -22,12 +27,6 @@
 		861B1F501D1AB523003739FA /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 861B1F4D1D1AB523003739FA /* README.txt */; };
 		8627C9A61CD61B300041A446 /* MoPubAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = 864081491C9AF613002BD1E4 /* MoPubAdapterMobFox.m */; };
 		8627C9A71CD61B3B0041A446 /* MoPubAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = 864081491C9AF613002BD1E4 /* MoPubAdapterMobFox.m */; };
-		863732F61D201B9600B35FB1 /* DFPInterstitialAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = 863732F31D201B9600B35FB1 /* DFPInterstitialAdapterMobFox.m */; };
-		863732F71D201B9600B35FB1 /* DFPInterstitialAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = 863732F31D201B9600B35FB1 /* DFPInterstitialAdapterMobFox.m */; };
-		863732F81D201B9600B35FB1 /* DFPInterstitialAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = 863732F31D201B9600B35FB1 /* DFPInterstitialAdapterMobFox.m */; };
-		863732F91D201B9600B35FB1 /* DFPMAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = 863732F51D201B9600B35FB1 /* DFPMAdapterMobFox.m */; };
-		863732FA1D201B9600B35FB1 /* DFPMAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = 863732F51D201B9600B35FB1 /* DFPMAdapterMobFox.m */; };
-		863732FB1D201B9600B35FB1 /* DFPMAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = 863732F51D201B9600B35FB1 /* DFPMAdapterMobFox.m */; };
 		864081521C9AF613002BD1E4 /* MoPubAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = 864081491C9AF613002BD1E4 /* MoPubAdapterMobFox.m */; };
 		864081551C9AF613002BD1E4 /* MoPubInterstitialAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = 8640814B1C9AF613002BD1E4 /* MoPubInterstitialAdapterMobFox.m */; };
 		864081561C9AF613002BD1E4 /* MoPubInterstitialAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = 8640814B1C9AF613002BD1E4 /* MoPubInterstitialAdapterMobFox.m */; };
@@ -690,16 +689,18 @@
 		86B9C4CA1CC3AB14002109CB /* MPRewardedVideoReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B9C2951CC3AB14002109CB /* MPRewardedVideoReward.m */; };
 		86B9C4CB1CC3AB14002109CB /* MPRewardedVideoReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B9C2951CC3AB14002109CB /* MPRewardedVideoReward.m */; };
 		86B9C4CC1CC3AB14002109CB /* MPRewardedVideoReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B9C2951CC3AB14002109CB /* MPRewardedVideoReward.m */; };
-		86D043651D4A376C00655C9E /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86D043631D4A376C00655C9E /* MobFoxSDKCore.bundle */; };
-		86D043661D4A376C00655C9E /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86D043631D4A376C00655C9E /* MobFoxSDKCore.bundle */; };
-		86D043671D4A376C00655C9E /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86D043631D4A376C00655C9E /* MobFoxSDKCore.bundle */; };
-		86D043681D4A376C00655C9E /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D043641D4A376C00655C9E /* MobFoxSDKCore.framework */; };
-		86D043691D4A376C00655C9E /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D043641D4A376C00655C9E /* MobFoxSDKCore.framework */; };
-		86D0436A1D4A376C00655C9E /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D043641D4A376C00655C9E /* MobFoxSDKCore.framework */; };
-		86D62BC71D4788C200CA5C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D62BC61D4788C200CA5C12 /* Main.storyboard */; };
-		86D62BC81D4788C200CA5C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D62BC61D4788C200CA5C12 /* Main.storyboard */; };
-		86D62BC91D4788C200CA5C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D62BC61D4788C200CA5C12 /* Main.storyboard */; };
-		86D62BCC1D47898600CA5C12 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D62BBF1D4786DC00CA5C12 /* MobFoxSDKCore.framework */; };
+		86D042921D48B8FB00655C9E /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86163E1C1D16DB2200A30C35 /* MobFoxSDKCore.framework */; };
+		86D045F41D50BFCF00655C9E /* MobFoxCustomEventAmazon.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D045F11D50BFCF00655C9E /* MobFoxCustomEventAmazon.m */; };
+		86D045F51D50BFCF00655C9E /* MobFoxCustomEventAmazon.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D045F11D50BFCF00655C9E /* MobFoxCustomEventAmazon.m */; };
+		86D045F61D50BFCF00655C9E /* MobFoxCustomEventAmazon.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D045F11D50BFCF00655C9E /* MobFoxCustomEventAmazon.m */; };
+		86D045F71D50BFCF00655C9E /* MobFoxInterstitialCustomEventAmazon.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D045F31D50BFCF00655C9E /* MobFoxInterstitialCustomEventAmazon.m */; };
+		86D045F81D50BFCF00655C9E /* MobFoxInterstitialCustomEventAmazon.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D045F31D50BFCF00655C9E /* MobFoxInterstitialCustomEventAmazon.m */; };
+		86D045F91D50BFCF00655C9E /* MobFoxInterstitialCustomEventAmazon.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D045F31D50BFCF00655C9E /* MobFoxInterstitialCustomEventAmazon.m */; };
+		86D045FB1D51F22A00655C9E /* AmazonAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D045FA1D51F22A00655C9E /* AmazonAd.framework */; };
+		86D045FC1D51F22A00655C9E /* AmazonAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D045FA1D51F22A00655C9E /* AmazonAd.framework */; };
+		86D045FD1D51F22A00655C9E /* AmazonAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D045FA1D51F22A00655C9E /* AmazonAd.framework */; };
+		86D045FF1D53793600655C9E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D045FE1D53793600655C9E /* StoreKit.framework */; };
+		86D62BBA1D47833600CA5C12 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86163E131D16D6EE00A30C35 /* MobFoxSDKCore.bundle */; };
 		86F16C1A1C8D84F50039F8DA /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 86F16C191C8D84F50039F8DA /* response.json */; };
 		86F16C1B1C8D84F50039F8DA /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 86F16C191C8D84F50039F8DA /* response.json */; };
 		86F16C1C1C8D84F50039F8DA /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 86F16C191C8D84F50039F8DA /* response.json */; };
@@ -740,26 +741,16 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		86D62BCE1D47898600CA5C12 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		860C0BCD1C95738D0001EEF3 /* libSystem.B.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.B.dylib; path = ../../../../../usr/lib/libSystem.B.dylib; sourceTree = "<group>"; };
 		860C0BCF1C9573D50001EEF3 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		860C0FB71C96B9B00001EEF3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		860C0FE81C96F5D30001EEF3 /* MoPubNativeAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoPubNativeAdView.h; sourceTree = "<group>"; };
 		860C0FE91C96F5D30001EEF3 /* MoPubNativeAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoPubNativeAdView.m; sourceTree = "<group>"; };
+		860F6DBD1D2CFFD400E62984 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		861204EF1D084DB000EDDAF8 /* response_waterfalls.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = response_waterfalls.txt; sourceTree = "<group>"; };
+		86163E131D16D6EE00A30C35 /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobFoxSDKCore.bundle; sourceTree = "<group>"; };
+		86163E1C1D16DB2200A30C35 /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = MobFoxSDKCore.framework; path = "/Users/shimisheetrit/Library/Developer/Xcode/DerivedData/MobFoxSDK-fujetfuzuorsmhdwusfnfmjqkpxe/Build/Products/Debug-iphoneos/MobFoxSDKCore.framework"; sourceTree = "<absolute>"; };
 		86186A281C79F0CB00D406BB /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		861B1F221D1A9010003739FA /* GADMAdapterMobFox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADMAdapterMobFox.h; path = AdMob/GADMAdapterMobFox.h; sourceTree = "<group>"; };
 		861B1F231D1A9010003739FA /* GADMAdapterMobFox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GADMAdapterMobFox.m; path = AdMob/GADMAdapterMobFox.m; sourceTree = "<group>"; };
@@ -770,10 +761,6 @@
 		861B1F4B1D1AB523003739FA /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
 		861B1F4C1D1AB523003739FA /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
 		861B1F4D1D1AB523003739FA /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		863732F21D201B9600B35FB1 /* DFPInterstitialAdapterMobFox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPInterstitialAdapterMobFox.h; sourceTree = "<group>"; };
-		863732F31D201B9600B35FB1 /* DFPInterstitialAdapterMobFox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFPInterstitialAdapterMobFox.m; sourceTree = "<group>"; };
-		863732F41D201B9600B35FB1 /* DFPMAdapterMobFox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPMAdapterMobFox.h; sourceTree = "<group>"; };
-		863732F51D201B9600B35FB1 /* DFPMAdapterMobFox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFPMAdapterMobFox.m; sourceTree = "<group>"; };
 		864081481C9AF613002BD1E4 /* MoPubAdapterMobFox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoPubAdapterMobFox.h; sourceTree = "<group>"; };
 		864081491C9AF613002BD1E4 /* MoPubAdapterMobFox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoPubAdapterMobFox.m; sourceTree = "<group>"; };
 		8640814A1C9AF613002BD1E4 /* MoPubInterstitialAdapterMobFox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoPubInterstitialAdapterMobFox.h; sourceTree = "<group>"; };
@@ -1210,10 +1197,13 @@
 		86B9C2931CC3AB14002109CB /* MPRewardedVideoError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPRewardedVideoError.m; sourceTree = "<group>"; };
 		86B9C2941CC3AB14002109CB /* MPRewardedVideoReward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPRewardedVideoReward.h; sourceTree = "<group>"; };
 		86B9C2951CC3AB14002109CB /* MPRewardedVideoReward.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPRewardedVideoReward.m; sourceTree = "<group>"; };
-		86D043631D4A376C00655C9E /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobFoxSDKCore.bundle; sourceTree = "<group>"; };
-		86D043641D4A376C00655C9E /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCore.framework; sourceTree = "<group>"; };
-		86D62BBF1D4786DC00CA5C12 /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobFoxSDKCore.framework; path = "/Users/shimisheetrit/Developer/MobFox-iOS-SDK-Core-Lib/DemoApp/MobFoxSDKCore.framework"; sourceTree = "<absolute>"; };
-		86D62BC61D4788C200CA5C12 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		86D045F01D50BFCF00655C9E /* MobFoxCustomEventAmazon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobFoxCustomEventAmazon.h; sourceTree = "<group>"; };
+		86D045F11D50BFCF00655C9E /* MobFoxCustomEventAmazon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobFoxCustomEventAmazon.m; sourceTree = "<group>"; };
+		86D045F21D50BFCF00655C9E /* MobFoxInterstitialCustomEventAmazon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobFoxInterstitialCustomEventAmazon.h; sourceTree = "<group>"; };
+		86D045F31D50BFCF00655C9E /* MobFoxInterstitialCustomEventAmazon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobFoxInterstitialCustomEventAmazon.m; sourceTree = "<group>"; };
+		86D045FA1D51F22A00655C9E /* AmazonAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AmazonAd.framework; sourceTree = "<group>"; };
+		86D045FE1D53793600655C9E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		86D62BB81D47831700CA5C12 /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobFoxSDKCore.framework; path = "../../../Library/Developer/Xcode/DerivedData/MobFoxSDK-fujetfuzuorsmhdwusfnfmjqkpxe/Build/Products/Debug-iphonesimulator/MobFoxSDKCore.framework"; sourceTree = "<group>"; };
 		86F16C191C8D84F50039F8DA /* response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
 		86F16C6B1C9020B10039F8DA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		86F8A2AC1C79BB8200BDD8FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1240,27 +1230,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86F16C6C1C9020B10039F8DA /* CoreMotion.framework in Frameworks */,
+				86D045FF1D53793600655C9E /* StoreKit.framework in Frameworks */,
+				86D042921D48B8FB00655C9E /* MobFoxSDKCore.framework in Frameworks */,
 				868823C11D1FCDB200D24DAC /* GoogleMobileAds.framework in Frameworks */,
 				8603F7D11CF2EFE400CAE120 /* libxml2.tbd in Frameworks */,
 				86F8A2B71C79BBC700BDD8FD /* EventKitUI.framework in Frameworks */,
 				86F8A2B51C79BBB300BDD8FD /* EventKit.framework in Frameworks */,
 				86F8A2C11C79BC2700BDD8FD /* SystemConfiguration.framework in Frameworks */,
 				86F8A2CB1C79C1E200BDD8FD /* MessageUI.framework in Frameworks */,
+				86D045FB1D51F22A00655C9E /* AmazonAd.framework in Frameworks */,
 				86F8A2BB1C79BBE700BDD8FD /* MediaPlayer.framework in Frameworks */,
 				86F8A2B31C79BBA800BDD8FD /* CoreTelephony.framework in Frameworks */,
 				86F8A2B11C79BB9C00BDD8FD /* CoreMedia.framework in Frameworks */,
 				86F8A2AD1C79BB8200BDD8FD /* CoreGraphics.framework in Frameworks */,
 				865BD0DF1C68CF3500F180D8 /* AVFoundation.framework in Frameworks */,
 				86F8A2C51C79BC5600BDD8FD /* AudioToolbox.framework in Frameworks */,
-				86F16C6C1C9020B10039F8DA /* CoreMotion.framework in Frameworks */,
 				86F8A2D11C79C20D00BDD8FD /* Social.framework in Frameworks */,
 				86B9C2AE1CC3AB14002109CB /* MMAdSDK.framework in Frameworks */,
 				86F8A2CD1C79C1F200BDD8FD /* MobileCoreServices.framework in Frameworks */,
 				86F8A2C91C79BC9700BDD8FD /* CoreBluetooth.framework in Frameworks */,
 				86F8A2C71C79BC6900BDD8FD /* iAd.framework in Frameworks */,
 				86F8A2BD1C79BBF400BDD8FD /* QuartzCore.framework in Frameworks */,
-				86D043681D4A376C00655C9E /* MobFoxSDKCore.framework in Frameworks */,
-				86D62BCC1D47898600CA5C12 /* MobFoxSDKCore.framework in Frameworks */,
 				86F8A2C31C79BC3200BDD8FD /* UIKit.framework in Frameworks */,
 				86F8A2B91C79BBDC00BDD8FD /* Foundation.framework in Frameworks */,
 				86A31C191CA183C000FD6959 /* FBAudienceNetwork.framework in Frameworks */,
@@ -1274,8 +1265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				86B9C2AF1CC3AB14002109CB /* MMAdSDK.framework in Frameworks */,
-				86D043691D4A376C00655C9E /* MobFoxSDKCore.framework in Frameworks */,
 				86A31C1A1CA183C000FD6959 /* FBAudienceNetwork.framework in Frameworks */,
+				86D045FC1D51F22A00655C9E /* AmazonAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1284,8 +1275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				86B9C2B01CC3AB14002109CB /* MMAdSDK.framework in Frameworks */,
-				86D0436A1D4A376C00655C9E /* MobFoxSDKCore.framework in Frameworks */,
 				86A31C1B1CA183C000FD6959 /* FBAudienceNetwork.framework in Frameworks */,
+				86D045FD1D51F22A00655C9E /* AmazonAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1315,10 +1306,6 @@
 			children = (
 				861B1F221D1A9010003739FA /* GADMAdapterMobFox.h */,
 				861B1F231D1A9010003739FA /* GADMAdapterMobFox.m */,
-				863732F41D201B9600B35FB1 /* DFPMAdapterMobFox.h */,
-				863732F51D201B9600B35FB1 /* DFPMAdapterMobFox.m */,
-				863732F21D201B9600B35FB1 /* DFPInterstitialAdapterMobFox.h */,
-				863732F31D201B9600B35FB1 /* DFPInterstitialAdapterMobFox.m */,
 			);
 			name = AdMob;
 			sourceTree = "<group>";
@@ -1354,21 +1341,26 @@
 			path = MoPub;
 			sourceTree = "<group>";
 		};
-		8643A9571CBEA0EC00D0CD85 /* Custom Events */ = {
+		8643A9571CBEA0EC00D0CD85 /* MobFox Custom Events */ = {
 			isa = PBXGroup;
 			children = (
+				86D045EF1D50BFAC00655C9E /* Amazon */,
 				86A8D6551CBFE947003E5AAA /* Facebook */,
 				86A8D64A1CBFCF56003E5AAA /* AdMob */,
 			);
-			name = "Custom Events";
+			name = "MobFox Custom Events";
 			path = CustomEvents;
 			sourceTree = "<group>";
 		};
 		865BD0E01C68DF7D00F180D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				86D043621D4A376C00655C9E /* MobFoxSDKCore.embeddedframework */,
+				86D045FE1D53793600655C9E /* StoreKit.framework */,
+				86D045FA1D51F22A00655C9E /* AmazonAd.framework */,
+				86D62BB81D47831700CA5C12 /* MobFoxSDKCore.framework */,
 				868823C01D1FCDB200D24DAC /* GoogleMobileAds.framework */,
+				86163E1C1D16DB2200A30C35 /* MobFoxSDKCore.framework */,
+				86163E131D16D6EE00A30C35 /* MobFoxSDKCore.bundle */,
 				86B9C1031CC3AB13002109CB /* MoPubSDK */,
 				86A31C181CA183C000FD6959 /* FBAudienceNetwork.framework */,
 				860C0FB71C96B9B00001EEF3 /* libz.tbd */,
@@ -1403,7 +1395,7 @@
 			isa = PBXGroup;
 			children = (
 				861B1F461D1AB523003739FA /* Mediation Adapters */,
-				8643A9571CBEA0EC00D0CD85 /* Custom Events */,
+				8643A9571CBEA0EC00D0CD85 /* MobFox Custom Events */,
 				860C0FCC1C96F1280001EEF3 /* MobFox Adapters */,
 				865BD0E01C68DF7D00F180D8 /* Frameworks */,
 				86891E101C5FA8250098C602 /* DemoApp */,
@@ -1432,12 +1424,12 @@
 				86891E151C5FA8250098C602 /* AppDelegate.m */,
 				86891E171C5FA8250098C602 /* MainViewController.h */,
 				86891E181C5FA8250098C602 /* MainViewController.m */,
+				860F6DBD1D2CFFD400E62984 /* Main.storyboard */,
 				86891EA81C62646C0098C602 /* SettingsViewController.h */,
 				86891EA91C62646C0098C602 /* SettingsViewController.m */,
 				865BD14D1C6CED9C00F180D8 /* NativeAdViewController.h */,
 				865BD14E1C6CED9C00F180D8 /* NativeAdViewController.m */,
 				865BD14F1C6CED9C00F180D8 /* NativeAdViewController.xib */,
-				86D62BC61D4788C200CA5C12 /* Main.storyboard */,
 				86891E1D1C5FA8250098C602 /* Assets.xcassets */,
 				86891E1F1C5FA8250098C602 /* LaunchScreen.storyboard */,
 				86891E221C5FA8250098C602 /* Info.plist */,
@@ -2120,13 +2112,15 @@
 			path = Internal;
 			sourceTree = "<group>";
 		};
-		86D043621D4A376C00655C9E /* MobFoxSDKCore.embeddedframework */ = {
+		86D045EF1D50BFAC00655C9E /* Amazon */ = {
 			isa = PBXGroup;
 			children = (
-				86D043631D4A376C00655C9E /* MobFoxSDKCore.bundle */,
-				86D043641D4A376C00655C9E /* MobFoxSDKCore.framework */,
+				86D045F01D50BFCF00655C9E /* MobFoxCustomEventAmazon.h */,
+				86D045F11D50BFCF00655C9E /* MobFoxCustomEventAmazon.m */,
+				86D045F21D50BFCF00655C9E /* MobFoxInterstitialCustomEventAmazon.h */,
+				86D045F31D50BFCF00655C9E /* MobFoxInterstitialCustomEventAmazon.m */,
 			);
-			path = MobFoxSDKCore.embeddedframework;
+			name = Amazon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2139,7 +2133,6 @@
 				86891E0A1C5FA8250098C602 /* Sources */,
 				86891E0B1C5FA8250098C602 /* Frameworks */,
 				86891E0C1C5FA8250098C602 /* Resources */,
-				86D62BCE1D47898600CA5C12 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2198,6 +2191,7 @@
 					86891E0D1C5FA8250098C602 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = AV662668AP;
+						DevelopmentTeamName = "Matomy Media Group Ltd.";
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
@@ -2210,6 +2204,7 @@
 					};
 					86891E261C5FA8250098C602 = {
 						CreatedOnToolsVersion = 7.2;
+						ProvisioningStyle = Manual;
 						TestTargetID = 86891E0D1C5FA8250098C602;
 					};
 					86891E311C5FA8250098C602 = {
@@ -2243,6 +2238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D62BBA1D47833600CA5C12 /* MobFoxSDKCore.bundle in Resources */,
 				86891E9A1C6106870098C602 /* test_native.png in Resources */,
 				86B9C4A61CC3AB14002109CB /* MPPlayBtn@2x.png in Resources */,
 				861B1F4E1D1AB523003739FA /* README.txt in Resources */,
@@ -2269,8 +2265,7 @@
 				86B9C4AC1CC3AB14002109CB /* MPUnmutedBtn@1x.png in Resources */,
 				86891EDD1C63B1230098C602 /* icon_01.png in Resources */,
 				86891EE11C6737EC0098C602 /* icon_02.png in Resources */,
-				86D043651D4A376C00655C9E /* MobFoxSDKCore.bundle in Resources */,
-				86D62BC71D4788C200CA5C12 /* Main.storyboard in Resources */,
+				860F6DBE1D2CFFD400E62984 /* Main.storyboard in Resources */,
 				86B9C4911CC3AB14002109CB /* MPDAAIcon.png in Resources */,
 				86B9C3351CC3AB14002109CB /* LICENSE in Resources */,
 				86B9C4AF1CC3AB14002109CB /* MPUnmutedBtn@2x.png in Resources */,
@@ -2315,7 +2310,7 @@
 				86B9C2CD1CC3AB14002109CB /* MPAdBrowserController.xib in Resources */,
 				861204F11D084DB000EDDAF8 /* response_waterfalls.txt in Resources */,
 				86B9C4A71CC3AB14002109CB /* MPPlayBtn@2x.png in Resources */,
-				86D62BC81D4788C200CA5C12 /* Main.storyboard in Resources */,
+				860F6DBF1D2CFFD400E62984 /* Main.storyboard in Resources */,
 				86B9C3361CC3AB14002109CB /* LICENSE in Resources */,
 				86891ED21C639C190098C602 /* img_03.png in Resources */,
 				86B9C4B31CC3AB14002109CB /* MPUnmutedBtn@3x.png in Resources */,
@@ -2325,12 +2320,12 @@
 				86B9C4A41CC3AB14002109CB /* MPPlayBtn.png in Resources */,
 				86B9C4AA1CC3AB14002109CB /* MPPlayBtn@3x.png in Resources */,
 				86891E981C6106870098C602 /* test_interstitial.png in Resources */,
+				86163E151D16D6EE00A30C35 /* MobFoxSDKCore.bundle in Resources */,
 				86B9C4981CC3AB14002109CB /* MPDAAIcon@3x.png in Resources */,
 				86B9C49B1CC3AB14002109CB /* MPMutedBtn@1x.png in Resources */,
 				86B9C4951CC3AB14002109CB /* MPDAAIcon@2x.png in Resources */,
 				86B9C48F1CC3AB14002109CB /* MPCloseButtonX@3x.png in Resources */,
 				86B9C4B01CC3AB14002109CB /* MPUnmutedBtn@2x.png in Resources */,
-				86D043661D4A376C00655C9E /* MobFoxSDKCore.bundle in Resources */,
 				86891ED71C63AAC10098C602 /* img_04.png in Resources */,
 				86891EE21C6737EC0098C602 /* icon_02.png in Resources */,
 				86F16C1B1C8D84F50039F8DA /* response.json in Resources */,
@@ -2364,7 +2359,7 @@
 				86B9C2CE1CC3AB14002109CB /* MPAdBrowserController.xib in Resources */,
 				861204F21D084DB000EDDAF8 /* response_waterfalls.txt in Resources */,
 				86B9C4A81CC3AB14002109CB /* MPPlayBtn@2x.png in Resources */,
-				86D62BC91D4788C200CA5C12 /* Main.storyboard in Resources */,
+				860F6DC01D2CFFD400E62984 /* Main.storyboard in Resources */,
 				86B9C3371CC3AB14002109CB /* LICENSE in Resources */,
 				86891ED31C639C190098C602 /* img_03.png in Resources */,
 				86B9C4B41CC3AB14002109CB /* MPUnmutedBtn@3x.png in Resources */,
@@ -2374,12 +2369,12 @@
 				86B9C4A51CC3AB14002109CB /* MPPlayBtn.png in Resources */,
 				86B9C4AB1CC3AB14002109CB /* MPPlayBtn@3x.png in Resources */,
 				86891E991C6106870098C602 /* test_interstitial.png in Resources */,
+				86163E161D16D6EE00A30C35 /* MobFoxSDKCore.bundle in Resources */,
 				86B9C4991CC3AB14002109CB /* MPDAAIcon@3x.png in Resources */,
 				86B9C49C1CC3AB14002109CB /* MPMutedBtn@1x.png in Resources */,
 				86B9C4961CC3AB14002109CB /* MPDAAIcon@2x.png in Resources */,
 				86B9C4901CC3AB14002109CB /* MPCloseButtonX@3x.png in Resources */,
 				86B9C4B11CC3AB14002109CB /* MPUnmutedBtn@2x.png in Resources */,
-				86D043671D4A376C00655C9E /* MobFoxSDKCore.bundle in Resources */,
 				86891ED81C63AAC10098C602 /* img_04.png in Resources */,
 				86891EE31C6737EC0098C602 /* icon_02.png in Resources */,
 				86F16C1C1C8D84F50039F8DA /* response.json in Resources */,
@@ -2475,6 +2470,7 @@
 				86B9C4CA1CC3AB14002109CB /* MPRewardedVideoReward.m in Sources */,
 				86B9C3471CC3AB14002109CB /* MRCalendarManager.m in Sources */,
 				86B9C3801CC3AB14002109CB /* MPError.m in Sources */,
+				86D045F41D50BFCF00655C9E /* MobFoxCustomEventAmazon.m in Sources */,
 				86B9C2C01CC3AB14002109CB /* MPAdAlertManager.m in Sources */,
 				86B9C3D11CC3AB14002109CB /* MPVASTWrapper.m in Sources */,
 				86B9C42E1CC3AB14002109CB /* MPNativeAdError.m in Sources */,
@@ -2494,6 +2490,7 @@
 				86B9C43D1CC3AB14002109CB /* MPNativeAdSource.m in Sources */,
 				86B9C3E61CC3AB14002109CB /* MPInterstitialCustomEvent.m in Sources */,
 				86B9C37D1CC3AB14002109CB /* MPAnalyticsTracker.m in Sources */,
+				86D045F71D50BFCF00655C9E /* MobFoxInterstitialCustomEventAmazon.m in Sources */,
 				86B9C4BE1CC3AB14002109CB /* MPRewardedVideoAdManager.m in Sources */,
 				86B9C41F1CC3AB14002109CB /* MPClientAdPositioning.m in Sources */,
 				86B9C4791CC3AB14002109CB /* MOPUBNativeVideoAdRenderer.m in Sources */,
@@ -2534,7 +2531,6 @@
 				86B9C3291CC3AB14002109CB /* MPInterstitialViewController.m in Sources */,
 				86B9C2E11CC3AB14002109CB /* MPEnhancedDeeplinkRequest.m in Sources */,
 				86B9C44F1CC3AB14002109CB /* MPStreamAdPlacer.m in Sources */,
-				863732F61D201B9600B35FB1 /* DFPInterstitialAdapterMobFox.m in Sources */,
 				86B9C2CF1CC3AB14002109CB /* MPAdConfiguration.m in Sources */,
 				86B9C3A11CC3AB14002109CB /* MPUserInteractionGestureRecognizer.m in Sources */,
 				86B9C4761CC3AB14002109CB /* MOPUBReplayView.m in Sources */,
@@ -2562,7 +2558,6 @@
 				86B9C2F01CC3AB14002109CB /* MPURLActionInfo.m in Sources */,
 				86B9C38F1CC3AB14002109CB /* MPLogging.m in Sources */,
 				86B9C2D21CC3AB14002109CB /* MPAdDestinationDisplayAgent.m in Sources */,
-				863732F91D201B9600B35FB1 /* DFPMAdapterMobFox.m in Sources */,
 				86891E131C5FA8250098C602 /* main.m in Sources */,
 				86B9C3D41CC3AB14002109CB /* MoPub.m in Sources */,
 				86B9C4161CC3AB14002109CB /* MPTableViewAdPlacerCell.m in Sources */,
@@ -2617,6 +2612,7 @@
 				86B9C47D1CC3AB14002109CB /* MOPUBNativeVideoAdRendererSettings.m in Sources */,
 				86B9C3031CC3AB14002109CB /* MPLogEventCommunicator.m in Sources */,
 				86B9C39C1CC3AB14002109CB /* MPStoreKitProvider.m in Sources */,
+				86D045F51D50BFCF00655C9E /* MobFoxCustomEventAmazon.m in Sources */,
 				86B9C2D01CC3AB14002109CB /* MPAdConfiguration.m in Sources */,
 				86B9C4291CC3AB14002109CB /* MPNativeAdConstants.m in Sources */,
 				86B9C3991CC3AB14002109CB /* MPSessionTracker.m in Sources */,
@@ -2703,7 +2699,6 @@
 				86B9C3961CC3AB14002109CB /* MPReachability.m in Sources */,
 				86B9C3E71CC3AB14002109CB /* MPInterstitialCustomEvent.m in Sources */,
 				86B9C2B81CC3AB14002109CB /* MPBannerCustomEventAdapter.m in Sources */,
-				863732F71D201B9600B35FB1 /* DFPInterstitialAdapterMobFox.m in Sources */,
 				86B9C2A91CC3AB14002109CB /* MPMillennialBannerCustomEvent.m in Sources */,
 				86B9C4531CC3AB14002109CB /* MPTableViewAdPlacer.m in Sources */,
 				86B9C36C1CC3AB14002109CB /* NSJSONSerialization+MPAdditions.m in Sources */,
@@ -2742,10 +2737,10 @@
 				86B9C3F01CC3AB14002109CB /* MPDiskLRUCache.m in Sources */,
 				86B9C2EE1CC3AB14002109CB /* MPProgressOverlayView.m in Sources */,
 				8627C9A71CD61B3B0041A446 /* MoPubAdapterMobFox.m in Sources */,
+				86D045F81D50BFCF00655C9E /* MobFoxInterstitialCustomEventAmazon.m in Sources */,
 				864081561C9AF613002BD1E4 /* MoPubInterstitialAdapterMobFox.m in Sources */,
 				86A8D65D1CBFE947003E5AAA /* MobFoxCustomEventFacebook.m in Sources */,
 				86B9C2A61CC3AB14002109CB /* MPiAdInterstitialCustomEvent.m in Sources */,
-				863732FA1D201B9600B35FB1 /* DFPMAdapterMobFox.m in Sources */,
 				86B9C4771CC3AB14002109CB /* MOPUBReplayView.m in Sources */,
 				86B9C35A1CC3AB14002109CB /* MRImageDownloader.m in Sources */,
 				86B9C38A1CC3AB14002109CB /* MPIdentityProvider.m in Sources */,
@@ -2808,6 +2803,7 @@
 				86B9C47E1CC3AB14002109CB /* MOPUBNativeVideoAdRendererSettings.m in Sources */,
 				86B9C3041CC3AB14002109CB /* MPLogEventCommunicator.m in Sources */,
 				86B9C39D1CC3AB14002109CB /* MPStoreKitProvider.m in Sources */,
+				86D045F61D50BFCF00655C9E /* MobFoxCustomEventAmazon.m in Sources */,
 				86B9C2D11CC3AB14002109CB /* MPAdConfiguration.m in Sources */,
 				86B9C42A1CC3AB14002109CB /* MPNativeAdConstants.m in Sources */,
 				86B9C39A1CC3AB14002109CB /* MPSessionTracker.m in Sources */,
@@ -2894,7 +2890,6 @@
 				86B9C3971CC3AB14002109CB /* MPReachability.m in Sources */,
 				86B9C3E81CC3AB14002109CB /* MPInterstitialCustomEvent.m in Sources */,
 				86B9C2B91CC3AB14002109CB /* MPBannerCustomEventAdapter.m in Sources */,
-				863732F81D201B9600B35FB1 /* DFPInterstitialAdapterMobFox.m in Sources */,
 				86B9C2AA1CC3AB14002109CB /* MPMillennialBannerCustomEvent.m in Sources */,
 				86B9C4541CC3AB14002109CB /* MPTableViewAdPlacer.m in Sources */,
 				86B9C36D1CC3AB14002109CB /* NSJSONSerialization+MPAdditions.m in Sources */,
@@ -2933,10 +2928,10 @@
 				86B9C3F11CC3AB14002109CB /* MPDiskLRUCache.m in Sources */,
 				86B9C2EF1CC3AB14002109CB /* MPProgressOverlayView.m in Sources */,
 				8627C9A61CD61B300041A446 /* MoPubAdapterMobFox.m in Sources */,
+				86D045F91D50BFCF00655C9E /* MobFoxInterstitialCustomEventAmazon.m in Sources */,
 				864081571C9AF613002BD1E4 /* MoPubInterstitialAdapterMobFox.m in Sources */,
 				86A8D65E1CBFE947003E5AAA /* MobFoxCustomEventFacebook.m in Sources */,
 				86B9C2A71CC3AB14002109CB /* MPiAdInterstitialCustomEvent.m in Sources */,
-				863732FB1D201B9600B35FB1 /* DFPMAdapterMobFox.m in Sources */,
 				86B9C4781CC3AB14002109CB /* MOPUBReplayView.m in Sources */,
 				86B9C35B1CC3AB14002109CB /* MRImageDownloader.m in Sources */,
 				86B9C38B1CC3AB14002109CB /* MPIdentityProvider.m in Sources */,
@@ -3013,6 +3008,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -3057,6 +3053,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -3078,12 +3075,11 @@
 		86891E3C1C5FA8250098C602 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Shimi Shitrit (WR9GDQQN94)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shimi Shitrit (WR9GDQQN94)";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
@@ -3098,7 +3094,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mobfox.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "60d442e7-f6a8-4c73-9f07-d2821e75a291";
@@ -3112,12 +3108,11 @@
 		86891E3D1C5FA8250098C602 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Shimi Shitrit (WR9GDQQN94)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shimi Shitrit (WR9GDQQN94)";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
@@ -3132,7 +3127,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mobfox.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "60d442e7-f6a8-4c73-9f07-d2821e75a291";
@@ -3145,8 +3140,11 @@
 		86891E3F1C5FA8250098C602 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
@@ -3160,6 +3158,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matomy.DemoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DemoApp/DemoAppTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoApp.app/DemoApp";
@@ -3169,8 +3169,11 @@
 		86891E401C5FA8250098C602 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
@@ -3184,6 +3187,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matomy.DemoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DemoApp/DemoAppTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoApp.app/DemoApp";
 			};
@@ -3192,7 +3197,9 @@
 		86891E421C5FA8250098C602 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
@@ -3216,7 +3223,9 @@
 		86891E431C5FA8250098C602 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",

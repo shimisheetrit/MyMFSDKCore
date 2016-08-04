@@ -64,7 +64,6 @@
 - (void)adView:(FBAdView *)adView didFailWithError:(NSError *)error;
 {
     NSLog(@"Ad failed to load");
-    
     self.adView.hidden = YES;
     [self.delegate MFCustomEventAdDidFailToReceiveAdWithError:error];
 
@@ -73,7 +72,6 @@
 - (void)adViewDidLoad:(FBAdView *)adView;
 {
     NSLog(@"Ad was loaded and ready to be displayed");
-    
     self.adView.hidden = NO;
     [self.delegate MFCustomEventAd:self didLoad:adView];
     

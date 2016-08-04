@@ -20,7 +20,6 @@
 
 - (void)requestAdWithNetworkID:(NSString*)nid customEventInfo:(NSDictionary *)info {
     
-    
     self.nativeAd = [[FBNativeAd alloc] initWithPlacementID:nid];
     self.nativeAd.delegate = self;
     [self.nativeAd loadAd];

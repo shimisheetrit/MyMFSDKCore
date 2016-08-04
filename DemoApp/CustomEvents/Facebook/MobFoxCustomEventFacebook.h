@@ -10,8 +10,9 @@
 #define MobFoxCustomEventFacebook_h
 
 #import <MobFoxSDKCore/MobFoxSDKCore.h>
-#import <FBAudienceNetwork/FBAudienceNetwork.h>
+//#import <FBAudienceNetwork/FBAudienceNetwork.h>
 
+@import FBAudienceNetwork;
 
 @interface MobFoxCustomEventFacebook : MobFoxCustomEvent <FBAdViewDelegate>
 
