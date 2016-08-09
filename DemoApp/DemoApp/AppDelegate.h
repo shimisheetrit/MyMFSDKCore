@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MobFoxSDKCore/MobFoxSDKCore.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, NSCacheDelegate, MobFoxInterstitialAdDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

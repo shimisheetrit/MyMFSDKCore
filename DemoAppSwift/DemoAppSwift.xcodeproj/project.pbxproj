@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		86186AEC1C7B739900D406BB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD1B51C73728400F180D8 /* MainViewController.swift */; };
 		86186AED1C7B739900D406BB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD1B51C73728400F180D8 /* MainViewController.swift */; };
-		8659487D1C7DECFB009E6750 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8659487B1C7DECFB009E6750 /* MobFoxSDKCore.bundle */; };
-		8659487E1C7DECFB009E6750 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8659487B1C7DECFB009E6750 /* MobFoxSDKCore.bundle */; };
-		8659487F1C7DECFB009E6750 /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8659487B1C7DECFB009E6750 /* MobFoxSDKCore.bundle */; };
-		865948801C7DECFB009E6750 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8659487C1C7DECFB009E6750 /* MobFoxSDKCore.framework */; };
-		865948811C7DECFB009E6750 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8659487C1C7DECFB009E6750 /* MobFoxSDKCore.framework */; };
-		865948821C7DECFB009E6750 /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8659487C1C7DECFB009E6750 /* MobFoxSDKCore.framework */; };
+		864081781C9EF8B9002BD1E4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864081771C9EF8B9002BD1E4 /* AudioToolbox.framework */; };
+		8640817A1C9EF8C3002BD1E4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864081791C9EF8C3002BD1E4 /* AVFoundation.framework */; };
+		8640817C1C9EF8D4002BD1E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8640817B1C9EF8D4002BD1E4 /* CoreGraphics.framework */; };
+		8640817E1C9EF8DD002BD1E4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8640817D1C9EF8DD002BD1E4 /* CoreMedia.framework */; };
+		864081801C9EF8E7002BD1E4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8640817F1C9EF8E7002BD1E4 /* CoreTelephony.framework */; };
+		864081821C9EF8FC002BD1E4 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864081811C9EF8FC002BD1E4 /* EventKit.framework */; };
+		864081841C9EF90C002BD1E4 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864081831C9EF90C002BD1E4 /* EventKitUI.framework */; };
+		864081861C9EF920002BD1E4 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864081851C9EF920002BD1E4 /* MediaPlayer.framework */; };
+		864081881C9EF92C002BD1E4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864081871C9EF92C002BD1E4 /* MessageUI.framework */; };
+		8640818A1C9EF935002BD1E4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864081891C9EF935002BD1E4 /* StoreKit.framework */; };
+		8640818C1C9EF941002BD1E4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8640818B1C9EF941002BD1E4 /* SystemConfiguration.framework */; };
 		865BD1B41C73728400F180D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD1B31C73728400F180D8 /* AppDelegate.swift */; };
 		865BD1B61C73728400F180D8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD1B51C73728400F180D8 /* MainViewController.swift */; };
 		865BD1BB1C73728400F180D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 865BD1BA1C73728400F180D8 /* Assets.xcassets */; };
@@ -31,6 +36,15 @@
 		865BD2321C74A72B00F180D8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD2311C74A72B00F180D8 /* CollectionViewCell.swift */; };
 		865BD2331C74A72B00F180D8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD2311C74A72B00F180D8 /* CollectionViewCell.swift */; };
 		865BD2341C74A72B00F180D8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BD2311C74A72B00F180D8 /* CollectionViewCell.swift */; };
+		86A31C1D1CA28AC900FD6959 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A31C1C1CA28AC900FD6959 /* GoogleMobileAds.framework */; };
+		86A31C1E1CA28AC900FD6959 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A31C1C1CA28AC900FD6959 /* GoogleMobileAds.framework */; };
+		86A31C1F1CA28AC900FD6959 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A31C1C1CA28AC900FD6959 /* GoogleMobileAds.framework */; };
+		86D0436E1D4A380300655C9E /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86D0436C1D4A380300655C9E /* MobFoxSDKCore.bundle */; };
+		86D0436F1D4A380300655C9E /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86D0436C1D4A380300655C9E /* MobFoxSDKCore.bundle */; };
+		86D043701D4A380300655C9E /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86D0436C1D4A380300655C9E /* MobFoxSDKCore.bundle */; };
+		86D043711D4A380300655C9E /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D0436D1D4A380300655C9E /* MobFoxSDKCore.framework */; };
+		86D043721D4A380300655C9E /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D0436D1D4A380300655C9E /* MobFoxSDKCore.framework */; };
+		86D043731D4A380300655C9E /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D0436D1D4A380300655C9E /* MobFoxSDKCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +65,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8659487B1C7DECFB009E6750 /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobFoxSDKCore.bundle; sourceTree = "<group>"; };
-		8659487C1C7DECFB009E6750 /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCore.framework; sourceTree = "<group>"; };
+		864081771C9EF8B9002BD1E4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		864081791C9EF8C3002BD1E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8640817B1C9EF8D4002BD1E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8640817D1C9EF8DD002BD1E4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8640817F1C9EF8E7002BD1E4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		864081811C9EF8FC002BD1E4 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		864081831C9EF90C002BD1E4 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		864081851C9EF920002BD1E4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		864081871C9EF92C002BD1E4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		864081891C9EF935002BD1E4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8640818B1C9EF941002BD1E4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		865BD1B01C73728400F180D8 /* DemoAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		865BD1B31C73728400F180D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		865BD1B51C73728400F180D8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +92,9 @@
 		865BD1E51C73735900F180D8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		865BD1F21C7495B100F180D8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		865BD2311C74A72B00F180D8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		86A31C1C1CA28AC900FD6959 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		86D0436C1D4A380300655C9E /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobFoxSDKCore.bundle; sourceTree = "<group>"; };
+		86D0436D1D4A380300655C9E /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +102,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8640818C1C9EF941002BD1E4 /* SystemConfiguration.framework in Frameworks */,
+				8640818A1C9EF935002BD1E4 /* StoreKit.framework in Frameworks */,
+				864081881C9EF92C002BD1E4 /* MessageUI.framework in Frameworks */,
+				86D043711D4A380300655C9E /* MobFoxSDKCore.framework in Frameworks */,
+				864081861C9EF920002BD1E4 /* MediaPlayer.framework in Frameworks */,
+				864081841C9EF90C002BD1E4 /* EventKitUI.framework in Frameworks */,
+				864081821C9EF8FC002BD1E4 /* EventKit.framework in Frameworks */,
+				864081801C9EF8E7002BD1E4 /* CoreTelephony.framework in Frameworks */,
+				8640817E1C9EF8DD002BD1E4 /* CoreMedia.framework in Frameworks */,
+				8640817C1C9EF8D4002BD1E4 /* CoreGraphics.framework in Frameworks */,
+				8640817A1C9EF8C3002BD1E4 /* AVFoundation.framework in Frameworks */,
+				864081781C9EF8B9002BD1E4 /* AudioToolbox.framework in Frameworks */,
 				865BD1F31C7495B100F180D8 /* AdSupport.framework in Frameworks */,
-				865948801C7DECFB009E6750 /* MobFoxSDKCore.framework in Frameworks */,
+				86A31C1D1CA28AC900FD6959 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +123,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865948811C7DECFB009E6750 /* MobFoxSDKCore.framework in Frameworks */,
+				86A31C1E1CA28AC900FD6959 /* GoogleMobileAds.framework in Frameworks */,
+				86D043721D4A380300655C9E /* MobFoxSDKCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,26 +132,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865948821C7DECFB009E6750 /* MobFoxSDKCore.framework in Frameworks */,
+				86A31C1F1CA28AC900FD6959 /* GoogleMobileAds.framework in Frameworks */,
+				86D043731D4A380300655C9E /* MobFoxSDKCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8659487A1C7DECFB009E6750 /* MobFoxSDKCore.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				8659487B1C7DECFB009E6750 /* MobFoxSDKCore.bundle */,
-				8659487C1C7DECFB009E6750 /* MobFoxSDKCore.framework */,
-			);
-			path = MobFoxSDKCore.embeddedframework;
-			sourceTree = "<group>";
-		};
 		865BD1A71C73728400F180D8 = {
 			isa = PBXGroup;
 			children = (
-				8659487A1C7DECFB009E6750 /* MobFoxSDKCore.embeddedframework */,
 				865BD2351C74CFC900F180D8 /* Frameworks */,
 				865BD1B21C73728400F180D8 /* DemoAppSwift */,
 				865BD1C71C73728400F180D8 /* DemoAppSwiftTests */,
@@ -175,9 +205,31 @@
 		865BD2351C74CFC900F180D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				86D0436B1D4A380300655C9E /* MobFoxSDKCore.embeddedframework */,
+				86A31C1C1CA28AC900FD6959 /* GoogleMobileAds.framework */,
+				8640818B1C9EF941002BD1E4 /* SystemConfiguration.framework */,
+				864081891C9EF935002BD1E4 /* StoreKit.framework */,
+				864081871C9EF92C002BD1E4 /* MessageUI.framework */,
+				864081851C9EF920002BD1E4 /* MediaPlayer.framework */,
+				864081831C9EF90C002BD1E4 /* EventKitUI.framework */,
+				864081811C9EF8FC002BD1E4 /* EventKit.framework */,
+				8640817F1C9EF8E7002BD1E4 /* CoreTelephony.framework */,
+				8640817D1C9EF8DD002BD1E4 /* CoreMedia.framework */,
+				8640817B1C9EF8D4002BD1E4 /* CoreGraphics.framework */,
+				864081791C9EF8C3002BD1E4 /* AVFoundation.framework */,
+				864081771C9EF8B9002BD1E4 /* AudioToolbox.framework */,
 				865BD1F21C7495B100F180D8 /* AdSupport.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86D0436B1D4A380300655C9E /* MobFoxSDKCore.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				86D0436C1D4A380300655C9E /* MobFoxSDKCore.bundle */,
+				86D0436D1D4A380300655C9E /* MobFoxSDKCore.framework */,
+			);
+			path = MobFoxSDKCore.embeddedframework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,8 +338,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				865BD1E21C7372F100F180D8 /* Main.storyboard in Resources */,
-				8659487D1C7DECFB009E6750 /* MobFoxSDKCore.bundle in Resources */,
 				865BD1BE1C73728400F180D8 /* LaunchScreen.storyboard in Resources */,
+				86D0436E1D4A380300655C9E /* MobFoxSDKCore.bundle in Resources */,
 				865BD1BB1C73728400F180D8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,8 +348,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D0436F1D4A380300655C9E /* MobFoxSDKCore.bundle in Resources */,
 				865BD1E31C7372F100F180D8 /* Main.storyboard in Resources */,
-				8659487E1C7DECFB009E6750 /* MobFoxSDKCore.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,8 +357,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D043701D4A380300655C9E /* MobFoxSDKCore.bundle in Resources */,
 				865BD1E41C7372F100F180D8 /* Main.storyboard in Resources */,
-				8659487F1C7DECFB009E6750 /* MobFoxSDKCore.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,9 +516,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DemoAppSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matomy.DemoAppSwift;
@@ -482,9 +535,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DemoAppSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matomy.DemoAppSwift;
@@ -499,6 +553,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DemoAppSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -515,6 +570,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DemoAppSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -530,6 +586,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DemoAppSwiftUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -546,6 +603,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MobFoxSDKCore.embeddedframework",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DemoAppSwiftUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
