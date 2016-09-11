@@ -13,23 +13,25 @@
 #import "MPMobFoxNativeAdRenderer.h"
 #import "MoPubNativeAdapterMobFox.h"
 
-//#import "MobFoxSDKCore-swift.h"
-//#import <MobFoxSDKCore/MobFoxSDKCore-Swift.h>
 
 #define NATIVEAD_ADAPTER_TEST 0
 #define ADMOB_ADAPTER_TEST 0
-#define MOPUB_ADAPTER_TEST 0
-
+#define MOPUB_ADAPTER_TEST 1
 #define ADS_TYPE_NUM 7
 #define AD_REFRESH 0
 
 
-#define MOBFOX_HASH_BANNER @"fe96717d9875b9da4339ea5367eff1ec"
-#define MOBFOX_HASH_INTER @"267d72ac3f77a3f447b32cf7ebf20673"
-
-#define MOBFOX_HASH_NATIVE @"80187188f458cfde788d961b6882fd53"
+#define MOBFOX_HASH_BANNER @"eb115dc9c19112f5a5c95ab728a3ce9c"
+#define MOBFOX_HASH_INTER @"145849979b4c7a12916c7f06d25b75e3"
+#define MOBFOX_HASH_NATIVE @"4c3ea57788c5858881dc42cfafe8c0ab"
 #define MOBFOX_HASH_VIDEO @"80187188f458cfde788d961b6882fd53"
 #define MOBFOX_HASH_AUDIO @"75f994b45ca31b454addc8b808d59135"
+
+#define MOBFOX_HASH_BANNER_TEST @"8769bb5eb962eb39170fc5d8930706a9"
+#define MOBFOX_HASH_INTER_TEST @"267d72ac3f77a3f447b32cf7ebf20673"
+#define MOBFOX_HASH_NATIVE_TEST @"80187188f458cfde788d961b6882fd53"
+#define MOBFOX_HASH_VIDEO_TEST @"80187188f458cfde788d961b6882fd53"
+#define MOBFOX_HASH_AUDIO_TEST @"75f994b45ca31b454addc8b808d59135"
 
 #define MOPUB_HASH_NATIVE @"ac0f139a2d9544fface76d06e27bc02a"
 #define MOPUB_HASH_BANNER @"234dd5a1b1bf4a5f9ab50431f9615784"
@@ -63,21 +65,23 @@
 
 
 
+
 @end
 
 @implementation MainViewController
 
 
+- (void)applicationDidBecomeActive {
+
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActive) name:@"applicationDidBecomeActiveNotification" object:nil];
 
-    /*
-    MobFoxExtension *mobfoxEx = [[MobFoxExtension alloc] init];
-    mobfoxEx.libVersion = @"2.1.8b";
-     */
     
     self.cellID = @"cellID";
     self.nativeAdView.hidden = true;
@@ -96,12 +100,10 @@
     
     /*** Banner ***/
     
-    //[MobFoxAd locationServicesDisabled:true];
-    /*screenHeight-bannerHeight*/
+    [MobFoxAd locationServicesDisabled:true];
     
     self.bannerAdRect = CGRectMake((screenWidth-bannerWidth)/2, SCREEN_HEIGHT - bannerHeight , bannerWidth, bannerHeight);
-    
-    self.mobfoxAd = [[MobFoxAd alloc] init:MOBFOX_HASH_BANNER withFrame:self.bannerAdRect];
+    self.mobfoxAd = [[MobFoxAd alloc] init:MOBFOX_HASH_BANNER_TEST withFrame:self.bannerAdRect];
     self.mobfoxAd.delegate = self;
     self.mobfoxAd.auto_pilot = true;
     self.mobfoxAd.refresh = [NSNumber numberWithInt:AD_REFRESH];
@@ -112,7 +114,7 @@
     
     [MobFoxInterstitialAd locationServicesDisabled:true];
     
-    self.mobfoxInterAd = [[MobFoxInterstitialAd alloc] init:MOBFOX_HASH_INTER withRootViewController:self];
+    self.mobfoxInterAd = [[MobFoxInterstitialAd alloc] init:MOBFOX_HASH_INTER_TEST withRootViewController:self];
     //self.mobfoxInterAd.ad.type = @"video";
     self.mobfoxInterAd.delegate = self;
     self.mobfoxInterAd.ad.autoplay =  true;
@@ -122,7 +124,7 @@
     
     [MobFoxNativeAd locationServicesDisabled:true];
 
-    self.mobfoxNativeAd = [[MobFoxNativeAd alloc] init:MOBFOX_HASH_NATIVE];
+    self.mobfoxNativeAd = [[MobFoxNativeAd alloc] init:MOBFOX_HASH_NATIVE_TEST];
     self.mobfoxNativeAd.delegate = self;
     
     
@@ -132,15 +134,16 @@
 
     float videoTopMargin = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 200.0 : 80.0;
     self.videoAdRect = CGRectMake((screenWidth - videoWidth)/2, self.collectionView.frame.size.height + videoTopMargin, videoWidth, videoHeight);
-    self.mobfoxVideoAd = [[MobFoxAd alloc] init:MOBFOX_HASH_VIDEO withFrame:self.videoAdRect];
+    self.mobfoxVideoAd = [[MobFoxAd alloc] init:MOBFOX_HASH_VIDEO_TEST withFrame:self.videoAdRect];
     
     self.mobfoxVideoAd.delegate = self;
     self.mobfoxVideoAd.type = @"video";
     self.mobfoxVideoAd.auto_pilot = YES;
     self.mobfoxVideoAd.autoplay = YES;
+    self.mobfoxVideoAd.skip = YES;
     [self.view addSubview:self.mobfoxVideoAd];
-
-
+    
+    
     
     #if NATIVEAD_ADAPTER_TEST
 
@@ -168,6 +171,7 @@
     #if ADMOB_ADAPTER_TEST
     
     // banner.
+    
     self.gadBannerView = [[GADBannerView alloc] initWithFrame:CGRectMake(0, 430, 320, 50)];
     self.gadBannerView.adUnitID = @"ca-app-pub-6224828323195096/5240875564";
     self.gadBannerView.rootViewController = self;
@@ -176,7 +180,7 @@
     //request.testDevices = @[ @"221e6c438e8184e0556942ea14bb214b" ];
     [self.gadBannerView loadRequest:request];
     
-     
+    /*
      self.gadInterstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-6224828323195096/7876284361"];
     GADRequest *request_interstitial = [GADRequest request];
     // Requests test ads on test devices.
@@ -201,7 +205,7 @@
     // Requests test ads on test devices.
     dfp_request.testDevices = @[ @"221e6c438e8184e0556942ea14bb214b" ];
     [self.dfpInterstitial loadRequest:dfp_request];
-    
+    */
     #endif
     
     #if MOPUB_ADAPTER_TEST
@@ -213,18 +217,33 @@
                                    MOPUB_BANNER_SIZE.width, MOPUB_BANNER_SIZE.height);
     [self.view addSubview:self.mpAdView];
     [self.mpAdView loadAd];
+    
+    for (int i =0; i < 20; i++) {
+        [self performSelector:@selector(loadMPAd) withObject:nil afterDelay:10.0];
+    }
+
     #endif
     
+}
+
+- (void)loadMPAd {
     
+    NSLog(@"-- loadMPAd: --");
+    [self.mpAdView loadAd];
+
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     
     [super viewDidAppear:true];
     
+    NSLog(@"-- viewDidAppear: --");
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
+    
+    NSLog(@"viewWillDisappear");
     
     [super viewWillDisappear:animated];
     [self.mobfoxVideoAd pause];
@@ -282,7 +301,7 @@
 
             [self hideAds:indexPath];
             [self.mobfoxVideoAd pause];
-            self.mobfoxAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_BANNER;
+            self.mobfoxAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_BANNER_TEST;
             [self.mobfoxAd loadAd];
             
             break;
@@ -291,15 +310,16 @@
 
             [self hideAds:indexPath];
             [self.mobfoxVideoAd pause];
-            self.mobfoxInterAd.ad.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_INTER;
+            self.mobfoxInterAd.ad.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_INTER_TEST;
             [self.mobfoxInterAd loadAd];
+
 
             break;
             
         case 2:
             [self hideAds:indexPath];
             [self.mobfoxVideoAd pause];
-            self.mobfoxNativeAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_NATIVE;
+            self.mobfoxNativeAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_NATIVE_TEST;
             [self.mobfoxNativeAd loadAd];
             
             break;
@@ -307,7 +327,7 @@
         case 3:
             
             [self hideAds:indexPath];
-            self.mobfoxVideoAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_VIDEO;
+            self.mobfoxVideoAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_VIDEO_TEST;
             [self.mobfoxVideoAd loadAd];
             break;
             
@@ -439,13 +459,18 @@
 
 }
 
+- (void)MobFoxAdFinished {
+    NSLog(@"MobFoxAdFinished:");
+    
+}
+
 #pragma mark MobFox Interstitial Ad Delegate
 
 //best to show after delegate informs an ad was loaded
 - (void)MobFoxInterstitialAdDidLoad:(MobFoxInterstitialAd *)interstitial {
     
     NSLog(@"MobFoxInterstitialAdDidLoad:");
-    
+        
     if(self.mobfoxInterAd.ready){
         [self.mobfoxInterAd show];
     }
@@ -516,6 +541,8 @@
         }
         
     }
+    [ad registerViewWithInteraction:self.nativeAdView withViewController:self];
+
     
 }
 
@@ -525,7 +552,6 @@
     NSLog(@"MobFoxNativeAdDidFailToReceiveAdWithError: %@", [error description]);
     
 }
-
 
 
 #pragma mark Private Methods

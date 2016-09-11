@@ -20,7 +20,7 @@
     
     FBAdSize fBAdSize;
     
-    UIViewController* rootVC = (UIViewController*)[[[[[UIApplication sharedApplication] keyWindow] subviews] objectAtIndex:0] nextResponder];
+    self.parentViewController = [info objectForKey:@"viewcontroller_parent"];
     
     if(CGSizeEqualToSize(kFBAdSize320x50.size, size)) {
         
@@ -53,7 +53,7 @@
         return;
     }
     
-    self.adView = [[FBAdView alloc] initWithPlacementID:nid adSize:fBAdSize rootViewController:rootVC];
+    self.adView = [[FBAdView alloc] initWithPlacementID:nid adSize:fBAdSize rootViewController:self.parentViewController];
     self.adView.delegate = self;
     [self.adView loadAd];
         
@@ -63,7 +63,8 @@
 
 - (void)adView:(FBAdView *)adView didFailWithError:(NSError *)error;
 {
-    NSLog(@"Ad failed to load");
+    NSLog(@"FB Ad failed to load");
+    
     self.adView.hidden = YES;
     [self.delegate MFCustomEventAdDidFailToReceiveAdWithError:error];
 
@@ -72,6 +73,7 @@
 - (void)adViewDidLoad:(FBAdView *)adView;
 {
     NSLog(@"Ad was loaded and ready to be displayed");
+    
     self.adView.hidden = NO;
     [self.delegate MFCustomEventAd:self didLoad:adView];
     

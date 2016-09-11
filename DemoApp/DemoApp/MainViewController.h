@@ -24,8 +24,6 @@
 @interface MainViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, MobFoxAdDelegate, MobFoxInterstitialAdDelegate, MobFoxNativeAdDelegate, FBAdViewDelegate, MPAdViewDelegate, MPNativeAdDelegate, MPNativeAdAdapterDelegate, MPCollectionViewAdPlacerDelegate, MPNativeCustomEventDelegate, GADInterstitialDelegate, GADBannerViewDelegate>
 
 @property (strong, nonatomic) NSString *invh;
-//@property (strong, nonatomic) MPInterstitialAdController *interstitial;
-
 @property (nonatomic, retain) MPAdView *adView;
 @property (nonatomic, retain) MPCollectionViewAdPlacer* placer;
 @property (nonatomic, retain) UICollectionView* collectionView_new;

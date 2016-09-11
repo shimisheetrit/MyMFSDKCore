@@ -14,9 +14,10 @@
 
 @interface MobFoxInterstitialCustomEventAdMob : MobFoxInterstitialCustomEvent <GADInterstitialDelegate>
 
-@property(nonatomic, strong) GADInterstitial *interstitial;
+-(void)requestInterstitialWithNetworkId:(NSString*)networkId customEventInfo:(NSDictionary *)info;
+-(void)presentWithRootController:(UIViewController *)rootViewController;
 
-- (void)requestInterstitialWithRootController:(UIViewController *)rootViewController networkId:(NSString*)networkId customEventInfo:(NSDictionary *)info;
+@property(nonatomic, strong) GADInterstitial *interstitial;
 
 @end
 

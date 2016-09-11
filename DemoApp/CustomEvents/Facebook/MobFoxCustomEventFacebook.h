@@ -10,12 +10,14 @@
 #define MobFoxCustomEventFacebook_h
 
 #import <MobFoxSDKCore/MobFoxSDKCore.h>
-//#import <FBAudienceNetwork/FBAudienceNetwork.h>
+#import <FBAudienceNetwork/FBAudienceNetwork.h>
 
-@import FBAudienceNetwork;
 
 @interface MobFoxCustomEventFacebook : MobFoxCustomEvent <FBAdViewDelegate>
 
+@property (strong, nonatomic) UIViewController *parentViewController;
+
+- (void)requestAdWithSize:(CGSize)size networkID:(NSString*)nid customEventInfo:(NSDictionary *)info;
 
 @end
 
