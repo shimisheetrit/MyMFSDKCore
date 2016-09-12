@@ -16,7 +16,7 @@
 
 #define NATIVEAD_ADAPTER_TEST 0
 #define ADMOB_ADAPTER_TEST 0
-#define MOPUB_ADAPTER_TEST 1
+#define MOPUB_ADAPTER_TEST 0
 #define ADS_TYPE_NUM 7
 #define AD_REFRESH 0
 
@@ -71,17 +71,13 @@
 @implementation MainViewController
 
 
-- (void)applicationDidBecomeActive {
 
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Do any additional setup after loading the view, typically from a nib.
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActive) name:@"applicationDidBecomeActiveNotification" object:nil];
-
     
     self.cellID = @"cellID";
     self.nativeAdView.hidden = true;
@@ -103,7 +99,7 @@
     [MobFoxAd locationServicesDisabled:true];
     
     self.bannerAdRect = CGRectMake((screenWidth-bannerWidth)/2, SCREEN_HEIGHT - bannerHeight , bannerWidth, bannerHeight);
-    self.mobfoxAd = [[MobFoxAd alloc] init:MOBFOX_HASH_BANNER_TEST withFrame:self.bannerAdRect];
+    self.mobfoxAd = [[MobFoxAd alloc] init:MOBFOX_HASH_BANNER withFrame:self.bannerAdRect];
     self.mobfoxAd.delegate = self;
     self.mobfoxAd.auto_pilot = true;
     self.mobfoxAd.refresh = [NSNumber numberWithInt:AD_REFRESH];
@@ -301,7 +297,7 @@
 
             [self hideAds:indexPath];
             [self.mobfoxVideoAd pause];
-            self.mobfoxAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_BANNER_TEST;
+            self.mobfoxAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_BANNER;
             [self.mobfoxAd loadAd];
             
             break;

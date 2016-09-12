@@ -48,7 +48,7 @@ class SettingsViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
     }
     
     //MARK: Navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if(segue.identifier == "SettingsToMainSegue") {
             
@@ -62,19 +62,19 @@ class SettingsViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
     }
     
     
-    @IBAction func startStopReading(sender: AnyObject) {
+    @IBAction func startStopReading(_ sender: AnyObject) {
         
         if(!self.isScannerReading) {
             if(self.startReading()) {
                 
-                self.startButton.setTitle("Stop", forState:UIControlState.Normal)
+                self.startButton.setTitle("Stop", for:UIControlState())
                 self.statusLabel.text = "Scanning for QR Code..."
                 
             }
         } else{
             
             self.stopReading()
-            self.startButton.setTitle("Start!", forState:UIControlState.Normal)
+            self.startButton.setTitle("Start!", for:UIControlState())
             self.statusLabel.text = "QR Code Reader is not running..."
             
         }
@@ -87,7 +87,7 @@ class SettingsViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         
         var input: AVCaptureDeviceInput
         
-        let captureDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+        let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
         
         do {
             
@@ -105,8 +105,8 @@ class SettingsViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         let captureMetadataOutput = AVCaptureMetadataOutput.init()
         self.captureSession.addOutput(captureMetadataOutput)
         
-        var dispatchQueue: dispatch_queue_t
-        dispatchQueue = dispatch_queue_create("myQueue", DISPATCH_QUEUE_SERIAL)
+        var dispatchQueue: DispatchQueue
+        dispatchQueue = DispatchQueue(label: "myQueue", attributes: DispatchQueueAttributes.serial)
         captureMetadataOutput.setMetadataObjectsDelegate(self, queue: dispatchQueue)
         captureMetadataOutput.metadataObjectTypes = NSArray.init(object: AVMetadataObjectTypeQRCode) as [AnyObject]
         
@@ -129,9 +129,9 @@ class SettingsViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
     
     //MARK: AVCaptureMetadataOutputObjectsDelegate
     
-    func captureOutput(captureOutput: AVCaptureOutput!,
+    func captureOutput(_ captureOutput: AVCaptureOutput!,
         didOutputMetadataObjects metadataObjects: [AnyObject]!,
-        fromConnection connection: AVCaptureConnection!) {
+        from connection: AVCaptureConnection!) {
             
             if(metadataObjects != nil && metadataObjects.count > 0) {
                 
@@ -139,12 +139,12 @@ class SettingsViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
                 
                 if(metadataObj.type == AVMetadataObjectTypeQRCode) {
                     
-                    self.statusLabel.performSelectorOnMainThread("setText:", withObject: "QR Code Reader is not running...", waitUntilDone: false)
-                    self.performSelectorOnMainThread("stopReading", withObject: nil, waitUntilDone: false)
+                    self.statusLabel.performSelector(onMainThread: "setText:", with: "QR Code Reader is not running...", waitUntilDone: false)
+                    self.performSelector(onMainThread: "stopReading", with: nil, waitUntilDone: false)
                     
-                    dispatch_async(dispatch_get_main_queue(), {
+                    DispatchQueue.main.async(execute: {
                
-                        self.startButton.setTitle("Start!", forState:UIControlState.Normal)
+                        self.startButton.setTitle("Start!", for:UIControlState())
                         self.hashTextField.text = metadataObj.stringValue
                         
                         })

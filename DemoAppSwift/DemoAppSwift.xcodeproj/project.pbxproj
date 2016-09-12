@@ -301,13 +301,16 @@
 					865BD1AF1C73728400F180D8 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = AV662668AP;
+						LastSwiftMigration = 0800;
 					};
 					865BD1C31C73728400F180D8 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 865BD1AF1C73728400F180D8;
 					};
 					865BD1CE1C73728400F180D8 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 865BD1AF1C73728400F180D8;
 					};
 				};
@@ -524,6 +527,7 @@
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matomy.DemoAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -543,6 +547,7 @@
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matomy.DemoAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -559,6 +564,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matomy.DemoAppSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoAppSwift.app/DemoAppSwift";
 			};
 			name = Debug;
@@ -576,6 +582,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matomy.DemoAppSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoAppSwift.app/DemoAppSwift";
 			};
 			name = Release;
@@ -592,6 +599,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matomy.DemoAppSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = DemoAppSwift;
 				USES_XCTRUNNER = YES;
 			};
@@ -609,6 +617,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matomy.DemoAppSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = DemoAppSwift;
 				USES_XCTRUNNER = YES;
 			};

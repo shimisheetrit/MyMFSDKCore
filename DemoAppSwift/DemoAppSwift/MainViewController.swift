@@ -33,7 +33,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     internal var invh: String?
     private let cellID = "cellID"
-    private var clickURL: NSURL?
+    private var clickURL: URL?
     private var adVideoRect: CGRect!
     
     // MobFox.
@@ -51,18 +51,18 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // Do any additional setup after loading the view, typically from a nib.
 
         
-        self.nativeAdView.hidden = true
+        self.nativeAdView.isHidden = true
         
         let recognizer = UITapGestureRecognizer.init(target: self, action: "handleGesture:")
         self.innerNativeAdView.addGestureRecognizer(recognizer)
         
         // Oreintation dependent in iOS 8 and later.
-        let screenWidth = UIScreen.mainScreen().bounds.size.width
-        let screenHeight = UIScreen.mainScreen().bounds.size.height
-        let bannerWidth = CGFloat(UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad ? 728.0 : 320.0)
-        let bannerHeight = CGFloat(UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad ? 90.0 : 50.0)
-        let videoWidth = CGFloat(UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad ? 500.0 : 300.0)
-        let videoHeight = CGFloat(UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad ? 450.0 : 250.0)
+        let screenWidth = UIScreen.main().bounds.size.width
+        let screenHeight = UIScreen.main().bounds.size.height
+        let bannerWidth = CGFloat(UIDevice.current().userInterfaceIdiom == UIUserInterfaceIdiom.pad ? 728.0 : 320.0)
+        let bannerHeight = CGFloat(UIDevice.current().userInterfaceIdiom == UIUserInterfaceIdiom.pad ? 90.0 : 50.0)
+        let videoWidth = CGFloat(UIDevice.current().userInterfaceIdiom == UIUserInterfaceIdiom.pad ? 500.0 : 300.0)
+        let videoHeight = CGFloat(UIDevice.current().userInterfaceIdiom == UIUserInterfaceIdiom.pad ? 450.0 : 250.0)
 
         /*** Banner ***/
         let rect = CGRect(origin: CGPoint(x: (screenWidth-bannerWidth)/2, y: screenHeight-bannerHeight), size: CGSize(width: bannerWidth, height: bannerHeight) )
@@ -80,18 +80,18 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         mobfoxNativeAd.delegate = self
         
         /*** Video ***/
-        let videoTopMargin = CGFloat(UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad ? 200.0 : 80.0)
-        self.adVideoRect = CGRectMake((screenWidth - videoWidth)/2, self.collectionView.frame.size.height + videoTopMargin, videoWidth, videoHeight)
+        let videoTopMargin = CGFloat(UIDevice.current().userInterfaceIdiom == UIUserInterfaceIdiom.pad ? 200.0 : 80.0)
+        self.adVideoRect = CGRect(x: (screenWidth - videoWidth)/2, y: self.collectionView.frame.size.height + videoTopMargin, width: videoWidth, height: videoHeight)
         self.initVideoAd()
         
         /*** AdMob ***/
-        bannerView = GADBannerView.init(adSize: kGADAdSizeBanner, origin: CGPointMake(0, 0))
+        bannerView = GADBannerView.init(adSize: kGADAdSizeBanner, origin: CGPoint(x: 0, y: 0))
         bannerView.adUnitID = "ca-app-pub-6224828323195096/5240875564​" // "ca-app-pub-3940256099942544/2934735716"
-        bannerView.frame = CGRectMake(0, 0, 320, 50)
+        bannerView.frame = CGRect(x: 0, y: 0, width: 320, height: 50)
         bannerView.rootViewController = self
         let request = GADRequest()
         //request.testDevices = ["221e6c438e8184e0556942ea14bb214b"] // kGADSimulatorID
-        bannerView.loadRequest(request)
+        bannerView.load(request)
         self.view.addSubview(bannerView)
         
      
@@ -104,7 +104,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         
         print("viewWillDisappear")
         
@@ -114,32 +114,32 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     //MARK: MobFox Ad Delegate
-     func MobFoxAdDidLoad(banner: MobFoxAd!) {
+     func mobFoxAdDidLoad(_ banner: MobFoxAd!) {
         
         print("MobFoxAdDidLoad")
         
     }
     
-    func MobFoxAdDidFailToReceiveAdWithError(error: NSError!) {
+    func mobFoxAdDidFailToReceiveAdWithError(_ error: NSError!) {
         
         print("MobFoxAdDidFailToReceiveAdWithError: ", error.description)
         
     }
     
-    func MobFoxAdClosed() {
+    func mobFoxAdClosed() {
         
         print("MobFoxAdClosed")
 
     }
     
-    func MobFoxAdClicked() {
+    func mobFoxAdClicked() {
         
         print("MobFoxAdClicked")
 
     }
     
     //MARK: MobFox Ad Interstitial Delegate
-    func MobFoxInterstitialAdDidLoad(interstitial: MobFoxInterstitialAd!) {
+    func mobFoxInterstitialAdDidLoad(_ interstitial: MobFoxInterstitialAd!) {
         
         print("MobFoxInterstitialAdDidLoad")
         
@@ -149,57 +149,57 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
 
     }
     
-    func MobFoxInterstitialAdDidFailToReceiveAdWithError(error :NSError!) {
+    func mobFoxInterstitialAdDidFailToReceiveAdWithError(_ error :NSError!) {
     
         print("MobFoxInterstitialAdDidFailToReceiveAdWithError: \(error.description)");
     
     }
     
-    func MobFoxInterstitialAdClosed() {
+    func mobFoxInterstitialAdClosed() {
     
     print("MobFoxInterstitialAdClosed")
     
     }
     
-    func MobFoxInterstitialAdClicked() {
+    func mobFoxInterstitialAdClicked() {
     
     print("MobFoxInterstitialAdClicked")
     
     }
     
-    func MobFoxInterstitialAdFinished() {
+    func mobFoxInterstitialAdFinished() {
     
     print("MobFoxInterstitialAdFinished")
     
     }
     
     //MARK: MobFox Ad Native Delegate
-    func MobFoxNativeAdDidLoad(ad: MobFoxNativeAd!, withAdData adData: MobFoxNativeData!) {
+    func mobFoxNativeAdDidLoad(_ ad: MobFoxNativeAd!, withAdData adData: MobFoxNativeData!) {
         
-        self.nativeAdIcon.image = UIImage(data: NSData(contentsOfURL: adData.icon.url)!)
+        self.nativeAdIcon.image = UIImage(data: try! Data(contentsOf: adData.icon.url))
         self.nativeAdTitle.text = adData.assetHeadline
         self.nativeAdDescription.text = adData.assetDescription
         self.clickURL = adData.clickURL.absoluteURL
                 
     }
     
-    func MobFoxNativeAdDidFailToReceiveAdWithError(error: NSError!) {
+    func mobFoxNativeAdDidFailToReceiveAdWithError(_ error: NSError!) {
         
         print("MobFoxNativeAdDidFailToReceiveAdWithError")
 
     }
     
     //MARK: UICollection View Delegate
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         print("collectionView:didSelectItemAtIndexPath")
         
-        let cell = collectionView.cellForItemAtIndexPath(indexPath)
+        let cell = collectionView.cellForItem(at: indexPath)
         if cell != nil {
-            cell!.backgroundColor = UIColor.lightGrayColor()
+            cell!.backgroundColor = UIColor.lightGray()
         }
         
-        switch indexPath.item {
+        switch (indexPath as NSIndexPath).item {
         case 0:
             self.hideAds(indexPath)
             self.removeVideoAd()
@@ -218,7 +218,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
             self.pauseAdRefresh()
             self.removeVideoAd()
             if self.invh != nil {self.mobfoxNativeAd.invh = self.invh!.characters.count > 0  ? self.invh! : InventoryHash.MobFoxHashNative}
-            self.mobfoxNativeAd.loadAd()
+            self.mobfoxNativeAd.load()
 
         case 3:
             self.hideAds(indexPath)
@@ -226,7 +226,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
             self.removeVideoAd()
             self.initVideoAd()
             if self.invh != nil {self.mobfoxVideoAd.invh = self.invh!.characters.count > 0  ? self.invh! : InventoryHash.MobFoxHashVideo}
-            self.mobfoxVideoAd.loadAd()
+            self.mobfoxVideoAd.load()
 
             
         default:
@@ -235,48 +235,48 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
     }
     
-    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         
-        let cell = collectionView.cellForItemAtIndexPath(indexPath)
+        let cell = collectionView.cellForItem(at: indexPath)
         if cell != nil {
-            cell?.backgroundColor = UIColor.whiteColor()
+            cell?.backgroundColor = UIColor.white()
         }
         
     }
     
     //MARK: UICollection View Data Source
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(self.cellID , forIndexPath: indexPath) as! CollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.cellID , for: indexPath) as! CollectionViewCell
         
         cell.title.text = self.adTitle(indexPath)
         cell.image.image = self.adImage(indexPath)
 
-        if cell.selected {
-            cell.backgroundColor = UIColor.lightGrayColor()
+        if cell.isSelected {
+            cell.backgroundColor = UIColor.lightGray()
         } else {
-            cell.backgroundColor = UIColor.whiteColor() // Default color
+            cell.backgroundColor = UIColor.white() // Default color
         }
         
         return cell
         
     }
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         
         return 1
         
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return 4
     }
     
     //MARK: Private Functions
-    private func adTitle(indexPath: NSIndexPath) ->String {
+    private func adTitle(_ indexPath: IndexPath) ->String {
         
-        switch indexPath.item {
+        switch (indexPath as NSIndexPath).item {
         case 0:
             return "Banner"
         case 1:
@@ -292,9 +292,9 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
     }
     
-    private func adImage(indexPath: NSIndexPath) ->UIImage {
+    private func adImage(_ indexPath: IndexPath) ->UIImage {
         
-        switch indexPath.item {
+        switch (indexPath as NSIndexPath).item {
         case 0:
             return UIImage(named:"test_banner.png")!
         case 1:
@@ -310,33 +310,33 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
     }
     
-    private func hideAds(indexPath: NSIndexPath) {
+    private func hideAds(_ indexPath: IndexPath) {
         
-        switch indexPath.item {
+        switch (indexPath as NSIndexPath).item {
             
         case 0:
-            self.mobfoxAd.hidden = false
-            self.mobfoxInterAd.ad.hidden = true
-            self.nativeAdView.hidden = true
-            if self.mobfoxVideoAd != nil {self.mobfoxVideoAd.hidden = true}
+            self.mobfoxAd.isHidden = false
+            self.mobfoxInterAd.ad.isHidden = true
+            self.nativeAdView.isHidden = true
+            if self.mobfoxVideoAd != nil {self.mobfoxVideoAd.isHidden = true}
             
         case 1:
-            self.mobfoxAd.hidden = true
-            self.mobfoxInterAd.ad.hidden = false
-            self.nativeAdView.hidden = true
-            if self.mobfoxVideoAd != nil {self.mobfoxVideoAd.hidden = true}
+            self.mobfoxAd.isHidden = true
+            self.mobfoxInterAd.ad.isHidden = false
+            self.nativeAdView.isHidden = true
+            if self.mobfoxVideoAd != nil {self.mobfoxVideoAd.isHidden = true}
             
         case 2:
-            self.mobfoxAd.hidden = true
-            self.mobfoxInterAd.ad.hidden = true
-            self.nativeAdView.hidden = false
-            if self.mobfoxVideoAd != nil {self.mobfoxVideoAd.hidden = true}
+            self.mobfoxAd.isHidden = true
+            self.mobfoxInterAd.ad.isHidden = true
+            self.nativeAdView.isHidden = false
+            if self.mobfoxVideoAd != nil {self.mobfoxVideoAd.isHidden = true}
             
         case 3:
-            self.mobfoxAd.hidden = true
-            self.mobfoxInterAd.ad.hidden = true
-            self.nativeAdView.hidden = true
-            if self.mobfoxVideoAd != nil {self.mobfoxVideoAd.hidden = true}
+            self.mobfoxAd.isHidden = true
+            self.mobfoxInterAd.ad.isHidden = true
+            self.nativeAdView.isHidden = true
+            if self.mobfoxVideoAd != nil {self.mobfoxVideoAd.isHidden = true}
             
         default:
             break
@@ -372,8 +372,8 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         if(adRefresh > 0) {
             
-            self.mobfoxAd.refresh = NSNumber.init(integer: 0)
-            self.mobfoxAd.loadAd()
+            self.mobfoxAd.refresh = NSNumber.init(value: 0)
+            self.mobfoxAd.load()
             self.mobfoxAd.removeFromSuperview()
         }
     }
@@ -383,20 +383,20 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         if(adRefresh > 0) {
             
             self.view.addSubview(self.mobfoxAd)
-            self.mobfoxAd.refresh = NSNumber.init(integer: adRefresh)
-            self.mobfoxAd.loadAd()
+            self.mobfoxAd.refresh = NSNumber.init(value: adRefresh)
+            self.mobfoxAd.load()
             
         } else {
             
-            self.mobfoxAd.refresh = NSNumber.init(integer: adRefresh)
-            self.mobfoxAd.loadAd()
+            self.mobfoxAd.refresh = NSNumber.init(value: adRefresh)
+            self.mobfoxAd.load()
         }
     }
     
-    private func handleGesture( gestureRecognizer: UIGestureRecognizer) {
+    private func handleGesture( _ gestureRecognizer: UIGestureRecognizer) {
         
         if (self.clickURL != nil) {
-            UIApplication.sharedApplication().openURL(self.clickURL!)
+            UIApplication.shared().openURL(self.clickURL!)
         }
     }
     
