@@ -32,7 +32,7 @@
             startingLineNumber = "305"
             endingLineNumber = "305"
             landmarkName = "-collectionView:didSelectItemAtIndexPath:"
-            landmarkType = "7">
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -112,7 +112,7 @@
             startingLineNumber = "293"
             endingLineNumber = "293"
             landmarkName = "-collectionView:didSelectItemAtIndexPath:"
-            landmarkType = "7">
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -128,7 +128,7 @@
             startingLineNumber = "78"
             endingLineNumber = "78"
             landmarkName = "-viewDidLoad"
-            landmarkType = "7">
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

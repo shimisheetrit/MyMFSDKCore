@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Constants.h</key>
 		<data>
-		Chm17eTmz6AT35mS8zZqSJqTsHU=
+		fJV0bkchLm67Q1P60kK7mWaVWjc=
 		</data>
 		<key>Headers/LocationServicesManager.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0dF1MUVCRbWE6LuIhbJU/wNcsQI=
+		FS9F5i8vbwdVLVuD7NImaXaeWGE=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -70,15 +70,15 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		R6p0pE+8VGvqWAzmxhLZ89PaJxU=
+		Gj4O/YXD/zcoLSZrQCph6zynlIE=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
-		VH8QOm5Y/TK7JJV/eFBRUlf50P8=
+		bvZxmIaMSgjBvlsrj86s+aq8cqI=
 		</data>
 		<key>MobFoxSDKCore.plist</key>
 		<data>
-		BFJJx9At3jAGDmIsxkGUkkWavaY=
+		KBQGj6Z/ywqXh9dLQ3oWh4zNuf4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -95,11 +95,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Chm17eTmz6AT35mS8zZqSJqTsHU=
+			fJV0bkchLm67Q1P60kK7mWaVWjc=
 			</data>
 			<key>hash2</key>
 			<data>
-			T434jJQQKtgx4VTWJznqdK7x/5sL1nePwAR7XBgrPUI=
+			lID4IPOmcoY93bxM0avgcVWf2BAW489lBuDtZ+mGDcM=
 			</data>
 		</dict>
 		<key>Headers/LocationServicesManager.h</key>
@@ -260,33 +260,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R6p0pE+8VGvqWAzmxhLZ89PaJxU=
+			Gj4O/YXD/zcoLSZrQCph6zynlIE=
 			</data>
 			<key>hash2</key>
 			<data>
-			bClqrSkJOnsWNzkXMj814wq7RykhKpSkV4quvpY49hE=
+			Xq4ldEAkY7O5RLagCLFYLDKTJ96cKuXAEUrVZmhYmd8=
 			</data>
 		</dict>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VH8QOm5Y/TK7JJV/eFBRUlf50P8=
+			bvZxmIaMSgjBvlsrj86s+aq8cqI=
 			</data>
 			<key>hash2</key>
 			<data>
-			MAj9zlTLcxYPNwkIgbX1Oe9+5Oc0utaGU9br/zfQqjc=
+			Qhv3Qpq2muEMS22LXos6D3EG4EZ2+ujgvC24St24ZVk=
 			</data>
 		</dict>
 		<key>MobFoxSDKCore.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BFJJx9At3jAGDmIsxkGUkkWavaY=
+			KBQGj6Z/ywqXh9dLQ3oWh4zNuf4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Llns4g1mv2dm06sVy1gyqNYxXgAeMUz+TyS3zjh/WN8=
+			bYFVoUgPILJ8kMnmMTSl+8cVcg5GXfbVelCc0h8GG9I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

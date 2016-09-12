@@ -148,6 +148,8 @@
 		86B601471D8191510098C39C /* MobFoxInterstitialCustomEventSupersonic.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B601461D8191510098C39C /* MobFoxInterstitialCustomEventSupersonic.m */; };
 		86B601481D8191510098C39C /* MobFoxInterstitialCustomEventSupersonic.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B601461D8191510098C39C /* MobFoxInterstitialCustomEventSupersonic.m */; };
 		86B601491D8191510098C39C /* MobFoxInterstitialCustomEventSupersonic.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B601461D8191510098C39C /* MobFoxInterstitialCustomEventSupersonic.m */; };
+		86B8DF051D86A44700FEF95A /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86B8DF031D86A44700FEF95A /* MobFoxSDKCore.bundle */; };
+		86B8DF061D86A44700FEF95A /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B8DF041D86A44700FEF95A /* MobFoxSDKCore.framework */; };
 		86B9C2961CC3AB14002109CB /* MPGoogleAdMobBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B9C1071CC3AB13002109CB /* MPGoogleAdMobBannerCustomEvent.m */; };
 		86B9C2971CC3AB14002109CB /* MPGoogleAdMobBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B9C1071CC3AB13002109CB /* MPGoogleAdMobBannerCustomEvent.m */; };
 		86B9C2981CC3AB14002109CB /* MPGoogleAdMobBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B9C1071CC3AB13002109CB /* MPGoogleAdMobBannerCustomEvent.m */; };
@@ -736,8 +738,6 @@
 		86F8A2CB1C79C1E200BDD8FD /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2CA1C79C1E200BDD8FD /* MessageUI.framework */; };
 		86F8A2CD1C79C1F200BDD8FD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2CC1C79C1F200BDD8FD /* MobileCoreServices.framework */; };
 		86F8A2D11C79C20D00BDD8FD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2D01C79C20D00BDD8FD /* Social.framework */; };
-		86FA54F91D81C29800BD7BBA /* MobFoxSDKCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86FA54F71D81C29800BD7BBA /* MobFoxSDKCore.bundle */; };
-		86FA54FB1D81C30D00BD7BBA /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FA54F81D81C29800BD7BBA /* MobFoxSDKCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -866,6 +866,8 @@
 		86B6013D1D8191260098C39C /* MobFoxInterstitialCustomEventAmazon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobFoxInterstitialCustomEventAmazon.m; sourceTree = "<group>"; };
 		86B601451D8191510098C39C /* MobFoxInterstitialCustomEventSupersonic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobFoxInterstitialCustomEventSupersonic.h; sourceTree = "<group>"; };
 		86B601461D8191510098C39C /* MobFoxInterstitialCustomEventSupersonic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobFoxInterstitialCustomEventSupersonic.m; sourceTree = "<group>"; };
+		86B8DF031D86A44700FEF95A /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobFoxSDKCore.bundle; sourceTree = "<group>"; };
+		86B8DF041D86A44700FEF95A /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCore.framework; sourceTree = "<group>"; };
 		86B9C1061CC3AB13002109CB /* MPGoogleAdMobBannerCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGoogleAdMobBannerCustomEvent.h; sourceTree = "<group>"; };
 		86B9C1071CC3AB13002109CB /* MPGoogleAdMobBannerCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGoogleAdMobBannerCustomEvent.m; sourceTree = "<group>"; };
 		86B9C1081CC3AB13002109CB /* MPGoogleAdMobInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGoogleAdMobInterstitialCustomEvent.h; sourceTree = "<group>"; };
@@ -1261,8 +1263,6 @@
 		86F8A2CA1C79C1E200BDD8FD /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		86F8A2CC1C79C1F200BDD8FD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		86F8A2D01C79C20D00BDD8FD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		86FA54F71D81C29800BD7BBA /* MobFoxSDKCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobFoxSDKCore.bundle; sourceTree = "<group>"; };
-		86FA54F81D81C29800BD7BBA /* MobFoxSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1279,7 +1279,6 @@
 				86D045FB1D51F22A00655C9E /* AmazonAd.framework in Frameworks */,
 				86F8A2BB1C79BBE700BDD8FD /* MediaPlayer.framework in Frameworks */,
 				86F8A2B31C79BBA800BDD8FD /* CoreTelephony.framework in Frameworks */,
-				86FA54FB1D81C30D00BD7BBA /* MobFoxSDKCore.framework in Frameworks */,
 				869107011D72CCBF007CC571 /* Supersonic.framework in Frameworks */,
 				86F8A2B11C79BB9C00BDD8FD /* CoreMedia.framework in Frameworks */,
 				86F8A2AD1C79BB8200BDD8FD /* CoreGraphics.framework in Frameworks */,
@@ -1294,6 +1293,7 @@
 				869107051D743CB5007CC571 /* MMAdSDK.framework in Frameworks */,
 				869107321D76F783007CC571 /* iSoma.framework in Frameworks */,
 				86F8A2C91C79BC9700BDD8FD /* CoreBluetooth.framework in Frameworks */,
+				86B8DF061D86A44700FEF95A /* MobFoxSDKCore.framework in Frameworks */,
 				86F8A2C71C79BC6900BDD8FD /* iAd.framework in Frameworks */,
 				86F8A2BD1C79BBF400BDD8FD /* QuartzCore.framework in Frameworks */,
 				86F8A2C31C79BC3200BDD8FD /* UIKit.framework in Frameworks */,
@@ -1447,7 +1447,7 @@
 		86891E051C5FA8250098C602 = {
 			isa = PBXGroup;
 			children = (
-				86FA54F61D81C29800BD7BBA /* MobFoxSDKCore.embeddedframework */,
+				86B8DF021D86A44700FEF95A /* MobFoxSDKCore.embeddedframework */,
 				861B1F461D1AB523003739FA /* Mediation Adapters */,
 				8643A9571CBEA0EC00D0CD85 /* MobFox Custom Events */,
 				860C0FCC1C96F1280001EEF3 /* MobFox Adapters */,
@@ -1640,6 +1640,15 @@
 				86B601461D8191510098C39C /* MobFoxInterstitialCustomEventSupersonic.m */,
 			);
 			path = Supersonic;
+			sourceTree = "<group>";
+		};
+		86B8DF021D86A44700FEF95A /* MobFoxSDKCore.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				86B8DF031D86A44700FEF95A /* MobFoxSDKCore.bundle */,
+				86B8DF041D86A44700FEF95A /* MobFoxSDKCore.framework */,
+			);
+			path = MobFoxSDKCore.embeddedframework;
 			sourceTree = "<group>";
 		};
 		86B9C1031CC3AB13002109CB /* MoPubSDK */ = {
@@ -2232,15 +2241,6 @@
 			path = Internal;
 			sourceTree = "<group>";
 		};
-		86FA54F61D81C29800BD7BBA /* MobFoxSDKCore.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				86FA54F71D81C29800BD7BBA /* MobFoxSDKCore.bundle */,
-				86FA54F81D81C29800BD7BBA /* MobFoxSDKCore.framework */,
-			);
-			path = MobFoxSDKCore.embeddedframework;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2387,7 +2387,7 @@
 				86891EE11C6737EC0098C602 /* icon_02.png in Resources */,
 				860F6DBE1D2CFFD400E62984 /* Main.storyboard in Resources */,
 				86B9C4911CC3AB14002109CB /* MPDAAIcon.png in Resources */,
-				86FA54F91D81C29800BD7BBA /* MobFoxSDKCore.bundle in Resources */,
+				86B8DF051D86A44700FEF95A /* MobFoxSDKCore.bundle in Resources */,
 				86B9C3351CC3AB14002109CB /* LICENSE in Resources */,
 				86B9C4AF1CC3AB14002109CB /* MPUnmutedBtn@2x.png in Resources */,
 				86891ED91C63AAC10098C602 /* img_05.png in Resources */,
