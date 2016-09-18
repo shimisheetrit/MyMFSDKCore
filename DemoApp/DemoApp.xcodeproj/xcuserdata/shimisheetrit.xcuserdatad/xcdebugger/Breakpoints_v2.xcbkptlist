@@ -15,8 +15,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "438"
             endingLineNumber = "438"
-            landmarkName = "@implementation MainViewController"
-            landmarkType = "3">
+            landmarkName = "-MobFoxAdDidLoad:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -32,7 +32,7 @@
             startingLineNumber = "305"
             endingLineNumber = "305"
             landmarkName = "-collectionView:didSelectItemAtIndexPath:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -112,7 +112,7 @@
             startingLineNumber = "293"
             endingLineNumber = "293"
             landmarkName = "-collectionView:didSelectItemAtIndexPath:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -127,8 +127,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "78"
             endingLineNumber = "78"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "5">
+            landmarkName = "@implementation MainViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

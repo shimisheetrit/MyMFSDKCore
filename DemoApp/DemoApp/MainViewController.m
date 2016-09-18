@@ -21,13 +21,17 @@
 #define AD_REFRESH 0
 
 
+#define MOBFOX_HASH_BANNER_FB @"4659f7f7872efe6004226b31e60eb04c"
+#define MOBFOX_HASH_INTER_FB @"d14378052bf3ed40d129134bec409bcc"
+#define MOBFOX_HASH_NATIVE_FB @"e1cc74740624632ab7ccfe812cf8a6ff"
+
 #define MOBFOX_HASH_BANNER @"eb115dc9c19112f5a5c95ab728a3ce9c"
 #define MOBFOX_HASH_INTER @"145849979b4c7a12916c7f06d25b75e3"
 #define MOBFOX_HASH_NATIVE @"4c3ea57788c5858881dc42cfafe8c0ab"
 #define MOBFOX_HASH_VIDEO @"80187188f458cfde788d961b6882fd53"
 #define MOBFOX_HASH_AUDIO @"75f994b45ca31b454addc8b808d59135"
 
-#define MOBFOX_HASH_BANNER_TEST @"fe96717d9875b9da4339ea5367eff1ec" //@"8769bb5eb962eb39170fc5d8930706a9"
+#define MOBFOX_HASH_BANNER_TEST @"fe96717d9875b9da4339ea5367eff1ec"
 #define MOBFOX_HASH_INTER_TEST @"267d72ac3f77a3f447b32cf7ebf20673"
 #define MOBFOX_HASH_NATIVE_TEST @"80187188f458cfde788d961b6882fd53"
 #define MOBFOX_HASH_VIDEO_TEST @"80187188f458cfde788d961b6882fd53"
@@ -99,7 +103,7 @@
     [MobFoxAd locationServicesDisabled:true];
     
     self.bannerAdRect = CGRectMake((screenWidth-bannerWidth)/2, SCREEN_HEIGHT - bannerHeight , bannerWidth, bannerHeight);
-    self.mobfoxAd = [[MobFoxAd alloc] init:MOBFOX_HASH_BANNER_TEST withFrame:self.bannerAdRect];
+    self.mobfoxAd = [[MobFoxAd alloc] init:MOBFOX_HASH_BANNER_FB withFrame:self.bannerAdRect];
     self.mobfoxAd.delegate = self;
     self.mobfoxAd.auto_pilot = true;
     self.mobfoxAd.refresh = [NSNumber numberWithInt:AD_REFRESH];
@@ -110,7 +114,7 @@
     
     [MobFoxInterstitialAd locationServicesDisabled:true];
     
-    self.mobfoxInterAd = [[MobFoxInterstitialAd alloc] init:MOBFOX_HASH_INTER_TEST withRootViewController:self];
+    self.mobfoxInterAd = [[MobFoxInterstitialAd alloc] init:MOBFOX_HASH_INTER_FB withRootViewController:self];
     //self.mobfoxInterAd.ad.type = @"video";
     self.mobfoxInterAd.delegate = self;
     self.mobfoxInterAd.ad.autoplay =  true;
@@ -120,7 +124,7 @@
     
     [MobFoxNativeAd locationServicesDisabled:true];
 
-    self.mobfoxNativeAd = [[MobFoxNativeAd alloc] init:MOBFOX_HASH_NATIVE_TEST];
+    self.mobfoxNativeAd = [[MobFoxNativeAd alloc] init:MOBFOX_HASH_NATIVE_FB];
     self.mobfoxNativeAd.delegate = self;
     
     
@@ -297,7 +301,7 @@
 
             [self hideAds:indexPath];
             [self.mobfoxVideoAd pause];
-            self.mobfoxAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_BANNER_TEST;
+            self.mobfoxAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_BANNER_FB;
             [self.mobfoxAd loadAd];
             
             break;
@@ -306,7 +310,7 @@
 
             [self hideAds:indexPath];
             [self.mobfoxVideoAd pause];
-            self.mobfoxInterAd.ad.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_INTER_TEST;
+            self.mobfoxInterAd.ad.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_INTER_FB;
             [self.mobfoxInterAd loadAd];
 
 
@@ -315,7 +319,7 @@
         case 2:
             [self hideAds:indexPath];
             [self.mobfoxVideoAd pause];
-            self.mobfoxNativeAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_NATIVE_TEST;
+            self.mobfoxNativeAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_NATIVE_FB;
             [self.mobfoxNativeAd loadAd];
             
             break;
