@@ -45,6 +45,10 @@
     }
    ]
   
+
+
+}
+
   Pod::Spec.new do |spec|
   spec.name             = 'Reachability'
   spec.version          = '3.1.0'
@@ -57,5 +61,3 @@
   spec.framework        = 'SystemConfiguration'
   spec.requires_arc     = true
 end
-
-}
