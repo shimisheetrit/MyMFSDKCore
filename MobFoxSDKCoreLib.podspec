@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/mobfox/MobFox-iOS-SDK-Core-Lib.git", :tag => "v2.4.0" }
+  s.source       = { :git => "https://github.com/mobfox/MobFox-iOS-SDK-Core-Lib/tree/pod_update", :tag => "v2.4.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
