@@ -1,63 +1,15 @@
-{
-  "name": "MobFoxSDKCoreLib",
-  "version": "2.4.0",
-  "homepage": "http://mobfox.com",
-  "license": "MIT",
-  "authors": {
-    "Matomy/MobFox": "itamar.n@matomy.com"
-  },
-  "summary": "The MobFox iOS SDK.",
-  "description": "MobFox's iOS SDK Core",
-  "platforms": {
-    "ios": "7.0"
-  },
-  "source": {
-    "git": "https://github.com/mobfox/MobFox-iOS-SDK-Core-Lib.git"
-  },
-  "preserve_paths": "MobFoxSDKCore.embeddedframework/MobFoxSDKCore.framework",
-  "public_header_files": "MobFoxSDKCore.embeddedframework/MobFoxSDKCore.framework/Headers/*.h",
-  "resources": "MobFoxSDKCore.embeddedframework/MobFoxSDKCore.bundle",
-  "vendored_frameworks": "MobFoxSDKCore.embeddedframework/MobFoxSDKCore.framework",
-  "libraries": [
-  ],
-  "xcconfig": {
-    "FRAMEWORK_SEARCH_PATHS": "\"$(PODS_ROOT)/MobFoxSDKCoreLib/**\""
-  },
-  "frameworks": [
-  ],
-  "requires_arc": true,
-  
-  "subspecs": [
-    {
-      "name": "MobFoxSDKCoreLib",
-      "preserve_paths": "MobFoxSDKCore.embeddedframework/MobFoxSDKCore.framework",
-      "public_header_files": "MobFoxSDKCore.embeddedframework/MobFoxSDKCore.framework/Headers/*.h",
-      "resources": "MobFoxSDKCore.embeddedframework/MobFoxSDKCore.bundle",
-      "vendored_frameworks": "MobFoxSDKCore.embeddedframework/MobFoxSDKCore.framework"
-    },
-    {
-      "name": "AdMob",
-      "source_files": "CustomEvents/AdMob/*.{h,m}"
-    },
-    {
-      "name": "MoPub",
-      "source_files": "CustomEvents/MoPub/*.{h,m}"
-    }
-   ]
-  
-
-
-}
 
   Pod::Spec.new do |spec|
-  spec.name             = 'Reachability'
-  spec.version          = '3.1.0'
-  spec.license          = { :type => 'BSD' }
-  spec.homepage         = 'https://github.com/tonymillion/Reachability'
-  spec.authors          = { 'Tony Million' => 'tonymillion@gmail.com' }
-  spec.summary          = 'ARC and GCD Compatible Reachability Class for iOS and macOS.'
-  spec.source           = { :git => 'https://github.com/tonymillion/Reachability.git', :tag => 'v3.1.0' }
+  spec.name             = 'MobFoxSDKCoreLib'
+  spec.version          = '2.4.0'
+  spec.license          = { :type => 'MIT' }
+  spec.homepage         = 'http://mobfox.com'
+  spec.authors          = { 'Itamar Nabriski' => 'itamar.n@matomy.com' }
+  spec.summary          = 'The MobFox iOS SDK.'
+  spec.source           = { :git => 'https://github.com/mobfox/MobFox-iOS-SDK-Core-Lib.git', :tag => 'v2.4.0' }
   spec.source_files     = 'Reachability.h,m'
+  spec.preserve_paths   = 'MobFoxSDKCore.embeddedframework/MobFoxSDKCore.framework'
+  
   spec.framework        = 'SystemConfiguration'
   spec.requires_arc     = true
 end
