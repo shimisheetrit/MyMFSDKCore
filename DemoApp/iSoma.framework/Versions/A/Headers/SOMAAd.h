@@ -20,6 +20,7 @@
 @interface SOMAAd : NSObject<NSCopying>
 
 @property(nonatomic, copy) NSString* userid;
+@property(nonatomic, copy) NSString* passbackUrl;
 @property(nonatomic, copy) NSString* ownid;
 @property(nonatomic, copy) NSString* adid;
 @property(nonatomic, copy) NSString* logid;

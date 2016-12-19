@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 #import "GADMediationAdRequest.h"
-//#import "GADMediatedNativeAd.h"
 
 @protocol GADMAdNetworkAdapter;
 
@@ -38,9 +37,9 @@
 
 /// Tells the connector that the adapter has received a mediated native ad. |mediatedNativeAd| is
 /// used by the Google Mobile Ads SDK for constructing a native ad object.
-/*- (void)adapter:(id<GADMAdNetworkAdapter>)adapter
+- (void)adapter:(id<GADMAdNetworkAdapter>)adapter
     didReceiveMediatedNativeAd:(id<GADMediatedNativeAd>)mediatedNativeAd;
-*/
+
 #pragma mark Ad events
 
 // Adapter should call as many of these as possible, during the lifecycle of the loaded banner or
@@ -70,15 +69,15 @@
 - (void)adapterDidDismissInterstitial:(id<GADMAdNetworkAdapter>)adapter;
 
 #pragma mark Deprecated
-/*
+
 - (void)adapter:(id<GADMAdNetworkAdapter>)adapter
-didReceiveInterstitial:(NSObject *)interstitial;
-    //GAD_DEPRECATED_MSG_ATTRIBUTE("Use adapterDidReceiveInterstitial:.");
+    didReceiveInterstitial:(NSObject *)interstitial
+    GAD_DEPRECATED_MSG_ATTRIBUTE("Use adapterDidReceiveInterstitial:.");
 
 - (void)adapter:(id<GADMAdNetworkAdapter>)adapter
     clickDidOccurInBanner:(UIView *)view GAD_DEPRECATED_MSG_ATTRIBUTE("Use adapterDidGetAdClick:.");
 
 - (void)adapter:(id<GADMAdNetworkAdapter>)adapter
     didFailInterstitial:(NSError *)error GAD_DEPRECATED_MSG_ATTRIBUTE("Use adapter:didFailAd:");
-*/
+
 @end
