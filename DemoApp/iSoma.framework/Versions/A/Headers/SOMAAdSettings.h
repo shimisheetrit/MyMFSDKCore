@@ -34,11 +34,9 @@
 @property(nonatomic, assign) CGFloat longitude;
 @property(nonatomic, assign) CGFloat latitude;
 
-//#warning SOMA>>> Check if user agent is needed
-//@property(nonatomic, strong) NSString* userAgent;
+@property(nonatomic, assign) BOOL httpsOnly;
 
-//@property(nonatomic, assign) BOOL isCovered;
-
+@property(nonatomic, assign, getter = isFrequencyCappingEnabled) BOOL frequencyCappingEnabled;
 @property(nonatomic, assign, getter = isTestModeEnabled) BOOL testModeEnabled;
 
 @property(nonatomic, assign, getter = isAutoReloadEnabled) BOOL autoReloadEnabled;

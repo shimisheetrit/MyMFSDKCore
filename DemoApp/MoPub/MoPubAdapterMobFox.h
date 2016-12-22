@@ -1,12 +1,22 @@
-//
-//  FacebookBannerCustomEvent.h
-//  MoPub
-//
-//  Copyright (c) 2014 MoPub. All rights reserved.
-//
+#ifndef MoPubAdapterMobFox_h
+#define MoPubAdapterMobFox_h
 
+#import <MobFoxSDKCore/MobFoxSDKCore.h>
+
+#if __has_include(<MoPub/MoPub.h>)
+#import <MoPub/MoPub.h>
+#else
 #import "MPBannerCustomEvent.h"
+#endif
 
-@interface MoPubAdapterMobFox : MPBannerCustomEvent
+@interface MoPubAdapterMobFox : MPBannerCustomEvent <MobFoxAdDelegate>
+
+@property (strong, nonatomic) MobFoxAd* ad;
+
+- (id) init;
+
+- (void)requestAdWithSize:(CGSize)size customEventInfo:(NSDictionary *)info;
 
 @end
+
+#endif

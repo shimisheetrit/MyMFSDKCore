@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import <MobFoxSDKCore/MobFoxSDKCore.h>
 
-@interface SettingsViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate>
+@interface SettingsViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate, MobFoxInterstitialAdDelegate>
 
 @end

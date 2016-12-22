@@ -8,6 +8,9 @@
 
 #import "SettingsViewController.h"
 #import "MainViewController.h"
+#import "AppDelegate.h"
+
+#define MOBFOX_HASH_INTER @"267d72ac3f77a3f447b32cf7ebf20673"
 
 @interface SettingsViewController ()
 
@@ -22,6 +25,9 @@
 @property (nonatomic) BOOL isScannerReading;
 @property (strong, nonatomic) AVCaptureSession *captureSession;
 @property (strong, nonatomic) AVCaptureVideoPreviewLayer *videoPreviewLayer;
+
+@property (strong, nonatomic) MobFoxInterstitialAd *mobfoxInterAd;
+
 
 @end
 
@@ -41,6 +47,25 @@
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc]
                                      initWithTarget:self
                                      action:@selector(dismissKeyboard)]];
+    
+    // interstitial test.
+    
+    /*** Interstitial ***/
+    
+    [MobFoxInterstitialAd locationServicesDisabled:true];
+    
+    //self.mobfoxInterAd = [[MobFoxInterstitialAd alloc] init];
+    //self.mobfoxInterAd = [[MobFoxInterstitialAd alloc] init:MOBFOX_HASH_INTER withRootViewController:nil];
+    
+    MainViewController *rootController =(MainViewController*)[[(AppDelegate*)
+                                                               [[UIApplication sharedApplication]delegate] window] rootViewController];
+    
+    self.mobfoxInterAd = [[MobFoxInterstitialAd alloc] init:MOBFOX_HASH_INTER withRootViewController:rootController];
+    
+    //self.mobfoxInterAd.ad.type = @"video";
+    self.mobfoxInterAd.delegate = self;
+    self.mobfoxInterAd.autoplay =  true;
+    [self.mobfoxInterAd loadAd];
 
 }
 
@@ -154,6 +179,17 @@
     }
 }
 
+#pragma mark MobFox Interstitial Ad Delegate
+
+//best to show after delegate informs an ad was loaded
+- (void)MobFoxInterstitialAdDidLoad:(MobFoxInterstitialAd *)interstitial {
+    
+    NSLog(@"MobFoxInterstitialAdDidLoad:");
+    
+    if(self.mobfoxInterAd.ready){
+        [self.mobfoxInterAd show];
+    }
+}
 
 
 @end
