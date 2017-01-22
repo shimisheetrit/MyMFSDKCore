@@ -1,0 +1,29 @@
+{
+  "name": "MobFoxSDKDynamic",
+  "version": "3.1.4",
+  "homepage": "http://mobfox.com",
+  "license": "MIT",
+  "authors": {
+    "Matomy/MobFox": "itamar.n@matomy.com"
+  },
+  "summary": "The MobFox iOS SDK.",
+  "description": "MobFox's iOS SDK Used To Get Ads From The MobFox SSP",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/mobfox/MobFox-iOS-SDK.git"
+  },
+  "preserve_paths": "MobFoxSDKCoreDynamic.embeddedframework/MobFoxSDKCore.framework",
+  "public_header_files": "MobFoxSDKCoreDynamic.embeddedframework/MobFoxSDKCore.framework/Headers/*.h",
+  "resources": "MobFoxSDKCoreDynamic.embeddedframework/MobFoxSDKCore.bundle",
+  "vendored_frameworks": "MobFoxSDKCoreDynamic.embeddedframework/MobFoxSDKCore.framework",
+  "libraries": [
+  ],
+  "xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "\"$(PODS_ROOT)/MobFoxSDK/**\""
+  },
+  "frameworks": [
+  ],
+  "requires_arc": true
+}
