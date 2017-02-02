@@ -7,3 +7,5 @@ Pod::Spec.new do |s|
   s.summary = 'The MobFox iOS SDK.'
   s.description = 'MobFox's iOS SDK Used To Get Ads From The MobFox SSP'
   s.platform = :ios, '8.0'
+
+end
