@@ -9,31 +9,5 @@ Pod::Spec.new do |s|
   s.platform = :ios, '8.0'
     
   
-  s.subspec 'MobFoxSDKCore' do |MobFoxSDKCore|
-    
-  MobFoxSDKCore.source_files = 'MobFoxSDKCore.embeddedframework/MobFoxSDKCore.framework/Headers/*.h'
-
-  end
-
-  s.subspec 'BitCode' do |BitCode|
-    
-  BitCode.source_files = 'MobFoxSDKCoreBitCode.embeddedframework/MobFoxSDKCoreBitCode.framework/Headers/*.h'
-  
-
-  end
-
-  s.subspec 'Dynamic' do |Dynamic|
-    
-  Dynamic.source_files = 'MobFoxSDKCoreDynamic.embeddedframework/MobFoxSDKCoreDynamic.framework/Headers/*.h'
-  
-  
-  end
-  
-  s.subspec 'DynamicBitCode' do |DynamicBitCode|
-    
-  DynamicBitCode.source_files = 'MobFoxSDKCoreDynamicBitCode.embeddedframework/MobFoxSDKCoreDynamicBitCode.framework/Headers/*.h'
-  
-  
-  end
   
 end
