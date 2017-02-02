@@ -1,11 +1,12 @@
 Pod::Spec.new do |s|
-  s.name = 'MobFoxSDK'
-  s.version = '3.1.4'
-  s.homepage = 'http://mobfox.com'
-  s.license = 'MIT'
-  s.author = 'Matomy/MobFox: itamar.n@matomy.com'
-  s.summary = 'The MobFox iOS SDK.'
-  s.description = 'MobFox's iOS SDK Used To Get Ads From The MobFox SSP'
-  s.platform = :ios, '8.0'
+  s.name = 'RestKit'
 
+  s.subspec 'Core' do |cs|
+    cs.dependency 'RestKit/ObjectMapping'
+    cs.dependency 'RestKit/Network'
+    cs.dependency 'RestKit/CoreData'
+  end
+
+  s.subspec 'ObjectMapping' do |os|
+  end
 end
