@@ -1,7 +1,9 @@
-subspec 'Twitter' do |sp|
-  sp.source_files = 'Classes/Twitter'
-end
-
-subspec 'Pinboard' do |sp|
-  sp.source_files = 'Classes/Pinboard'
-end
+Pod::Spec.new do |s|
+  s.name = 'MobFoxSDK'
+  s.version = '3.1.4'
+  s.homepage = 'http://mobfox.com'
+  s.license = 'MIT'
+  s.author = 'Matomy/MobFox: itamar.n@matomy.com'
+  s.summary = 'The MobFox iOS SDK.'
+  s.description = 'MobFox's iOS SDK Used To Get Ads From The MobFox SSP'
+  s.platform = :ios, '8.0'
