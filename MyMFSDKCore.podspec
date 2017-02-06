@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -79,7 +79,9 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/shimisheetrit/MyMFSDKCore.git", :tag => "v#{s.version}" }
+  # s.source       = { :git => "https://github.com/shimisheetrit/MyMFSDKCore.git", :tag => "v#{s.version}" }
+  
+  s.source       = { :git => "https://github.com/shimisheetrit/MyMFSDKCore.git", :tag => "v3.1.5" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -93,8 +95,7 @@ Pod::Spec.new do |s|
   # s.source_files  = "Classes", "Classes/**/*.{h,m}"
   s.source_files  = "MobFoxSDKCore.embeddedframework/MobFoxSDKCore.framework/Headers/*.h"
   #s.exclude_files = "Classes/Exclude"
-
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "MobFoxSDKCore.embeddedframework/MobFoxSDKCore.framework/Headers/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -130,9 +131,10 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  # s.xcconfig = "FRAMEWORK_SEARCH_PATHS" = "\"$(PODS_ROOT)/MobFoxSDK/**\""
   # s.dependency "JSONKit", "~> 1.4"
 
 end
